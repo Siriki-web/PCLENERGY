@@ -1,0 +1,11 @@
+.menu-link:active{
+    color: black;
+}
+
+.menu-link:focus{
+    color: #EFA21F;
+}
+
+.menu-link:hover{
+    color: #EFA21F;
+}
