@@ -51,6 +51,10 @@ const TitleBestSource = styled.h3`
     text-transform: capitalize;
     margin-bottom: 30px;
     margin-top: 40px;
+
+    @media all and (max-width: 1024px){
+        font-size: 2.5rem;
+    }
     `
 
 const ParagraphHistory = styled.p`

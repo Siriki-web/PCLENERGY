@@ -31,7 +31,6 @@ const StyledLink = styled(Link)`
 
 const DivNav = styled.div`
     display: flex; 
-    // justify-content: space-around;
     align-items: center;
     padding-top: 20px;
     margin-left: 65px;

@@ -106,7 +106,7 @@ const IconSocialNetwork = styled.div`
 
 const Copyright = styled.p`
     color: white;
-    margin-left: 225px;
+    text-align: center;
     padding-bottom: 30px;
 
     @media all and (max-width: 1024px){

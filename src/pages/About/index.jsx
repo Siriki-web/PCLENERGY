@@ -54,7 +54,7 @@ const TitleWhoWeAre = styled.h1`
     line-height: 50px;
 
     @media all and (max-width: 1024px){
-        font-size: 50px;
+        font-size: 1.625rem;
         text-align: center;
         }
     `
@@ -66,7 +66,8 @@ const StyleParagraph = styled.p`
     font-weight: 300;
 
     @media all and (max-width: 1024px){
-        font-size: 16px;
+        font-size: .875rem;
+        line-height: 30px;
         }
     `
 
@@ -99,6 +100,10 @@ const TitleMeetOurTeam = styled.h1`
     padding-top: 50px;
     margin-bottom: 5px;
     font-weight: 900;
+
+    @media all and (max-width: 1024px){
+        font-size: 1.625rem;
+    }
     `
 
 const ParagraphTeam = styled.p`
@@ -107,17 +112,7 @@ const ParagraphTeam = styled.p`
     text-align: center;
     margin-bottom: 70px;
     `
-
-// // const CardEnergy = styled.div`
-// //     position: absolute;
-// //     bottom: -643px;
-// //     right: 440px;
-// //     opacity: 1;
-// //     color: white;
-// //     width: 175px; 
-// //     height: 140px; 
-// //     background-image: linear-gradient(to right, #EFA21F, #32B34A);
-// `    
+ 
 
 const DivButton = styled.div`
     @media all and (max-width: 1024px){
@@ -155,9 +150,6 @@ const About = () => {
                     </div>
                     <div>
                         <ImgUsine src={usine_solaire} alt="" />
-                        {/* <CardEnergy>
-                                <h3 style={{marginLeft: "10px", marginTop: "50px"}}>ENERGY IS THE FUTURE, MAKE IT BRILLIANT</h3>
-                        </CardEnergy> */}
                     </div>
                 </ContainerWhoWeAre>
                 <OurPartners />

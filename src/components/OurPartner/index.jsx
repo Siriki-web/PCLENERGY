@@ -12,7 +12,7 @@ const TitlePartners = styled.h1`
     margin-bottom: 5px;
 
     @media all and (max-width: 1024px){
-        font-size: 50px;
+        font-size: 1.625rem;
     }
 `
 

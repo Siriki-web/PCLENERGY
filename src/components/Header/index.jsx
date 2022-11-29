@@ -7,15 +7,15 @@ import Nav from "../Nav";
 
 
 const ContainerHome = styled.div`
-    margin-bottom: 80px;
     position: absolute;
     background: rgba(0,0,0,0.8);
     opacity: 0.8;
     height: 100%;
     width: 100%;
     `
+
 const Lines = styled.div`
-    width: 410px;
+    width: 280px;
     height: 1px;
     background-color: white;
 
@@ -80,8 +80,8 @@ const TitleH1 = styled.h1`
     margin-left: 80px;
     margin-top: 10px;
     margin-bottom: 2px;
-    font-size: 74px;
-    font-weight: 800;
+    font-size: 62px;
+    font-weight: 900;
 
     @media all and (max-width: 1024px){
         margin-left: 2px;

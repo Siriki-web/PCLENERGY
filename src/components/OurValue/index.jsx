@@ -61,11 +61,19 @@ const MeetsBusiness = styled.h3`
     line-height: 60px;
     margin-bottom: 20px;
     margin-top: 20px;
+
+    @media all and (max-width: 1024px){
+        font-size: 3.5rem;
+    }
     `   
 
 const ParagrahValue = styled.p`
     color: white;
     font-size: 25px;
+
+    @media all and (max-width: 1024px){
+        // font-size: 1rem;
+    }
     `
 
 const ImageVisionMissipn = styled.img`

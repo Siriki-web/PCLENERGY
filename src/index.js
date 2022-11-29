@@ -22,6 +22,7 @@ import MasterPlans from './pages/MasterPlans';
 import SupportFunction from './pages/SupportFunction';
 import Portfolio from './pages/Portfolio';
 import Program from './pages/Program';
+import OperationMaintenance from './pages/OperationMaintenance'
 
 
 
@@ -50,7 +51,7 @@ root.render(
                 <Route path='support-function' element={<SupportFunction />} />
                 <Route path='portfolio-advisory' element={<Portfolio />} />
                 <Route path='program-project-management' element={<Program />} />
-                <Route path='operation-maintenace' element={<Portfolio />} />
+                <Route path='operation-maintenace' element={<OperationMaintenance />} />
             </Routes>
         </Router>
         <App />

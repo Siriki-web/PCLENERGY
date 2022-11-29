@@ -66,6 +66,7 @@ ul.navMenu {
     display: flex;
     flex-direction: column;
     width: 70%;
+    padding-bottom: 20px;
     border-top: 1px solid #fff;
     position: absolute;
     top: 0px;

@@ -84,132 +84,132 @@ const TheService = () => {
     return (
         <table className='asktable'>
             <tbody>
-                <Link to="/program-project-management" style={{textDecoration: "none"}}>
-                    <td className='first-col'>
+                <td className='first-col'>
+                    <Link to="/program-project-management" style={{ textDecoration: "none" }}>
                         <div className='cercle'>
                             <Img src={pm} alt="" />
                         </div>
                         <H4>program and project <br />management </H4>
-                    </td>
-                </Link>
-                <Link to="/portfolio-advisory" style={{ textDecoration: "none" }}>
-                    <td className='first-col'>
+                    </Link>
+                </td>
+                <td className='first-col'>
+                    <Link to="/portfolio-advisory" style={{ textDecoration: "none" }}>
                         <div className='cercle'>
                             <Img src={portfolio} alt="" />
                         </div>
                         <H4>portfolio <br />advisory</H4>
-                    </td>
-                </Link>
-                <Link to="/support-function" style={{ textDecoration: "none" }}>
-                    <td className='first-col'>
+                    </Link>
+                </td>
+                <td className='first-col'>
+                    <Link to="/support-function" style={{ textDecoration: "none" }}>
+
                         <div className='cercle'>
                             <Img src={sf} alt="" />
                         </div>
                         <H4>support functions <br />outsourcing</H4>
-                    </td>
-                </Link>
-                <Link to="/strategic-advisory" style={{ textDecoration: "none" }}>
-                    <td className='first-col'>
+                    </Link>
+                </td>
+                <td className='first-col'>
+                    <Link to="/strategic-advisory" style={{ textDecoration: "none" }}>
                         <div className='cercle'>
                             <Img src={sa} alt="" />
                         </div>
                         <H4>strategic advisory <br />services</H4>
-                    </td>
-                </Link>
-                <Link to="/quality-assurance" style={{ textDecoration: "none" }}>
-                    <td className='first-col'>
+                    </Link>
+                </td>
+                <td className='first-col'>
+                    <Link to="/quality-assurance" style={{ textDecoration: "none" }}>
                         <div className='cercle'>
                             <Img src={qa} alt="" />
                         </div>
                         <H4>quality <br />assurance</H4>
-                    </td>
-                </Link>
-
+                    </Link>
+                </td>
             </tbody>
 
             <tbody>
-                <Link to="/training-service" style={{ textDecoration: "none" }}>
-                    <td className='first-col'>
+                <td className='first-col'>
+                    <Link to="/training-service" style={{ textDecoration: "none" }}>
                         <div className='cercle'>
                             <Img src={ts} alt="" />
                         </div>
                         <H4>TRAINING <br /> SERVICE</H4>
-                    </td>
-                </Link>
-                <Link to="/software" style={{ textDecoration: "none" }}>
-                    <td className='first-col'>
+                    </Link>
+                </td>
+                <td className='first-col'>
+                    <Link to="/software" style={{ textDecoration: "none" }}>
                         <div className='cercle'>
                             <Img src={sd} alt="" />
                         </div>
                         <H4>SOFTWARE DEPLOYMENT <br />AND DEVELOPMENT</H4>
-                    </td>
-                </Link>
-                <Link to="/energy-concept" style={{ textDecoration: "none" }}>
-                    <td className='first-col'>
+                    </Link>
+                </td>
+                <td className='first-col'>
+                    <Link to="/energy-concept" style={{ textDecoration: "none" }}>
                         <div className='cercle'>
                             <Img src={ec} alt="" />
                         </div>
                         <H4>ENERGY <br />CONCEPTS</H4>
-                    </td>
-                </Link>
-                <Link to="/bankable" style={{ textDecoration: "none" }}>
-                    <td className='first-col'>
+                    </Link>
+                </td>
+                <td className='first-col'>
+                    <Link to="/bankable" style={{ textDecoration: "none" }}>
                         <div className='cercle'>
                             <Img src={bfs} alt="" />
                         </div>
                         <H4>BANKABLE FEASIBILITY <br />STUDIES</H4>
-                    </td>
-                </Link>
-                <Link to="/master-plans" style={{ textDecoration: "none" }}>
-                    <td className='first-col'>
+                    </Link>
+                </td>
+                <td className='first-col'>
+                    <Link to="/master-plans" style={{ textDecoration: "none" }}>
                         <div className='cercle'>
                             <Img src={mp} alt="" />
                         </div>
                         <H4>MASTER <br />PLANS</H4>
-                    </td>
-                </Link>
+                    </Link>
+                </td>
             </tbody>
             <tbody>
-                <Link to="/operation-maintenace" style={{ textDecoration: "none" }}>
-                    <td className='first-col bb'>
+                <td className='first-col bb'>
+                    <Link to="/operation-maintenace" style={{ textDecoration: "none" }}>
                         <div className='cercle'>
                             <Img src={omc} alt="" />
                         </div>
                         <H4>OPERATION AND <br />MAINTENANCE <br />CONSULTANCY</H4>
-                    </td>
-                </Link>
-                <Link to="/partnership" style={{ textDecoration: "none" }}>
-                    <td className='first-col bb'>
+                    </Link>
+                </td>
+                <td className='first-col bb'>
+                    <Link to="/partnership" style={{ textDecoration: "none" }}>
                         <div className='cercle'>
                             <Img src={pppa} alt="" />
                         </div>
                         <H4>PUBLIC PRIVATE <br /> PARTNERSHIP (PPP) <br />ADVISORY</H4>
-                    </td>
-                </Link>
-                <Link to="/" style={{ textDecoration: "none" }}>
-                    <td className='first-col bb'>
+                    </Link>
+                </td>
+                <td className='first-col bb'>
+                    <Link to="/" style={{ textDecoration: "none" }}>
                         <div className='cercle'>
                             <Img src={pfs} alt="" />
                         </div>
                         <H4>PRE-FEASIBILITY <br />STUDIES</H4>
-                    </td>
-                </Link>
-                <Link to="/transaction-advisory" style={{ textDecoration: "none" }}>
-                    <td className='first-col bb'>
+                    </Link>
+                </td>
+                <td className='first-col bb'>
+                    <Link to="/transaction-advisory" style={{ textDecoration: "none" }}>
                         <div className='cercle'>
                             <Img src={transaction} alt="" />
                         </div>
                         <H4>TRANSACTION ADVISORY <br />&DUE DILIGENCE</H4>
-                    </td>
-                </Link>
-                <Link to="/lobbying" style={{ textDecoration: "none" }}>
-                    <td className='first-col bb'>
+                    </Link>
+                </td>
+                <td className='first-col bb'>
+                    <Link to="/lobbying" style={{ textDecoration: "none" }}>
                         <div className='cercle'>
                             <Img src={lgr} alt="" />
                         </div>
                         <H4>LOBBYING & GOVERNMENT <br />RELATIONS</H4>
-                    </td>
-                </Link>
+                    </Link>
+                </td>
             </tbody>
         </table>
     );
