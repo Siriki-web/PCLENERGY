@@ -22,33 +22,27 @@ import pp from '../../assets/public-private.png'
 import arrow_up from '../../assets/arrow-up.png'
 import virgule_debout from '../../assets/virgule-debout.svg'
 import electric_drive from '../../assets/electric-drive.png'
+import { Link } from 'react-router-dom';
+import TitlePage from '../../components/TitlePage';
 
 
 
 
 
-const OurServices = styled.div`
-    position: absolute;
-    top: 310px;
-    right: 15%;
-    background-color: black;
-    height: 210px;
-    width: 945px;
-    color: white;
-    border-radius: 5px;
+const Cover = styled.div`
+    position: relative;
+    background-image: url(${electric_drive});
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 415px;
     `
 
-const TitleService = styled.h1`
-    text-align: center;
-    font-size: 90px;
-    line-height: 100px;
-    color: #EFA21F;
-    margin-top: 30px;
-    margin-bottom: 25px;
-    `
-
-const ParagrahService = styled.p`
-    text-align: center;
+const CoverOverlay = styled.div`
+    background: rgba(0,0,0,0.8);
+    opacity: 0.8;
+    height: 100%;
+    width: 100%;
     `
 
 const JustServices = styled.div`
@@ -99,7 +93,6 @@ const CtnTestimonials = styled.div`
 `
 
 const LeftBorder = styled.div`
-    height: 600px;
     width: 7%;
     background-image: linear-gradient(#EE6B2A, #30B24A);
     border-top-right-radius: 5px;
@@ -123,6 +116,10 @@ const Carre = styled.div`
     height: 65px;
     width: 65px;
     background-image: linear-gradient(#30B24A, #EE6B2A);
+
+    @media all and (max-width: 1024px){
+        display: none;
+    }
     `
 
 const PeopleSay = styled.h1`
@@ -130,6 +127,10 @@ const PeopleSay = styled.h1`
     text-transform: uppercase;
     font-size: 35px;
     margin-top: 0px;
+
+    @media all and (max-width: 1024px){
+        font-size: 30px;
+    }
     `
 
 const Testi = styled.h4`
@@ -142,6 +143,11 @@ const Para = styled.p`
     color: white;
     font-size: 20px;
     margin-top: 75px;
+
+    @media all and (max-width: 1024px){
+        font-size: 13px;
+        margin-top: 40px;
+    }
     `
 
 const Author = styled.div`
@@ -158,11 +164,20 @@ const Lines = styled.div`
     background-color: #EFA21F;
     margin-top: 20px;
     margin-right: 10px;
+
+    @media all and (max-width: 1024px){
+        width: 20px;
+    }
     `
 
 const NameAuthor = styled.h2`
     line-height: 0;
     color: #EFA21F;
+
+    @media all and (max-width: 1024px){
+        font-size: 15px;
+        margin-top: 20px;
+    }
     `
 
 const Rond = styled.div`
@@ -173,354 +188,170 @@ const Rond = styled.div`
     margin: 2px;
     `
 
+const CardImage = styled.div`
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 250px;
+    margin: 20px;
+    `
+
+const CardOverlay = styled.div`
+    position: absolute;
+    background: rgba(0,0,0,0.8);
+    opacity: 0.6;
+    height: 100%;
+    width: 100%;
+    `
+
 const NameService = styled.h3`
     font-size: 15px;
     position: absolute;
-    left: 10px;
+    left: 25px;
     bottom: 0;
     color: white;
 `
 
+const ImgVirgule = styled.img`
+    position: absolute;
+    top: -40px; 
+    width: 120px;
+    height: 200px;
 
+    @media all and (max-width: 1024px){
+        display: none;
+    }
+`
 
+const Advis = styled.p`
+    color: white;
+`
 
 const Service = () => {
     return (
         <div>
-            <div style={{
-                position: "relative",
-                backgroundImage: `url("${electric_drive}")`,
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-                backgroundSize: "cover",
-                height: "415px"
-            }}>
-                <div style={{
-                    position: "absolute",
-                    background: 'rgba(0,0,0,0.8)',
-                    opacity: '0.8',
-                    height: '100%',
-                    width: '100%'
-                }}>
+            <Cover>
+                <CoverOverlay>
                     <Nav />
-                </div>
-
-                <OurServices>
-                    <TitleService>OUR SERVICES</TitleService>
-                    <ParagrahService>Renewable Energy for a Sustainable World.</ParagrahService>
-                </OurServices>
-            </div>
+                </CoverOverlay>
+                <TitlePage name="our services" paragraph="Renewable Energy for a Sustainable World." />
+            </Cover>
             <JustServices>
                 <TitleH2>We've got lots of <br />Services just for you.</TitleH2>
                 <CtnService>
                     <SusCtnService>
                         <div>
-                            <div style={{
-                                backgroundImage: `url("${quality_assurance}")`,
-                                position: 'relative',
-                                backgroundPosition: "center",
-                                backgroundRepeat: "no-repeat",
-                                backgroundSize: "cover",
-                                height: "300px",
-                                width: "250px",
-                                margin: "20px"
-                            }}>
-                                <div style={{
-                                    position: "absolute",
-                                    background: 'rgba(0,0,0,0.8)',
-                                    opacity: '0.8',
-                                    height: '100%',
-                                    width: '100%'
-                                }}>
-                                    <NameService>QUALITY <br /> ASSURANCE</NameService>
-                                </div>
-                            </div>
-                            <div style={{
-                                backgroundImage: `url("${pp}")`,
-                                position: 'relative',
-                                backgroundPosition: "center",
-                                backgroundRepeat: "no-repeat",
-                                backgroundSize: "cover",
-                                height: "300px",
-                                width: "250px",
-                                margin: "20px"
-                            }}>
-                                <div style={{
-                                    position: "absolute",
-                                    background: 'rgba(0,0,0,0.8)',
-                                    opacity: '0.8',
-                                    height: '100%',
-                                    width: '100%'
-                                }}>
-                                    <NameService>TRAINING SERVICE<br />PARTNERSHIP (PPP) <br />ADVISORY</NameService>
-                                </div>
-                            </div>
-                            <div style={{
-                                backgroundImage: `url("${strategic_advisory}")`,
-                                position: 'relative',
-                                backgroundPosition: "center",
-                                backgroundRepeat: "no-repeat",
-                                backgroundSize: "cover",
-                                height: "300px",
-                                width: "250px",
-                                margin: "20px"
-                            }}>
-                                <div style={{
-                                    position: "absolute",
-                                    background: 'rgba(0,0,0,0.8)',
-                                    opacity: '0.8',
-                                    height: '100%',
-                                    width: '100%'
-                                }}>
-                                    <NameService>STRATEGIC ADVISORY<br />SERVICES</NameService>
-                                </div>
-                            </div>
-                            <div style={{
-                                backgroundImage: `url("${feasibility}")`,
-                                position: 'relative',
-                                backgroundPosition: "center",
-                                backgroundRepeat: "no-repeat",
-                                backgroundSize: "cover",
-                                height: "300px",
-                                width: "250px",
-                                margin: "20px"
-                            }}>
-                                <div style={{
-                                    position: "absolute",
-                                    background: 'rgba(0,0,0,0.8)',
-                                    opacity: '0.8',
-                                    height: '100%',
-                                    width: '100%'
-                                }}>
+                            <Link to="/quality-assurance">
+                                <CardImage style={{ backgroundImage: `url("${quality_assurance}")` }}>
+                                    <CardOverlay>
+                                        <NameService>QUALITY <br /> ASSURANCE</NameService>
+                                    </CardOverlay>
+                                </CardImage>
+                            </Link>
+                            <Link to='/partnership'>
+                                <CardImage style={{ backgroundImage: `url("${pp}")` }}>
+                                    <CardOverlay>
+                                        <NameService>PUBLIC PRIVATE<br />PARTNERSHIP (PPP) <br />ADVISORY</NameService>
+                                    </CardOverlay>
+                                </CardImage>
+                            </Link>
+                            <Link to="/strategic-advisory">
+                                <CardImage style={{ backgroundImage: `url("${strategic_advisory}")` }}>
+                                    <CardOverlay>
+                                        <NameService>STRATEGIC ADVISORY<br />SERVICES</NameService>
+                                    </CardOverlay>
+                                </CardImage>
+                            </Link>
+                            <CardImage style={{ backgroundImage: `url("${feasibility}")` }}>
+                                <CardOverlay>
                                     <NameService>PRE-FEASIBILITY<br />STUDIES</NameService>
-                                </div>
-                            </div>
+                                </CardOverlay>
+                            </CardImage>
                         </div>
                         <div>
-                            <div style={{
-                                backgroundImage: `url("${training_service}")`,
-                                position: 'relative',
-                                backgroundPosition: "center",
-                                backgroundRepeat: "no-repeat",
-                                backgroundSize: "cover",
-                                height: "300px",
-                                width: "250px",
-                                margin: "20px"
-                            }}>
-                                <div style={{
-                                    position: "absolute",
-                                    background: 'rgba(0,0,0,0.8)',
-                                    opacity: '0.8',
-                                    height: '100%',
-                                    width: '100%'
-                                }}>
-                                    <NameService>TRAINING <br /> SERVICES</NameService>
-                                </div>
-                            </div>
-                            <div style={{
-                                backgroundImage: `url("${portfolio_advisory}")`,
-                                position: 'relative',
-                                backgroundPosition: "center",
-                                backgroundRepeat: "no-repeat",
-                                backgroundSize: "cover",
-                                height: "300px",
-                                width: "250px",
-                                margin: "20px"
-                            }}>
-                                <div style={{
-                                    position: "absolute",
-                                    background: 'rgba(0,0,0,0.8)',
-                                    opacity: '0.8',
-                                    height: '100%',
-                                    width: '100%'
-                                }}>
-                                    <NameService>PORTFOLIO<br />ADVISORY</NameService>
-                                </div>
-                            </div>
-                            <div style={{
-                                backgroundImage: `url("${software_dev}")`,
-                                position: 'relative',
-                                backgroundPosition: "center",
-                                backgroundRepeat: "no-repeat",
-                                backgroundSize: "cover",
-                                height: "300px",
-                                width: "250px",
-                                margin: "20px"
-                            }}>
-                                <div style={{
-                                    position: "absolute",
-                                    background: 'rgba(0,0,0,0.8)',
-                                    opacity: '0.8',
-                                    height: '100%',
-                                    width: '100%'
-                                }}>
-                                    <NameService>SOFTWARE <br />DEPLOYMENT <br />AND DEVELOPMENT</NameService>
-                                </div>
-                            </div>
-                            <div style={{
-                                backgroundImage: `url("${transaction_advisory}")`,
-                                position: 'relative',
-                                backgroundPosition: "center",
-                                backgroundRepeat: "no-repeat",
-                                backgroundSize: "cover",
-                                height: "300px",
-                                width: "250px",
-                                margin: "20px"
-                            }}>
-                                <div style={{
-                                    position: "absolute",
-                                    background: 'rgba(0,0,0,0.8)',
-                                    opacity: '0.8',
-                                    height: '100%',
-                                    width: '100%'
-                                }}>
-                                    <NameService>TRANSACTION <br />ADVISORY <br />&DUE DILIGENCE</NameService>
-                                </div>
-                            </div>
+                            <Link to="/training-service">
+                                <CardImage style={{ backgroundImage: `url("${training_service}")` }}>
+                                    <CardOverlay>
+                                        <NameService>TRAINING <br /> SERVICES</NameService>
+                                    </CardOverlay>
+                                </CardImage>
+                            </Link>
+                            <Link to='/portfolio-advisory'>
+                                <CardImage style={{ backgroundImage: `url("${portfolio_advisory}")` }}>
+                                    <CardOverlay>
+                                        <NameService>PORTFOLIO<br />ADVISORY</NameService>
+                                    </CardOverlay>
+                                </CardImage>
+                            </Link>
+                            <Link to='/software'>
+                                <CardImage style={{ backgroundImage: `url("${software_dev}")` }}>
+                                    <CardOverlay>
+                                        <NameService>SOFTWARE <br />DEPLOYMENT <br />AND DEVELOPMENT</NameService>
+                                    </CardOverlay>
+                                </CardImage>
+                            </Link>
+                            <Link to='/transaction-advisory'>
+                                <CardImage style={{ backgroundImage: `url("${transaction_advisory}")` }}>
+                                    <CardOverlay>
+                                        <NameService>TRANSACTION <br />ADVISORY <br />&DUE DILIGENCE</NameService>
+                                    </CardOverlay>
+                                </CardImage>
+                            </Link>
                         </div>
                         <div>
-                            <div style={{
-                                backgroundImage: `url("${energy_concept}")`,
-                                position: 'relative',
-                                backgroundPosition: "center",
-                                backgroundRepeat: "no-repeat",
-                                backgroundSize: "cover",
-                                height: "300px",
-                                width: "250px",
-                                margin: "20px"
-                            }}>
-                                <div style={{
-                                    position: "absolute",
-                                    background: 'rgba(0,0,0,0.8)',
-                                    opacity: '0.8',
-                                    height: '100%',
-                                    width: '100%'
-                                }}>
-                                    <NameService>ENERGY <br />CONCEPT</NameService>
-                                </div>
-                            </div>
-                            <div style={{
-                                backgroundImage: `url("${ppm}")`,
-                                position: 'relative',
-                                backgroundPosition: "center",
-                                backgroundRepeat: "no-repeat",
-                                backgroundSize: "cover",
-                                height: "300px",
-                                width: "250px",
-                                margin: "20px"
-                            }}>
-                                <div style={{
-                                    position: "absolute",
-                                    background: 'rgba(0,0,0,0.8)',
-                                    opacity: '0.8',
-                                    height: '100%',
-                                    width: '100%'
-                                }}>
-                                    <NameService>PROGRAM <br />AND PROJECT <br />MANAGEMENT</NameService>
-                                </div>
-                            </div>
-                            <div style={{
-                                backgroundImage: `url("${master_plans}")`,
-                                position: 'relative',
-                                backgroundPosition: "center",
-                                backgroundRepeat: "no-repeat",
-                                backgroundSize: "cover",
-                                height: "300px",
-                                width: "250px",
-                                margin: "20px"
-                            }}>
-                                <div style={{
-                                    position: "absolute",
-                                    background: 'rgba(0,0,0,0.8)',
-                                    opacity: '0.8',
-                                    height: '100%',
-                                    width: '100%'
-                                }}>
-                                    <NameService>MASTER <br />PLANS</NameService>
-                                </div>
-                            </div>
-                            <div style={{
-                                backgroundImage: `url("${lobbying}")`,
-                                position: 'relative',
-                                backgroundPosition: "center",
-                                backgroundRepeat: "no-repeat",
-                                backgroundSize: "cover",
-                                height: "300px",
-                                width: "250px",
-                                margin: "20px"
-                            }}>
-                                <div style={{
-                                    position: "absolute",
-                                    background: 'rgba(0,0,0,0.8)',
-                                    opacity: '0.8',
-                                    height: '100%',
-                                    width: '100%'
-                                }}>
-                                    <NameService>LOBBYING & <br />GOVERNEMENT <br />RELATIONS</NameService>
-                                </div>
-                            </div>
+                            <Link to='/energy-concept'>
+                                <CardImage style={{ backgroundImage: `url("${energy_concept}")` }}>
+                                    <CardOverlay>
+                                        <NameService>ENERGY <br />CONCEPT</NameService>
+                                    </CardOverlay>
+                                </CardImage>
+                            </Link>
+                            <Link to='/program-project-management'>
+                                <CardImage style={{ backgroundImage: `url("${ppm}")` }}>
+                                    <CardOverlay>
+                                        <NameService>PROGRAM <br />AND PROJECT <br />MANAGEMENT</NameService>
+                                    </CardOverlay>
+                                </CardImage>
+                            </Link>
+                            <Link to='/master-plans'>
+                                <CardImage style={{ backgroundImage: `url("${master_plans}")` }}>
+                                    <CardOverlay>
+                                        <NameService>MASTER <br />PLANS</NameService>
+                                    </CardOverlay>
+                                </CardImage>
+                            </Link>
+                            <Link to="/lobbying">
+                                <CardImage style={{ backgroundImage: `url("${lobbying}")` }}>
+                                    <CardOverlay>
+                                        <NameService>LOBBYING & <br />GOVERNEMENT <br />RELATIONS</NameService>
+                                    </CardOverlay>
+                                </CardImage>
+                            </Link>
                         </div>
                         <div>
-                            <div style={{
-                                backgroundImage: `url("${bankable}")`,
-                                position: 'relative',
-                                backgroundPosition: "center",
-                                backgroundRepeat: "no-repeat",
-                                backgroundSize: "cover",
-                                height: "300px",
-                                width: "250px",
-                                margin: "20px"
-                            }}>
-                                <div style={{
-                                    position: "absolute",
-                                    background: 'rgba(0,0,0,0.8)',
-                                    opacity: '0.8',
-                                    height: '100%',
-                                    width: '100%'
-                                }}>
-                                    <NameService>BANKABLE FEASABILITY <br />STUDIES</NameService>
-                                </div>
-                            </div>
-                            <div style={{
-                                backgroundImage: `url("${outsourcing}")`,
-                                position: 'relative',
-                                backgroundPosition: "center",
-                                backgroundRepeat: "no-repeat",
-                                backgroundSize: "cover",
-                                height: "300px",
-                                width: "250px",
-                                margin: "20px"
-                            }}>
-                                <div style={{
-                                    position: "absolute",
-                                    background: 'rgba(0,0,0,0.8)',
-                                    opacity: '0.8',
-                                    height: '100%',
-                                    width: '100%'
-                                }}>
-                                    <NameService>SUPPORT FUNCTIONS <br />OUTSOURCING</NameService>
-                                </div>
-                            </div>
-                            <div style={{
-                                backgroundImage: `url("${maintenance_consultancy}")`,
-                                position: 'relative',
-                                backgroundPosition: "center",
-                                backgroundRepeat: "no-repeat",
-                                backgroundSize: "cover",
-                                height: "300px",
-                                width: "250px",
-                                margin: "20px"
-                            }}>
-                                <div style={{
-                                    position: "absolute",
-                                    background: 'rgba(0,0,0,0.8)',
-                                    opacity: '0.8',
-                                    height: '100%',
-                                    width: '100%'
-                                }}>
-                                    <NameService>OPERAION AND <br />MAINTENANCE <br />CONSULTANCY</NameService>
-                                </div>
-                            </div>
+                            <Link to="/bankable">
+                                <CardImage style={{ backgroundImage: `url("${bankable}")` }}>
+                                    <CardOverlay>
+                                        <NameService>BANKABLE FEASABILITY <br />STUDIES</NameService>
+                                    </CardOverlay>
+                                </CardImage>
+                            </Link>
+                            <Link to='/support-function'>
+                                <CardImage style={{ backgroundImage: `url("${outsourcing}")` }}>
+                                    <CardOverlay>
+                                        <NameService>SUPPORT FUNCTIONS <br />OUTSOURCING</NameService>
+                                    </CardOverlay>
+                                </CardImage>
+                            </Link>
+                            <Link to="operation-maintenance">
+                                <CardImage style={{ backgroundImage: `url("${maintenance_consultancy}")` }}>
+                                    <CardOverlay>
+                                        <NameService>OPERAION AND <br />MAINTENANCE <br />CONSULTANCY</NameService>
+                                    </CardOverlay>
+                                </CardImage>
+                            </Link>
                         </div>
                     </SusCtnService>
                     <Btn>
@@ -531,7 +362,7 @@ const Service = () => {
                         <TextCtn>
                             <GblCarre>
                                 <Carre>
-                                    <img style={{ position: "absolute", top: "-40px", width: "120px", height: "200px" }} src={virgule_debout} alt="" />
+                                    <ImgVirgule src={virgule_debout} alt="" />
                                 </Carre>
                                 <div>
                                     <Testi>TESTIMONIALS</Testi>
@@ -551,7 +382,7 @@ const Service = () => {
                                         <Lines></Lines>
                                         <div className="name-author">
                                             <NameAuthor>MARGET WILLIAMS</NameAuthor>
-                                            <p style={{ color: "white" }}>MD, ADVIS HOLDINGS</p>
+                                            <Advis>MD, ADVIS HOLDINGS</Advis>
                                         </div>
                                     </Author>
                                 </div>

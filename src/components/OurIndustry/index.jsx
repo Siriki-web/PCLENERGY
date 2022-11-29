@@ -12,6 +12,11 @@ const ContainerIndustry = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     height: 300px;
+
+    @media all and (max-width: 1024px){
+        width: 100%;
+        height: 400px;
+    }
     `
 
 const Container = styled.div`
@@ -32,6 +37,10 @@ const StyleH2 = styled.h2`
     font-size: 40px;
     font-weight: 800;
     color: white;
+
+    @media all and (max-width: 1024px){
+        font-size: 28px;
+    }
     `
 
 

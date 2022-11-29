@@ -16,17 +16,11 @@ const Fonction = styled.p`
 const ImgPerson = styled.img`
     height: 250px;
     width: 250px;
-    &:hover{
-        
-
-    }
-    `    
+    `        
 
 const MeetOurTeam = ({name, fonction, cp_twitter, cp_link, cover}) => {
     return (
         <div>
-            {/* <h1>meet our team</h1>
-            <p>Teamwork makes the dream work. </p> */}
             <li>
                 <ImgPerson src={cover} alt="" /><br />
                 <Name>{name}</Name>

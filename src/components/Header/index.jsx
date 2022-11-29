@@ -4,10 +4,24 @@ import React from 'react';
 import Nav from "../Nav";
 
 
+
+
+const ContainerHome = styled.div`
+    margin-bottom: 80px;
+    position: absolute;
+    background: rgba(0,0,0,0.8);
+    opacity: 0.8;
+    height: 100%;
+    width: 100%;
+    `
 const Lines = styled.div`
     width: 410px;
     height: 1px;
     background-color: white;
+
+     @media all and (max-width: 1024px){
+        width: 150px;
+    }
     `
 
 const Welcome = styled.div`
@@ -15,6 +29,10 @@ const Welcome = styled.div`
     align-items: baseline;
     margin-top: 40px;
     margin-left: 80px;
+
+    @media all and (max-width: 1024px){
+        margin-left: 2px;
+    }
     `
 
 const Button = styled.button`
@@ -26,7 +44,15 @@ const Button = styled.button`
     color: white;
     border-radius: 5px; 
     margin-left: 80px; 
-    margin-top: 5px
+    margin-top: 5px;
+    `
+
+const DivButton = styled.div`
+    @media all and (max-width: 1024px){
+        display: flex;
+        justify-content: center;
+        margin-right: 80px;
+    }
     `
 
 const ParagraphWelcome = styled.p`
@@ -43,7 +69,11 @@ const ParagraphPCL = styled.p`
     color: white;
     font-size: 21px;
     line-height: 30px;
-    `    
+
+    @media all and (max-width: 1024px){
+        margin-left: 2px;
+    }
+    `
 
 const TitleH1 = styled.h1`
     line-height: 80px;
@@ -52,17 +82,16 @@ const TitleH1 = styled.h1`
     margin-bottom: 2px;
     font-size: 74px;
     font-weight: 800;
-`    
+
+    @media all and (max-width: 1024px){
+        margin-left: 2px;
+    }
+`
 
 
 const Header = () => {
     return (
-        <div style={{ marginBottom: "80px",
-            position: "absolute",
-            background: 'rgba(0,0,0,0.8)',
-            opacity: '0.8',
-            height: '100%',
-            width: '100%' }}>
+        <ContainerHome>
             <Nav />
             <Welcome>
                 <ParagraphWelcome>welcome to pcl energy</ParagraphWelcome>
@@ -76,12 +105,14 @@ const Header = () => {
                 PCL Energy is your Environmentally friendly Energy Company offering a broad <br />
                 portfolio of Energy technologies, products and solutions Accross Africa.
             </ParagraphPCL>
-            <Button>DISCOVER MORE <img style={{
-                width: "15px",
-                height: "15px",
-                marginLeft: "5px"
-            }} src={arrow} alt="arrow oblique" /></Button>
-        </div>
+            <DivButton>
+                <Button>DISCOVER MORE <img style={{
+                    width: "15px",
+                    height: "15px",
+                    marginLeft: "5px"
+                }} src={arrow} alt="arrow oblique" /></Button>
+            </DivButton>
+        </ContainerHome>
     );
 };
 

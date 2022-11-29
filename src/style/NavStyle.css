@@ -1,11 +1,106 @@
-.menu-link:active{
-    color: black;
+/* @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap"); */
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+
+
+
+.main-container{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.3);
 }
 
-.menu-link:focus{
-    color: #EFA21F;
+ul.navMenu {
+  display: flex;
+  list-style: none;
 }
 
-.menu-link:hover{
+
+.navLinks {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+  border-bottom: 3px solid transparent;
+}
+
+
+.navItem {
+  line-height: 40px;
+  margin-right: 4rem;
+}
+
+
+.navItem:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0;
+  background: transparent;
+  transition: width 0.7s ease, background-color 0.5s ease;
+}
+
+
+.navItem:hover:after {
+  width: 100%;
+  background: #EFA21F;
+}
+
+
+.navItem.active {
+  color: #EFA21F;
+  border: 1px solid #EFA21F;
+}
+
+
+.nav-icon {
+  display: none;
+}
+
+
+@media screen and (max-width: 960px) {
+
+  .navMenu {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    border-top: 1px solid #fff;
+    position: absolute;
+    top: 0px;
+    left: -110%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .navMenu.active {
+    background: #EFA21F;
+    left: 0px;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+  .navItem .active {
     color: #EFA21F;
+    border: none;
+  }
+  
+  .navLinks {
+    padding: 1.5rem;
+    width: 100%;
+    display: table;
+  }
+
+  .nav-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #EFA21F;
+  }
 }

@@ -1,52 +1,49 @@
 import React from 'react';
 import image_about from '../../assets/img-header-about.png'
-import Nav from '../../components/Nav';
+import { dataPerson } from '../../data/dataPerson'
 import styled from 'styled-components';
+import Nav from '../../components/Nav';
 import ButtonLearnMore from '../../components/ButtonLearnMore'
 import usine_solaire from '../../assets/usine-solaire.png'
 import OurPartners from '../../components/OurPartner';
 import OurValue from '../../components/OurValue';
 import Ourhistory from '../../components/OurHistory';
-import { dataPerson } from '../../data/dataPerson'
 import MeetOurTeam from '../../components/MeetOurTeam';
 import OurIndustry from '../../components/OurIndustry';
 import Footer from '../../components/Footer';
+import TitlePage from '../../components/TitlePage';
 
 
-const AboutUs = styled.div`
-    position: absolute;
-    top: 310px;
-    right: 15%;
-    background-color: black;
-    height: 210px;
-    width: 945px;
-    color: white;
+const ContainerAbout = styled.div`
+    position: relative;
+    background-image: url(${image_about});
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 415px;        
     `
 
-const TitleAbout = styled.h1`
-    text-align: center;
-    font-size: 90px;
-    line-height: 100px;
-    color: #EFA21F;
-    margin-top: 30px;
-    margin-bottom: 25px;
-    `
-
-const ParagrahAbout = styled.p`
-    text-align: center;
+const SubContainerAbout = styled.div`
+    background: rgba(0,0,0,0.8);
+    opacity: 0.8;
+    height: 100%;
+    width: 100%;
     `
 
 const WhoWheAre = styled.div`
     background-color: #080402;
     opacity: 1;
-    height: 1370px;
     `
 
 const ImgUsine = styled.img`
-    // position: relative;
+    position: relative;
     height: 710px;
     width: 540px;
     margin-top: 25px;
+
+    @media all and (max-width: 1024px){
+        width: 100%;
+    }
     `
 
 const TitleWhoWeAre = styled.h1`
@@ -55,6 +52,11 @@ const TitleWhoWeAre = styled.h1`
     font-weight: 800;
     text-transform: uppercase;
     line-height: 50px;
+
+    @media all and (max-width: 1024px){
+        font-size: 50px;
+        text-align: center;
+        }
     `
 
 const StyleParagraph = styled.p`
@@ -62,6 +64,10 @@ const StyleParagraph = styled.p`
     font-size: 20px;
     line-height: 45px;
     font-weight: 300;
+
+    @media all and (max-width: 1024px){
+        font-size: 16px;
+        }
     `
 
 const ContainerWhoWeAre = styled.div`
@@ -81,7 +87,7 @@ const Ul = styled.ul`
 
 const ContainerMeetOurTeam = styled.div`
     background: linear-gradient(#000000, #100000);
-    height: 700px;
+    padding-bottom: 20px;
     `
 
 const TitleMeetOurTeam = styled.h1`
@@ -100,43 +106,37 @@ const ParagraphTeam = styled.p`
     font-size: 25px;
     text-align: center;
     margin-bottom: 70px;
+    `
 
-    `    
+// // const CardEnergy = styled.div`
+// //     position: absolute;
+// //     bottom: -643px;
+// //     right: 440px;
+// //     opacity: 1;
+// //     color: white;
+// //     width: 175px; 
+// //     height: 140px; 
+// //     background-image: linear-gradient(to right, #EFA21F, #32B34A);
+// `    
 
-// const CarreEnergyFutures = styled.div`
-//     position: absolute;
-//     top: 500px;
-//     height: 313px;
-//     width: 419px;
-//     background-image: linear-gradient(to right, #32B34A, #EFA21F);
-//     `
-
+const DivButton = styled.div`
+    @media all and (max-width: 1024px){
+        display: flex;
+        justify-content: center;
+    }
+    `
 
 
 const About = () => {
-    
+
     return (
         <div>
-            <div style={{
-                position: "relative",
-                backgroundImage: `url("${image_about}")`,
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-                backgroundSize: "cover",
-                height: "415px"
-            }}>
-                <div style={{position: "absolute",
-                    background: 'rgba(0,0,0,0.8)',
-                    opacity: '0.8',
-                    height: '100%',
-                    width: '100%'}}>
+            <ContainerAbout>
+                <SubContainerAbout>
                     <Nav />
-                </div>
-                <AboutUs>
-                    <TitleAbout>ABOUT US</TitleAbout>
-                    <ParagrahAbout>Renewable Energy for a Sustainable World.</ParagrahAbout>
-                </AboutUs>
-            </div>
+                </SubContainerAbout>
+                <TitlePage name="about us" paragraph="Renewable Energy for a Sustainable World." />
+            </ContainerAbout>
             <WhoWheAre>
                 <ContainerWhoWeAre>
                     <div>
@@ -151,10 +151,13 @@ const About = () => {
                             We're providing Consulting services in all of Africa and its <br />
                             Environs. Our Services are the most efficient and reasonably <br />priced in the industry.
                         </StyleParagraph>
-                        <ButtonLearnMore />
+                        <DivButton><ButtonLearnMore /></DivButton>
                     </div>
                     <div>
                         <ImgUsine src={usine_solaire} alt="" />
+                        {/* <CardEnergy>
+                                <h3 style={{marginLeft: "10px", marginTop: "50px"}}>ENERGY IS THE FUTURE, MAKE IT BRILLIANT</h3>
+                        </CardEnergy> */}
                     </div>
                 </ContainerWhoWeAre>
                 <OurPartners />

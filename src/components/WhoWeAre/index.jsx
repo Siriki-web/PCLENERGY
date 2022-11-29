@@ -19,6 +19,10 @@ const StyleParagraph = styled.p`
     font-size: 20px;
     line-height: 45px;
     font-weight: 300;
+
+    @media all and (max-width: 1024px){
+        font-size: 18px;
+        }
     `
 
 const TitleWhoWeAre = styled.h1`
@@ -28,14 +32,30 @@ const TitleWhoWeAre = styled.h1`
     text-transform: uppercase;
     line-height: 50px;
     margin-bottom: 40px;
+
+    @media all and (max-width: 1024px){
+        text-align: center;
+        }
+        
     `
 
 const ImgUsine = styled.img`
     height: 710px;
     width: 540px;
     margin-top: 25px;
+
+    @media all and (max-width: 1024px){
+        width: 100%;
+    }
     `
 
+const DivButton = styled.div`
+    @media all and (max-width: 1024px){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    `
 
 const WhoWeAre = () => {
     return (
@@ -52,7 +72,7 @@ const WhoWeAre = () => {
                     We’re providing Consulting services in all of Africa and its Environs. <br /> Our Services are the most efficient and reasonably priced in the <br />
                     industry.
                 </StyleParagraph>
-                <ButtonLearnMore />
+                <DivButton><ButtonLearnMore /></DivButton>
             </div>
         </ContainerWhoWeAre>
     )

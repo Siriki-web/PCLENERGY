@@ -7,10 +7,7 @@ import deux_cent_cinquante from '../../assets/deux-cent-cinq.png'
 import styled from 'styled-components';
 
 
-// const FirstLines = styled.div`
-//     display: flex;
-//     // justify-content: space-between;
-//     `
+
 
 const Container = styled.div`
     padding-top: 100px;
@@ -27,6 +24,11 @@ const ShellsImage = styled.img`
     width: 500px;
     border-radius: 10px;
     margin-left: 20px;
+
+    @media all and (max-width: 1024px){
+        width: 100%;
+        margin-left: 0;
+    }
     `
 
 const TitleWork = styled.h3`
@@ -44,6 +46,11 @@ const TextWork = styled.p`
     line-height: 70px;
     margin-top: 2px;
     margin-bottom: 40px;
+
+    @media all and (max-width: 1024px){
+        font-size: 50px;
+        text-align: center;
+    }
     `
 
 const TextDescription = styled.p`
@@ -55,18 +62,32 @@ const TextDescription = styled.p`
 const FirstLinesImage = styled.img`
     height: 63px;
     width: 123px;
-    
     `
 
 const SecondLinesImage = styled.img`
     height: 63px;
-    width: 93px;`
+    width: 93px;
+    `
+
+
+const Stats = styled.div`
+    margin-right: "60px";
+
+    @media all and (max-width: 1024px){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+    `
+
+
 
 const WorkStatistics = () => {
     return (
         <Container>
             <ShellsImage src={shells} alt="" />
-            <div style={{ marginRight: "60px" }}>
+            <Stats>
                 <TitleWork>work statistics</TitleWork>
                 <TextWork>How about some Fact <br />Numbers about us.</TextWork>
                 <div style={{display: "flex"}}>
@@ -92,7 +113,7 @@ const WorkStatistics = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </Stats>
         </Container>
     );
 };

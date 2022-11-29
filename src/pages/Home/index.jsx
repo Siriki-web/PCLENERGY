@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 import backImage from "../../assets/fond-header.png"
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
@@ -8,22 +9,30 @@ import RecentInsights from '../../components/RecentInsights';
 import WhoWeAre from '../../components/WhoWeAre';
 import WhyChooseUs from '../../components/WhyChooseUs';
 import WorkStatistics from '../../components/WorkStatistics';
-// import OurIndustry from '../../components/OurIndustry';
-// import ButtonLearnMore from '../../components/ButtonLearnMore';
+
+
+const SubDiv = styled.div`
+    position: relative;
+    background-image: url(${backImage});
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 770px;
+
+    @media all and (max-width: 1024px){ 
+        padding-bottom: 170px;
+    }
+    `
+
+
 
 const Home = () => {
 
     return (
         <div>
-            <div style={{
-                position: "relative",
-                backgroundImage: `url("${backImage}")`,
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-                backgroundSize: "cover",
-                height: "770px"}}>
+            <SubDiv>
                 <Header />
-            </div>
+            </SubDiv>
             <WhoWeAre />
             <OurServices />
             <WhyChooseUs />

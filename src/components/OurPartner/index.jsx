@@ -10,6 +10,10 @@ const TitlePartners = styled.h1`
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 5px;
+
+    @media all and (max-width: 1024px){
+        font-size: 50px;
+    }
 `
 
 const ImgPartners = styled.img`

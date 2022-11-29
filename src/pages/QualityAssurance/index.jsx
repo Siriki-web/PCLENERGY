@@ -5,133 +5,265 @@ import img_text from '../../assets/qlity-incruste.png'
 import gra from '../../assets/gra.png'
 import OurIndustry from '../../components/OurIndustry';
 import Footer from '../../components/Footer';
+import styled from 'styled-components';
+import { MdKeyboardArrowRight } from 'react-icons/md'
+
+
+
+const ContainerQualityAssurance = styled.div`
+    background-color: #0D0D0D;
+    `
+
+const HeaderQualityAssurance = styled.div`
+    position: relative;
+    background-image: url(${quality_assurance});
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 415px;
+    margin-top: 30px;
+`
+
+const TheServices = styled.div`
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    border: 5px solid #EFA21F;
+    margin-right: 10px;
+`
+
+const UnderHeader = styled.div`
+    display: flex;
+    justify-content: center;
+    background: rgba(0,0,0,0.8);
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+`
+
+const ImageQuality = styled.img`
+    // position: relative; 
+    // top: 90px; 
+    // left: 125px; 
+    margin-top: 50px;
+    height: 140px;
+
+    @media all and (max-width: 1024px){
+        width: 100%;
+        left: 0;
+        }
+`
+
+const H1 = styled.h1`
+    // position: absolute;
+    // top: 65px;
+    // left: 319px;
+    margin-top: -120px;
+    font-size: 70px;
+    color: #EFA21F;
+    text-align: center;
+
+    @media all and (max-width: 1024px){
+        left: 0;
+        font-size: 50px;
+        }
+`
+const DivServices = styled.div`
+    display: flex;
+    align-items: center;
+`
+
+const Img = styled.img`
+    height: 300px;
+    width: 325px;
+    margin: 50px;
+    `
+
+const Pg = styled.p`
+    color: white;
+    `
+
+const CircleButton = styled.div`
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #EFA21F;
+    margin-right: 5px;
+    `
+
+const Container = styled.div`
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    `
+
+
+const PgH = styled.p`
+    color: white;
+    line-height: 35px;
+
+    @media all and (max-width: 1024px){
+        font-size: 15px;
+    }
+    `    
+
+const DivStyle = styled.div`
+    display: flex;
+    align-items: baseline;
+
+    @media all and (max-width: 1024px){
+        padding-left: 25px;
+        }
+    `    
+
+const H3 = styled.h3`
+    margin-left: 125px;
+    color: white;
+
+    @media all and (max-width: 1024px){
+        margin-left: 0;
+        padding-left: 5px;
+        }
+}
+`
+
+const Text = styled.p`
+    color: white;
+    line-height: 40px;
+
+    @media all and (max-width: 1024px){
+        font-size: 12px;
+        padding-left: 25px;
+    }
+    `
+const DivQ = styled.div`
+    display: flex;
+    align-items: center; 
+
+    @media all and (max-width: 1024px){
+        padding-left: 25px;
+        }
+`
+
+const TitreH2 = styled.h2`
+    text-align: left;
+    font-size: 20px;
+    color: #EFA21F;
+
+    @media all and (max-width: 1024px){
+        padding-left: 25px;
+        }
+    `
 
 const QualityAssurance = () => {
     return (
-        <div style={{ backgroundColor: "#0D0D0D" }}>
+        <ContainerQualityAssurance>
             <div>
                 <Nav />
-                <div style={{
-                    position: "relative",
-                    backgroundImage: `url("${quality_assurance}")`,
-                    backgroundPosition: "center",
-                    backgroundRepeat: "no-repeat",
-                    backgroundSize: "cover",
-                    height: '300px',
-                    marginTop: "50px"
-                }}>
-                    <div style={{
-                        position: "absolute",
-                        background: 'rgba(0,0,0,0.8)',
-                        opacity: '1',
-                        height: '100%',
-                        width: '100%'
-                    }}>
-                        <img style={{ position: "relative", top: "90px", left: "135px", height: "140px" }} src={img_text} alt="" />
-                        <h1 style={{ position: "absolute", top: "70px", left: "300px", fontSize: "70px", color: "#EFA21F", textAlign: "center" }}>QUALITY ASSURANCE</h1>
-                    </div>
-                </div>
+                <HeaderQualityAssurance>
+                    <UnderHeader>
+                        <div style={{display: "flex", flexDirection: "column", justifyContent: "center"}}>
+                            <ImageQuality src={img_text} alt="" />
+                            <H1>QUALITY ASSURANCE</H1>
+                        </div>
+                    </UnderHeader>
+                </HeaderQualityAssurance>
             </div>
-            <h3 style={{ marginLeft: "125px", color: "white" }}><span style={{ color: "#EFA21F" }}>Our Services </span> Quality Assurance</h3>
-            <div style={{ display: "flex", justifyContent: "space-around", flexWrap: "wrap", marginBottom: "40px" }}>
+            <H3><span style={{color: "#EFA21F" }}>Our Services <MdKeyboardArrowRight style={{height: "15px"}}/></span> Quality Assurance</H3>
+            <Container>
                 <div>
-                    <h2 style={{ color: "#EFA21F" }}>Quality Assurance</h2>
-                    <p style={{ color: "white", lineHeight: "40px" }}>
+                    <TitreH2>Quality Assurance</TitreH2>
+                    <Text>
                         PCL Energy provides the very best of services, one of which is <span style={{ color: "#EFA21F" }}>QUALITY <br />
                             ASSURANCE</span> Services. We offer you an unexampled Experience cutting <br />
                         across the Energy Sector. We provide this service across Nigeria and <br />
                         beyond. As a result, we can help you to assure quality across all your <br />
                         business processes and runnings.<br /><br />
                         Our out- point Quality Assurance Services include:
-                    </p>
-                    <div style={{ display: "flex", alignItems: "center" }}>
-                        <div style={{ height: "10px", width: "10px", borderRadius: "50%", backgroundColor: "#EFA21F", marginRight: "5px" }}></div>
+                    </Text>
+                    <DivQ>
+                        <CircleButton></CircleButton>
                         <p style={{ color: "white" }}>Organisation Of Quality Assurance Training Courses</p>
-                    </div>
-                    <div style={{ display: "flex", alignItems: "baseline" }}>
-                        <div style={{ height: "10px", width: "10px", borderRadius: "50%", backgroundColor: "#EFA21F", marginRight: "5px" }}></div>
-                        <p style={{ color: "white", lineHeight: "35px" }}>Backing In Defining A Quality Assurance Program That Meets The Full <br />Compass Of All Regulatory Conditions.</p>
-                    </div>
-                    <div style={{ display: "flex", alignItems: "baseline" }}>
-                        <div style={{ height: "10px", width: "10px", borderRadius: "50%", backgroundColor: "#EFA21F", marginRight: "5px" }}></div>
-                        <p style={{ color: "white", lineHeight: "35px" }}>Performing Pre-award or Pre-qualification checks, including a <br />
+                    </DivQ>
+                    <DivStyle>
+                        <CircleButton></CircleButton>
+                        <PgH>Backing In Defining A Quality Assurance Program That Meets The Full <br />
+                        Compass Of All Regulatory Conditions.</PgH>
+                    </DivStyle>
+                    <DivStyle>
+                        <CircleButton></CircleButton>
+                        <PgH>Performing Pre-award or Pre-qualification checks, including a <br />
                             complete review of suppliers' quality assurance program to meet <br />
-                            Government or Purchasers' Conditions</p>
-                    </div>
-                    <img style={{ height: "300px", width: "325px", margin: "50px" }} src={gra} alt="" />
+                            Government or Purchasers' Conditions</PgH>
+                    </DivStyle>
+                    <Img src={gra} alt="" />
                 </div>
 
                 {/* Services */}
                 <div>
-                    <h2 style={{ color: "#EFA21F" }}>Other Services Provided by <br />PCL Energy</h2>
-                    <div style={{ display: "flex", alignItems: "center" }}>
-                        <div style={{ height: "10px", width: "10px", borderRadius: "5px", border: "5px solid #EFA21F", marginRight: "10px" }}></div>
-                        <p style={{ color: "white" }}>Training Service</p>
-                    </div>
-
-                    <div style={{ display: "flex", alignItems: "center" }}>
-                        <div style={{ height: "10px", width: "10px", borderRadius: "5px", border: "5px solid #EFA21F", marginRight: "10px" }}></div>
-                        <p style={{ color: "white" }}>Energy Concept</p>
-                    </div>
-
-                    <div style={{ display: "flex", alignItems: "center" }}>
-                        <div style={{ height: "10px", width: "10px", borderRadius: "5px", border: "5px solid #EFA21F", marginRight: "10px" }}></div>
-                        <p style={{ color: "white" }}>Bankable Feasibility Studies</p>
-                    </div>
-
-                    <div style={{ display: "flex", alignItems: "center" }}>
-                        <div style={{ height: "10px", width: "10px", borderRadius: "5px", border: "5px solid #EFA21F", marginRight: "10px" }}></div>
-                        <p style={{ color: "white" }}>Public Private Partnership (PPP)</p>
-                    </div>
-
-                    <div style={{ display: "flex", alignItems: "center" }}>
-                        <div style={{ height: "10px", width: "10px", borderRadius: "5px", border: "5px solid #EFA21F", marginRight: "10px" }}></div>
-                        <p style={{ color: "white" }}>Program And project Management</p>
-                    </div>
-
-                    <div style={{ display: "flex", alignItems: "center" }}>
-                        <div style={{ height: "10px", width: "10px", borderRadius: "5px", border: "5px solid #EFA21F", marginRight: "10px" }}></div>
-                        <p style={{ color: "white" }}>Support Functions Outsourcing</p>
-                    </div>
-
-                    <div style={{ display: "flex", alignItems: "center" }}>
-                        <div style={{ height: "10px", width: "10px", borderRadius: "5px", border: "5px solid #EFA21F", marginRight: "10px" }}></div>
-                        <p style={{ color: "white" }}>Strategic Advisory Services</p>
-                    </div>
-
-                    <div style={{ display: "flex", alignItems: "center" }}>
-                        <div style={{ height: "10px", width: "10px", borderRadius: "5px", border: "5px solid #EFA21F", marginRight: "10px" }}></div>
-                        <p style={{ color: "white" }}>Software Deployment Development</p>
-                    </div>
-                    <div style={{ display: "flex", alignItems: "center" }}>
-                        <div style={{ height: "10px", width: "10px", borderRadius: "5px", border: "5px solid #EFA21F", marginRight: "10px" }}></div>
-                        <p style={{ color: "white" }}>Master Plans</p>
-                    </div>
-                    <div style={{ display: "flex", alignItems: "center" }}>
-                        <div style={{ height: "10px", width: "10px", borderRadius: "5px", border: "5px solid #EFA21F", marginRight: "10px" }}></div>
-                        <p style={{ color: "white" }}>Operation And maintenance Consultancy</p>
-                    </div>
-                    <div style={{ display: "flex", alignItems: "center" }}>
-                        <div style={{ height: "10px", width: "10px", borderRadius: "5px", border: "5px solid #EFA21F", marginRight: "10px" }}></div>
-                        <p style={{ color: "white" }}>Pre-Feasibility Studies</p>
-                    </div>
-                    <div style={{ display: "flex", alignItems: "center" }}>
-                        <div style={{ height: "10px", width: "10px", borderRadius: "5px", border: "5px solid #EFA21F", marginRight: "10px" }}></div>
-                        <p style={{ color: "white" }}>Transaction Advisory & Due Diligence</p>
-                    </div>
-                    <div style={{ display: "flex", alignItems: "center" }}>
-                        <div style={{ height: "10px", width: "10px", borderRadius: "5px", border: "5px solid #EFA21F", marginRight: "10px" }}></div>
-                        <p style={{ color: "white" }}>Lobbying & Government Relations</p>
-                    </div>
-                    <div style={{ display: "flex", alignItems: "center" }}>
-                        <div style={{ height: "10px", width: "10px", borderRadius: "5px", border: "5px solid #EFA21F", marginRight: "10px" }}></div>
-                        <p style={{ color: "white" }}>Portfolio Advisory</p>
-                    </div>
+                    <h2 style={{ color: "#EFA21F", textAlign: "left", fontSize: "20px" }}>Other Services Provided by <br />PCL Energy</h2>
+                    <DivServices>
+                        <TheServices></TheServices>
+                        <Pg>Training Service</Pg>
+                    </DivServices>
+                    <DivServices>
+                        <TheServices></TheServices>
+                        <Pg>Energy Concept</Pg>
+                    </DivServices>
+                    <DivServices>
+                        <TheServices></TheServices>
+                        <Pg>Bankable Feasibility Studies</Pg>
+                    </DivServices>
+                    <DivServices>
+                        <TheServices></TheServices>
+                        <Pg>Public Private Partnership (PPP)</Pg>
+                    </DivServices>
+                    <DivServices>
+                        <TheServices></TheServices>
+                        <Pg>Program And project Management</Pg>
+                    </DivServices>
+                    <DivServices>
+                        <TheServices></TheServices>
+                        <Pg>Support Functions Outsourcing</Pg>
+                    </DivServices>
+                    <DivServices>
+                        <TheServices></TheServices>
+                        <Pg>Strategic Advisory Services</Pg>
+                    </DivServices>
+                    <DivServices>
+                        <TheServices></TheServices>
+                        <Pg>Software Deployment Development</Pg>
+                    </DivServices>
+                    <DivServices>
+                        <TheServices></TheServices>
+                        <Pg>Master Plans</Pg>
+                    </DivServices>
+                    <DivServices>
+                        <TheServices></TheServices>
+                        <Pg>Operation And maintenance Consultancy</Pg>
+                    </DivServices>
+                    <DivServices>
+                        <TheServices></TheServices>
+                        <Pg>Pre-Feasibility Studies</Pg>
+                    </DivServices>
+                    <DivServices>
+                        <TheServices></TheServices>
+                        <Pg>Transaction Advisory & Due Diligence</Pg>
+                    </DivServices>
+                    <DivServices>
+                        <TheServices></TheServices>
+                        <Pg>Lobbying & Government Relations</Pg>
+                    </DivServices>
+                    <DivServices>
+                        <TheServices></TheServices>
+                        <Pg>Portfolio Advisory</Pg>
+                    </DivServices>
                 </div>
-            </div>
+            </Container>
             <OurIndustry />
             <Footer />
-        </div>
+        </ContainerQualityAssurance>
 
     );
 };

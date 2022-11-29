@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import services from '../../assets/service.PNG'
 import ButtonLearnMore from '../ButtonLearnMore';
+import TheService from '../TheService';
 
 
 const Container = styled.div`
@@ -17,6 +17,10 @@ const TitleServices = styled.h1`
     font-size: 90px;
     color: #EFA21F;
     text-align: center;
+
+    @media all and (max-width: 1024px){
+        font-size: 70px;
+    }
     `
 
 const TextServices = styled.p`
@@ -24,15 +28,7 @@ const TextServices = styled.p`
     text-align: center;
     color: white;
     margin-bottom: 70px;
-    `    
-
-const ImgServices = styled.img`
-    display: block;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 50px;
-    `    
+    `        
 
 const ImageDiv = styled.div`
     display: flex;
@@ -44,7 +40,7 @@ const OurServices = () => {
         <Container>
             <TitleServices>our services</TitleServices>
             <TextServices>Make the energy choice that's good for business - and the planet.</TextServices>
-            <ImgServices src={services} alt="" />
+            <TheService />
             <ImageDiv><ButtonLearnMore /></ImageDiv>
         </Container>
     );

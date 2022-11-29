@@ -13,11 +13,19 @@ const ContaierChoose = styled.div`
     padding-top: 60px;
     `
 
-
 const ContainerPrincial = styled.div`
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    `
+
+const Div = styled.div`
+    height: 340px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 30px;
     `
 
 const Container = styled.div`
@@ -34,16 +42,18 @@ const TitleChoose = styled.h2`
     font-size: 30px;
     text-transform: uppercase;
     color: white;
+    text-align: left;
     `
 
 const TitleH2 = styled.h2`
     text-transform: capitalize;
     color: #EFA21F;
-    font-size: 60px;
-    line-height: 60px;
+    font-size: 40px;
+    line-height: 40px;
     font-weight: 800;
     margin-top: 5px;
     margin-bottom: 5px;
+    text-align: left;
     `
 
 const Paragrah = styled.p`
@@ -63,10 +73,7 @@ const H2 = styled.h2`
     text-transform: uppercase;
     color: #EFA21F;
     font-size: 18px;
-    `
-const Live = styled.div`
-    margin-top: 50px;
-    margin-bottom: 70px;
+    text-align: left;
     `
 
 const Img = styled.img`
@@ -76,7 +83,7 @@ const Img = styled.img`
 
 const LiveP = styled.p`
     font-size: 25px;
-    line-height: 45px;
+    line-height: 35px;
     color: white;
     margin-top: 15px;
     `
@@ -87,11 +94,11 @@ const WhyChooseUs = () => {
         <ContaierChoose>
             <ContainerPrincial>
                 <div>
-                    <Live>
+                    <Div>
                         <TitleChoose>WHY CHOOSE US</TitleChoose>
                         <TitleH2>Live Green, <br /> Think Green.</TitleH2>
                         <LiveP>Here are some reason <br />Why you should look no further.</LiveP>
-                    </Live>
+                    </Div>
                     <Container>
                         <Cercle><Img src={certified_expert} /></Cercle>
                         <H2>CERTIFIED EXPERT</H2>
@@ -102,7 +109,7 @@ const WhyChooseUs = () => {
                         </Paragrah>
                     </Container>
                 </div>
-                <div class="sus-ctn-choose">
+                <div>
                     <Container>
                         <Cercle><Img src={eco_tech} /></Cercle>
                         <H2>ECO TECHNOLOGY</H2>
@@ -123,7 +130,7 @@ const WhyChooseUs = () => {
                         </Paragrah>
                     </Container>
                 </div>
-                <div class="sus-ctn-choose">
+                <div>
                     <Container>
                         <Cercle><Img src={sm} /></Cercle>
                         <H2>SMART TECHNOLOGY</H2>

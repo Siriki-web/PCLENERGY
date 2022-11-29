@@ -7,7 +7,7 @@ const BtnLearnMore = styled.button`
     align-items: center;
     border-radius: 5px;
     border: none;
-    padding: 12px 15px;
+    padding: 12px 25px;
     background-image: linear-gradient(to right, #EE6B2A, #2BAF49);
     color: white;
     `

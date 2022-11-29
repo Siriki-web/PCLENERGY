@@ -1,77 +1,161 @@
 import React from 'react';
 import human from '../../assets/human-figurines.png'
-import Nav from '../../components/Nav';
 import styled from 'styled-components';
 import { dataOurInsights } from '../../data/dataOurInsights'
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import Nav from '../../components/Nav';
 import Categories from '../../components/Categories';
 import InsightItem from '../../components/InsightItem';
 import RecentPost from '../../components/RecentPost';
 import OurIndustry from '../../components/OurIndustry';
 import Footer from '../../components/Footer';
-import { Link } from 'react-router-dom';
+import TitlePage from '../../components/TitlePage';
 
-const OurInsights = styled.div`
-    position: absolute;
-    top: 310px;
-    right: 15%;
-    background-color: black;
-    height: 210px;
-    width: 945px;
-    color: white;
-    border-radius: 5px;
-    `
 
-const TitleInsight = styled.h1`
-    text-align: center;
-    font-size: 90px;
-    line-height: 100px;
-    color: #EFA21F;
+const Cover = styled.div`
+    position: relative;
+    background-image: url(${human});
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 415px;
+`
+
+const CoverOverlay = styled.div`
+    background: rgba(0,0,0,0.8);
+    opacity: 0.8;
+    height: 100%;
+    width: 100%;
+`
+
+const TheInsights = styled.div`
+    display: flex;
+    justify-content: space-around;
+    // flex-wrap: wrap;
+    margin-bottom: 50px;
     margin-top: 30px;
-    margin-bottom: 25px;
+    margin-left: 150px;
+
+    @media all and (max-width: 1024px){
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 0;
+    }
     `
 
-const ParagrahInsight = styled.p`
-    text-align: center;
+const CategoriesInsights = styled.span`
+    height: 20px;
+    width: 20px;
+    background-color: #EFA21A;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    align-items: center;
+    color: white;
     `
 
+const DivTags = styled.div`
+    background-color: #707070;
+    padding: 20px;
+    border-radius: 5px;
+    width: 65%;
+    margin-top: 35px;
+
+    @media all and (max-width: 1024px){
+        width: auto;
+    }
+    `
+
+const Tags = styled.div`
+    display: flex;
+    justify-content: space-between;
+    `
+
+
+const RecentPosts = styled.div`
+    display: flex;
+    justify-content: center;
+    background-color: #707070;
+    border-radius: 5px;
+    padding: 20px;
+    width: 65%;
+    margin-top: 30px;
+
+    @media all and (max-width: 1024px){
+        width: auto;
+    }
+`    
+
+const LookingInsights = styled.div`
+    display: flex;
+    justify-content: center;
+    background-color: #707070;
+    padding: 20px;
+    border-radius: 5px;
+    width: 65%;
+
+    @media all and (max-width: 1024px){
+        width: auto;
+    }
+    `
+
+const TheCategories = styled.div`
+    background-color: #707070;
+    padding: 20px;
+    border-radius: 5px;
+    width: 65%;
+    margin-top: 35px;
+
+    @media all and (max-width: 1024px){
+        width: auto;
+    }
+    `
+const Div = styled.div`
+    margin-right: 70px;
+
+    @media all and (max-width: 1024px){
+        margin-right:0;
+    }
+    `    
+
+const TitleP = styled.p`
+    color: white;
+    `    
+const Pg = styled.p`
+    font-size: 15px;
+    `    
+
+const ColorTextTags = styled.div`
+    color: white;
+    `
+const H3 = styled.h3`
+    color: white;
+    `
 
 const Insight = () => {
     const [activeCategory, setActiveCategory] = useState('')
     const categories = dataOurInsights.reduce((acc, ins) => acc.includes(ins.categoryPost) ? acc : acc.concat(ins.categoryPost), [])
 
+   
+
     return (
         <div style={{ backgroundColor: "#0D0D0D" }}>
-            <div style={{
-                position: "relative",
-                backgroundImage: `url("${human}")`,
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-                backgroundSize: "cover",
-                height: "415px"
-            }}>
-                <div style={{
-                    position: "absolute",
-                    background: 'rgba(0,0,0,0.8)',
-                    opacity: '0.8',
-                    height: '100%',
-                    width: '100%'
-                }}>
+            <Cover>
+                <CoverOverlay>
                     <Nav />
-                </div>
+                </CoverOverlay>
                 
-                <OurInsights>
-                    <TitleInsight>OUR INSIGHTS</TitleInsight>
-                    <ParagrahInsight>Renewable Energy for a Sustainable World.</ParagrahInsight>
-                </OurInsights>
-            </div>
+               <TitlePage name="our insights" paragraph="Renewable Energy for a Sustainable World." />
+            </Cover>
             <Categories
                 categories={categories}
                 setActiveCategory={setActiveCategory}
                 activeCategory={activeCategory} />
 
-            <div style={{ display: "flex", justifyContent: "space-around", flexWrap: "wrap", marginBottom: "50px", marginTop: "30px" }}>
-                <div style={{ marginLeft: "70px" }}>
+            <TheInsights>
+                <Div>
                     {dataOurInsights.map(({ id, picture, author, titlePost, contentPost, comment, date, categoryPost }) =>
                         !activeCategory || activeCategory === categoryPost ? (
                             <div key={id}>
@@ -87,33 +171,22 @@ const Insight = () => {
                         ) : null
                     )
                     }
-                </div>
+                </Div>
                 <div>
                     <div>
-                        <div style={{
-                            display: "flex",
-                            justifyContent: "center",
-                            backgroundColor: "#707070",
-                            padding: "20px",
-                            borderRadius: "5px",
-                            width: "65%"
-                        }}>
+                        <LookingInsights>
                             <div style={{ paddingBottom: "25px" }}>
-                                <h3 style={{ color: "white", }}>Looking For Insights?</h3>
-                                <input style={{ width: "330px", height: "35px", borderRadius: "5px", border: "none" }} type="search" placeholder='Search Here' />
+                                <H3>Looking For Insights?</H3>
+                                <input style={{ 
+                                    width: "330px", 
+                                    height: "35px", 
+                                    borderRadius: "5px", 
+                                    border: "none" }} type="search" placeholder='Search Here' />
                             </div>
-                        </div>
-                        <div style={{
-                            display: "flex",
-                            justifyContent: "center",
-                            backgroundColor: "#707070",
-                            borderRadius: "5px",
-                            padding: "20px",
-                            width: "65%",
-                            marginTop: "30px"
-                            }}>
+                        </LookingInsights>
+                        <RecentPosts>
                             <div>
-                                <h3 style={{ color: "white" }}>Recent Posts</h3>
+                                <H3>Recent Posts</H3>
                                 <div>
                                     {dataOurInsights.map(({ id, picture, titlePost, date }) =>
                                         <div key={id}>
@@ -123,62 +196,49 @@ const Insight = () => {
                                     }
                                 </div>
                             </div>
-                        </div>
+                        </RecentPosts>
                     </div>
-                    <div style={{
-                        backgroundColor: "#707070",
-                        padding: "20px",
-                        borderRadius: "5px",
-                        width: "65%",
-                        marginTop: "35px"
-                    }}>
-                        <h3 style={{ color: "white" }}>Categories</h3>
+                    <TheCategories>
+                        <H3>Categories</H3>
                         <div style={{ display: "flex", justifyContent: "space-between" }}>
                             <div>
-                                <p style={{ color: "white" }}>Reports</p>
-                                <p style={{ color: "white" }}>Insights</p>
-                                <p style={{ color: "white" }}>Articles</p>
-                                <p style={{ color: "white" }}>All</p>
+                                <TitleP>Reports</TitleP>
+                                <TitleP>Insights</TitleP>
+                                <TitleP>Articles</TitleP>
+                                <TitleP>All</TitleP>
                             </div>
-                            <div style={{}}>
-                                <p><span style={{ height: "20px", width: "20px", backgroundColor: "#EFA21A", borderRadius: "50%", display: "flex", justifyContent: "center", fontSize: "12px", alignItems: "center", color: "white" }}>1</span></p>
-                                <p><span style={{ height: "20px", width: "20px", backgroundColor: "#EFA21A", borderRadius: "50%", display: "flex", justifyContent: "center", fontSize: "12px", alignItems: "center", color: "white" }}>3</span></p>
-                                <p><span style={{ height: "20px", width: "20px", backgroundColor: "#EFA21A", borderRadius: "50%", display: "flex", justifyContent: "center", fontSize: "12px", alignItems: "center", color: "white" }}>1</span></p>
-                                <p><span style={{ height: "20px", width: "20px", backgroundColor: "#EFA21A", borderRadius: "50%", display: "flex", justifyContent: "center", fontSize: "12px", alignItems: "center", color: "white" }}>5</span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div style={{
-                        backgroundColor: "#707070",
-                        padding: "20px",
-                        borderRadius: "5px",
-                        width: "65%",
-                        marginTop: "35px"
-                    }}>
-                        <h3 style={{ color: "white" }}>Tags</h3>
-                        <div style={{ display: "flex", justifyContent: "space-between" }}>
-                            <div style={{ color: "white" }}>
-                                <p>Wind Turbines</p>
-                                <p>Wind Turbines</p>
-                                <p>Hydro Plants</p>
-                            </div>
-                            <div style={{ color: "white" }}>
-                                <p><span style={{ color: "#EFA21F" }}>Solar Panels</span></p>
-                                <p>Solar Panels</p>
-                                <p>Charge Control</p>
-                            </div>
-                            <div style={{ color: "white" }}>
-                                <p>Battery Materials</p>
-                                <p>Battery Materials</p>
-                                <p>Fossil Ressources</p>
+                            <div>
+                                <p><CategoriesInsights>1</CategoriesInsights></p>
+                                <p><CategoriesInsights>3</CategoriesInsights></p>
+                                <p><CategoriesInsights>1</CategoriesInsights></p>
+                                <p><CategoriesInsights>5</CategoriesInsights></p>
                             </div>
                         </div>
-                    </div>
+                    </TheCategories>
+                    <DivTags>
+                        <H3>Tags</H3>
+                        <Tags>
+                            <ColorTextTags>
+                                <Pg>Wind Turbines</Pg>
+                                <Pg>Wind Turbines</Pg>
+                                <Pg>Hydro Plants</Pg>
+                            </ColorTextTags>
+                            <ColorTextTags>
+                                <Pg><span style={{ color: "#EFA21F" }}>Solar Panels</span></Pg>
+                                <Pg>Solar Panels</Pg>
+                                <Pg>Charge Control</Pg>
+                            </ColorTextTags>
+                            <ColorTextTags>
+                                <Pg>Battery Materials</Pg>
+                                <Pg>Battery Materials</Pg>
+                                <Pg>Fossil Ressources</Pg>
+                            </ColorTextTags>
+                        </Tags>
+                    </DivTags>
                 </div>
-            </div>
+            </TheInsights>
             <OurIndustry />
             <Footer />
-            <Link to="/quality-assurance" >Quality Assurance</Link>
             <Link to="/article" >Articles</Link>
         </div>
     );

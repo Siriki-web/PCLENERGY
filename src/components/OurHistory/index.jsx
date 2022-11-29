@@ -28,7 +28,7 @@ const ImgHistory = styled.img`
 
 const BackOurHistory = styled.div`
     background-color: #000000;
-    padding: 10px 0px 00px 40px;
+    padding: 10px 0px 0px 40px;
     border-radius: 10px;
     width: 47%;
 

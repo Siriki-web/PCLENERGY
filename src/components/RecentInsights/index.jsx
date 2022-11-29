@@ -11,6 +11,10 @@ const TitleInsight = styled.h1`
     font-size: 90px;
     font-weight: 800;
     text-align: center;
+
+    @media all and (max-width: 1024px){
+        font-size: 70px;
+    }
 `
 
 const ImgPlak = styled.img`
@@ -49,6 +53,10 @@ const Button = styled.button`
     display: flex;
     align-items: center;
     border: none;
+
+    @media all and (max-width: 1024px){
+        margin-bottom: 20px;
+    }
     `
 
 const ButtonMoreArticle = styled.button`
@@ -64,7 +72,7 @@ const ButtonMoreArticle = styled.button`
 
 const RecentInsights = () => {
     return (
-        <div style={{ backgroundColor: "#0D0D0D", paddingTop: "20px", paddingBottom: "50px"}}>
+        <div style={{ backgroundColor: "#0D0D0D", paddingTop: "20px", paddingBottom: "70px"}}>
             <TitleInsight>recent insights</TitleInsight>
             <div style={{ display: "flex", justifyContent: "space-around", flexWrap: "wrap"}}>
                 <div>

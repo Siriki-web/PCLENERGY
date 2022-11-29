@@ -1,33 +1,68 @@
 import React from 'react';
+import styled from 'styled-components';
+import '../../style/Insight.css'
 
-const Categories = ({ setActiveCategory, categories, activecategory }) => {
+
+const ContainerCategory = styled.div`
+    padding-top: 150px;
+    margin-left: 138px;
+    
+    @media all and (max-width: 1024px){
+        margin-left: 0;
+    }
+    `
+
+const ButtonAll = styled.button`
+    border: 1px solid #B2B2B2;
+    padding: 15px 25px;
+    margin: 10px;
+    border-radius: 37px;
+    background: #0D0D0D;
+    color: white;
+
+    @media all and (max-width: 1024px){
+        padding: 10px 15px;
+        margin-left: 25px;
+    }
+    `
+
+const ButtonCategories = styled.button`
+    border: 1px solid #B2B2B2;
+    padding: 15px 25px;
+    margin: 10px;
+    border-radius: 37px;
+    background-color: #0D0D0D;
+    // background:  activeCategory? #EFA21F: #0D0D0D;
+    color: white;
+
+    @media all and (max-width: 1024px){
+        padding: 10px 15px;
+    }
+
+`
+
+const Categories = ({ setActiveCategory, categories, activeCategory }) => {
+
+    const handleClick = (e) => {
+        setActiveCategory(e.target.value)
+    }
+
+
     return (
-        <div style={{ paddingTop: "150px", marginLeft: "110px" }}>
-            <button style={{
-                border: "1px solid #B2B2B2", 
-                padding: "15px 25px", 
-                margin: "10px",
-                borderRadius: "37px",
-                background: "#0D0D0D",
-                color: "white"}} onClick={() => setActiveCategory('')}>All
-            </button>
+        <ContainerCategory>
+            <ButtonAll  onClick={() => setActiveCategory('')}>All</ButtonAll>
 
             {
                 categories.map((cat) =>
-                    <button style={{
-                        border: "1px solid #B2B2B2", 
-                        padding: "15px 25px", 
-                        margin: "10px",
-                        borderRadius: "37px",
-                        background: "#0D0D0D",
-                        color: "white"}}
+                    <ButtonCategories 
                         key={cat}
+                        className={activeCategory === "cat" ? "active" : undefined}
                         value={cat}
-                        onClick={(e) => setActiveCategory(e.target.value)}>{cat}
-                    </button>
+                        onClick={handleClick}>{cat}
+                    </ButtonCategories>
                 )
             }
-        </div>
+        </ContainerCategory>
     );
 };
 
