@@ -21,7 +21,8 @@ const StyleParagraph = styled.p`
     font-weight: 300;
 
     @media all and (max-width: 1024px){
-        font-size: 18px;
+        font-size: 1rem;
+        line-height: 30px;
         }
     `
 
@@ -35,6 +36,7 @@ const TitleWhoWeAre = styled.h1`
 
     @media all and (max-width: 1024px){
         text-align: center;
+        font-size: 1.625rem;
         }
         
     `

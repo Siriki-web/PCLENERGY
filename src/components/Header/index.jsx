@@ -71,7 +71,8 @@ const ParagraphPCL = styled.p`
     line-height: 30px;
 
     @media all and (max-width: 1024px){
-        margin-left: 2px;
+        margin-left: 5px;
+        font-size: 1rem;
     }
     `
 
@@ -84,7 +85,9 @@ const TitleH1 = styled.h1`
     font-weight: 900;
 
     @media all and (max-width: 1024px){
-        margin-left: 2px;
+        margin-left: 5px;
+        font-size: 2.5rem;
+        line-height: 60px;
     }
 `
 

@@ -57,7 +57,10 @@ const TitleH2 = styled.h2`
     font-size: 80px;
     line-height: 90px;
 
-    
+    @media all and (max-width: 1024px){
+        font-size: 1.625rem;
+        line-height: 40px;
+    }
     `
 
 const CtnService = styled.div`
@@ -175,6 +178,7 @@ const Lines = styled.div`
 const NameAuthor = styled.h2`
     line-height: 0;
     color: #EFA21F;
+    margin-top: 20px;
 
     @media all and (max-width: 1024px){
         font-size: 15px;
@@ -229,6 +233,7 @@ const ImgVirgule = styled.img`
 
 const Advis = styled.p`
     color: white;
+
 `
 
 const Service = () => {
@@ -382,7 +387,7 @@ const Service = () => {
                                     </Para>
                                     <Author>
                                         <Lines></Lines>
-                                        <div className="name-author">
+                                        <div style={{marginLeft: "5px"}}>
                                             <NameAuthor>MARGET WILLIAMS</NameAuthor>
                                             <Advis>MD, ADVIS HOLDINGS</Advis>
                                         </div>

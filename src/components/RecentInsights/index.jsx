@@ -13,7 +13,7 @@ const TitleInsight = styled.h1`
     text-align: center;
 
     @media all and (max-width: 1024px){
-        font-size: 70px;
+        font-size: 1.625rem;
     }
 `
 

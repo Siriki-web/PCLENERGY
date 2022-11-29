@@ -10,7 +10,6 @@ const Container = styled.div`
 
 const Header = styled.div`
     position: relative;
-    // background-image: url(${});
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
