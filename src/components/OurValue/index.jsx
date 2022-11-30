@@ -19,18 +19,22 @@ const ContainerValue = styled.div`
 const VisionAndmission = styled.div`
     display: flex;
     align-items: center;
+
+    @media only screen and (max-width: 500px){
+        padding-left: 1rem;
+        paddiing-right: 1rem;
+    }
     ` 
 
 const BackOurValue = styled.div`
     background-color: #35281E;
     border-top-right-radius: 55px;
-    // opacity: 0.7;
     padding-left: 100px;
     width: 45%;
     height: 700px;
 
-    @media all and (max-width: 1024px){
-        padding-left: 20px;
+    @media only screen and (max-width: 500px){
+        padding-left: 1rem;
         width: 100%;
         height: 100%;
     }
@@ -52,6 +56,10 @@ const TitleOurValue = styled.h3`
     color: white;
     text-transform: uppercase;
     font-size: 30px;
+
+    @media only screen and (max-width: 500px){
+        padding-left: 1rem;
+    }
     `  
 
 const MeetsBusiness = styled.h3`
@@ -62,8 +70,10 @@ const MeetsBusiness = styled.h3`
     margin-bottom: 20px;
     margin-top: 20px;
 
-    @media all and (max-width: 1024px){
-        font-size: 3.5rem;
+    @media only screen and (max-width: 1024px){
+        padding-left: 1rem;
+        font-size: 2.5rem;
+        line-height: 40px;
     }
     `   
 
@@ -71,8 +81,11 @@ const ParagrahValue = styled.p`
     color: white;
     font-size: 25px;
 
-    @media all and (max-width: 1024px){
-        // font-size: 1rem;
+    @media only screen and (max-width: 500px){
+        text-align: justify;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-size: 18px;
     }
     `
 
@@ -92,6 +105,11 @@ const TitleVisionMission = styled.h3`
 const ParagrahDescribe = styled.p`
     color: white;
     font-size: 20px;
+
+    @media only screen and (max-width: 500px){
+        font-size: .875rem;
+    
+    }
     `
 
 const OurValue = () => {
@@ -100,7 +118,7 @@ const OurValue = () => {
             <BackOurValue>
                 <TitleOurValue>our value</TitleOurValue>
                 <MeetsBusiness>where technology <br />meets busines.</MeetsBusiness>
-                <ParagrahValue>PCL Energy is your Environmentally Friendly Energy <br />consulting firm offering a broad portfolio of <br />Technology solutions and expertise.</ParagrahValue>
+                <ParagrahValue>PCL Energy is your Environmentally Friendly Energy consulting firm offering a broad portfolio of Technology solutions and expertise.</ParagrahValue>
                 <VisionAndmission>
                     <ImageVisionMissipn src={binocular} alt="" />
                     <div>
@@ -112,7 +130,7 @@ const OurValue = () => {
                     <ImageVisionMissipn src={missions} alt="" />
                     <div>
                         <TitleVisionMission>mission</TitleVisionMission>
-                        <ParagrahDescribe>Combining Expertise, Investments, and <br />Partnerships to Meet Your Energy needs.</ParagrahDescribe>
+                        <ParagrahDescribe>Combining Expertise, Investments, and Partnerships to Meet Your Energy needs.</ParagrahDescribe>
                     </div>
                 </VisionAndmission>
             </BackOurValue>

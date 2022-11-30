@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Service from './pages/Service';
 import Insight from './pages/Insight';
+import InsightDetail from './pages/InsightDetail'
 import Contact from './pages/Contact';
 import QualityAssurance from './pages/QualityAssurance';
 import GlobalStyle from './style/GlobalStyle';
@@ -33,25 +34,26 @@ root.render(
             <GlobalStyle />
             <Routes>
                 <Route exact path='/' element={<Home />} />
-                <Route path='about' element={<About />} />
-                <Route path='service' element={<Service />} />    
-                <Route path='insight' element={<Insight />} />    
-                <Route path='contact' element={<Contact />} />
-                <Route path='quality-assurance' element={<QualityAssurance />} />
-                <Route path='training-service' element={<TrainingService />} />
-                <Route path='bankable' element={<Bankable />} />
-                <Route path='lobbying' element={<Lobbying />} />
-                <Route path='strategic-advisory' element={<StrategicAdvisory />} />
-                <Route path='partnership' element={<Partnership />} />
-                <Route path='article' element={<Articles />} />
-                <Route path='software' element={<SoftwareDevelopment />} />
-                <Route path='energy-concept' element={<EnergyConcept />} />
-                <Route path='transaction-advisory' element={<TransactionAdvisory />} />
-                <Route path='master-plans' element={<MasterPlans />} />
-                <Route path='support-function' element={<SupportFunction />} />
-                <Route path='portfolio-advisory' element={<Portfolio />} />
-                <Route path='program-project-management' element={<Program />} />
-                <Route path='operation-maintenace' element={<OperationMaintenance />} />
+                <Route path='/about' element={<About />} />
+                <Route path='/service' element={<Service />} />    
+                <Route exact path='/insight' element={<Insight />} /> 
+                <Route path='/insight/:id' element={<InsightDetail />} />
+                <Route path='/contact' element={<Contact />} />
+                <Route path='/quality-assurance' element={<QualityAssurance />} />
+                <Route path='/training-service' element={<TrainingService />} />
+                <Route path='/bankable' element={<Bankable />} />
+                <Route path='/lobbying' element={<Lobbying />} />
+                <Route path='/strategic-advisory' element={<StrategicAdvisory />} />
+                <Route path='/partnership' element={<Partnership />} />
+                <Route path='/article' element={<Articles />} />
+                <Route path='/software' element={<SoftwareDevelopment />} />
+                <Route path='/energy-concept' element={<EnergyConcept />} />
+                <Route path='/transaction-advisory' element={<TransactionAdvisory />} />
+                <Route path='/master-plans' element={<MasterPlans />} />
+                <Route path='/support-function' element={<SupportFunction />} />
+                <Route path='/portfolio-advisory' element={<Portfolio />} />
+                <Route path='/program-project-management' element={<Program />} />
+                <Route path='/operation-maintenace' element={<OperationMaintenance />} />
             </Routes>
         </Router>
         <App />

@@ -2,6 +2,7 @@ import styled from "styled-components";
 import arrow from '../../assets/arrow-up.png'
 import React from 'react';
 import Nav from "../Nav";
+import { Link } from "react-router-dom";
 
 
 
@@ -19,7 +20,7 @@ const Lines = styled.div`
     height: 1px;
     background-color: white;
 
-     @media all and (max-width: 1024px){
+     @media only screen and (max-width: 500px){
         width: 150px;
     }
     `
@@ -61,6 +62,11 @@ const ParagraphWelcome = styled.p`
     color: white;
     font-weight: 300;
     font-size: 20px;           
+
+    @media only screen and (max-width: 500px){
+        padding-left: 1rem;
+        // padding-right: 1rem;
+    }
     `
 
 const ParagraphPCL = styled.p`
@@ -71,8 +77,10 @@ const ParagraphPCL = styled.p`
     line-height: 30px;
 
     @media all and (max-width: 1024px){
-        margin-left: 5px;
+        margin-left: 16px;
+        margin-right: 16px;
         font-size: 1rem;
+        text-align: justify;
     }
     `
 
@@ -83,9 +91,11 @@ const TitleH1 = styled.h1`
     margin-bottom: 2px;
     font-size: 62px;
     font-weight: 900;
+    text-align: justify;
 
-    @media all and (max-width: 1024px){
-        margin-left: 5px;
+    @media only screen and (max-width: 500px){
+        margin-left: 16px;
+        // padding-left: 2rem;
         font-size: 2.5rem;
         line-height: 60px;
     }
@@ -109,11 +119,14 @@ const Header = () => {
                 portfolio of Energy technologies, products and solutions Accross Africa.
             </ParagraphPCL>
             <DivButton>
-                <Button>DISCOVER MORE <img style={{
-                    width: "15px",
-                    height: "15px",
-                    marginLeft: "5px"
-                }} src={arrow} alt="arrow oblique" /></Button>
+                <Link style={{textDecoration: "none"}} to='/service'>
+                    <Button>DISCOVER MORE <img style={{
+                        width: "15px",
+                        height: "15px",
+                        marginLeft: "5px"
+                    }} src={arrow} alt="arrow oblique" />
+                    </Button>
+                </Link>
             </DivButton>
         </ContainerHome>
     );

@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import ButtonLearnMore from '../ButtonLearnMore';
 import TheService from '../TheService';
+import { Link } from 'react-router-dom';
 
 
 const Container = styled.div`
@@ -28,6 +29,11 @@ const TextServices = styled.p`
     text-align: center;
     color: white;
     margin-bottom: 70px;
+
+    @media only screen and (max-width: 500px){
+        font-size: 1rem;
+        padding: 1rem;
+    } 
     `        
 
 const ImageDiv = styled.div`
@@ -41,7 +47,11 @@ const OurServices = () => {
             <TitleServices>our services</TitleServices>
             <TextServices>Make the energy choice that's good for business - and the planet.</TextServices>
             <TheService />
-            <ImageDiv><ButtonLearnMore /></ImageDiv>
+            <ImageDiv>
+                <Link style={{textDecoration: "none"}} to='/service'>
+                    <ButtonLearnMore />
+                </Link>
+            </ImageDiv>
         </Container>
     );
 };

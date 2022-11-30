@@ -1,6 +1,7 @@
 import React from 'react';
 import image_about from '../../assets/img-header-about.png'
 import { dataPerson } from '../../data/dataPerson'
+import { useEffect } from 'react';
 import styled from 'styled-components';
 import Nav from '../../components/Nav';
 import ButtonLearnMore from '../../components/ButtonLearnMore'
@@ -61,14 +62,20 @@ const TitleWhoWeAre = styled.h1`
 
 const StyleParagraph = styled.p`
     color: white;
-    font-size: 20px;
+    font-size: 1rem;
+    text-align: justify;
     line-height: 45px;
     font-weight: 300;
 
     @media all and (max-width: 1024px){
-        font-size: .875rem;
+        font-size: 1rem;
         line-height: 30px;
         }
+
+    @media only screen and (max-width: 500px){
+        padding: 1rem;
+
+    }    
     `
 
 const ContainerWhoWeAre = styled.div`
@@ -113,7 +120,6 @@ const ParagraphTeam = styled.p`
     margin-bottom: 70px;
     `
  
-
 const DivButton = styled.div`
     @media all and (max-width: 1024px){
         display: flex;
@@ -121,8 +127,22 @@ const DivButton = styled.div`
     }
     `
 
+const DivText = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+
+    @media only screen and (max-width: 500px){
+        width: 100%;
+    }
+    `
+
 
 const About = () => {
+    useEffect(() => {
+        window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+    }, [])
 
     return (
         <div>
@@ -134,20 +154,20 @@ const About = () => {
             </ContainerAbout>
             <WhoWheAre>
                 <ContainerWhoWeAre>
-                    <div>
+                    <DivText >
                         <TitleWhoWeAre>who we are</TitleWhoWeAre>
-                        <StyleParagraph>PCL Energy is an Energy consulting firm that provides sustainable <br />
-                            energy solutions that allow our clients to maximize their energy <br />
-                            efficiency and operational performance while reducing their <br />
-                            carbon footprint and operational costs. we also provide our <br />
-                            clients with innovative energy technology solutions for the <br />
-                            modernization of their facilites and Energy Infractructure. <br /><br />
-                            We're your No 1 Energy Consulting Firm in the whole of Africa! <br /><br />
-                            We're providing Consulting services in all of Africa and its <br />
-                            Environs. Our Services are the most efficient and reasonably <br />priced in the industry.
+                        <StyleParagraph>PCL Energy is an Energy consulting firm that provides sustainable 
+                            energy solutions that allow our clients to maximize their energy 
+                            efficiency and operational performance while reducing their 
+                            carbon footprint and operational costs. we also provide our 
+                            clients with innovative energy technology solutions for the 
+                            modernization of their facilites and Energy Infractructure. <br />
+                            We're your No 1 Energy Consulting Firm in the whole of Africa! <br />
+                            We're providing Consulting services in all of Africa and its 
+                            Environs. Our Services are the most efficient and reasonably priced in the industry.
                         </StyleParagraph>
                         <DivButton><ButtonLearnMore /></DivButton>
-                    </div>
+                    </DivText>
                     <div>
                         <ImgUsine src={usine_solaire} alt="" />
                     </div>

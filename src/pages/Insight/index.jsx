@@ -32,7 +32,6 @@ const CoverOverlay = styled.div`
 const TheInsights = styled.div`
     display: flex;
     justify-content: space-around;
-    // flex-wrap: wrap;
     margin-bottom: 50px;
     margin-top: 30px;
     margin-left: 150px;

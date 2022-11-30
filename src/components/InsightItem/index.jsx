@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import arrow_gold from '../../assets/arrow_orange.png'
 // import { CiSearch } from 'react-icons/ci'
@@ -39,20 +40,28 @@ const Button = styled.button`
     margin-bottom: 35px;
     `
 
-const InsightItem = ({ picture, date, author, comment, titlePost, contentPost, categoryPost }) => {
+const LineHeight = styled.div`
+    background-color: orange;
+    height: 30px;
+    width: 1px;
+    `    
+
+const InsightItem = ({ id, picture, date, author, comment, titlePost, contentPost }) => {
     return (
         <div>
             <Image src={picture} alt="" />
             <DataPost>
                 <Para>{date}</Para>
-                <div style={{ backgroundColor: "orange", height: "30px", width: "1px" }}></div>
+                <LineHeight></LineHeight>
                 <Para><span style={{ color: "#EFA21F" }}>Author:</span> {author}</Para>
-                <div style={{ backgroundColor: "orange", height: "30px", width: "1px" }}></div>
+                <LineHeight></LineHeight>
                 <Para><span style={{ color: "#EFA21F" }}>Comments:</span>{comment}</Para>
             </DataPost>
             <TitlePost>{titlePost}</TitlePost>
             <p>{contentPost}</p>
-            <Button>READ NOW <img style={{ height: "8px", marginLeft: "5px" }} src={arrow_gold} alt="" /></Button>
+            <Link to={`/insight/${id}`}>
+                <Button>READ NOW <img style={{ height: "8px", marginLeft: "5px" }} src={arrow_gold} alt="" /></Button>
+            </Link>
         </div>
     );
 };

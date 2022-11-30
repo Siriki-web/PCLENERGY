@@ -17,13 +17,11 @@ const TitlePartners = styled.h1`
 `
 
 const ImgPartners = styled.img`
-    height: 200px;
-    width: 400px;
+    width: 300px;
 `
 
 const ImgPcl = styled.img`
-    height: 200px;
-    width: 250px;
+    width: 200px;
 `
 
 const ContainerPartners = styled.div`

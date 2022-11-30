@@ -7,6 +7,7 @@ import OurIndustry from '../../components/OurIndustry';
 import Footer from '../../components/Footer';
 import styled from 'styled-components';
 import { MdKeyboardArrowRight } from 'react-icons/md'
+import { useEffect } from 'react';
 
 
 
@@ -157,6 +158,11 @@ const TitreH2 = styled.h2`
     `
 
 const QualityAssurance = () => {
+
+    useEffect(() => {
+        window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+    }, [])
+
     return (
         <ContainerQualityAssurance>
             <div>

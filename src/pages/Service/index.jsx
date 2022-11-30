@@ -23,6 +23,7 @@ import arrow_up from '../../assets/arrow-up.png'
 import virgule_debout from '../../assets/virgule-debout.svg'
 import electric_drive from '../../assets/electric-drive.png'
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 import TitlePage from '../../components/TitlePage';
 
 
@@ -237,6 +238,10 @@ const Advis = styled.p`
 `
 
 const Service = () => {
+
+    useEffect(() => {
+        window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+    }, [])
     return (
         <div>
             <Cover>

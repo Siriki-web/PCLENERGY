@@ -22,8 +22,8 @@ const StyledLink = styled(Link)`
         background-image: linear-gradient(to right, #2BAF49, #EE6B2A);
         text-transform: uppercase;
 
-        @media all and (max-width: 1024px){
-            margin-right: 60px;
+        @media only screen and (max-width: 500px){
+            margin-left: -75px;
             }
         `
     }
@@ -39,7 +39,7 @@ const DivNav = styled.div`
 const Img = styled.img`
     height: 75px;
     width: 79px;
-    margin-right: 70px;
+    margin-right: 150px;
 
     @media all and (max-width: 1024px) {
         margin-left: -50px;

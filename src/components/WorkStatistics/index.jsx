@@ -47,9 +47,10 @@ const TextWork = styled.p`
     margin-top: 2px;
     margin-bottom: 40px;
 
-    @media all and (max-width: 1024px){
-        font-size: 50px;
+    @media only screen and (max-width: 500px){
+        font-size: 25px;
         text-align: center;
+        line-height: 40px;
     }
     `
 
@@ -62,6 +63,8 @@ const TextDescription = styled.p`
 const FirstLinesImage = styled.img`
     height: 63px;
     width: 123px;
+
+   
     `
 
 const SecondLinesImage = styled.img`

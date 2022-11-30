@@ -52,7 +52,7 @@ const TitleBestSource = styled.h3`
     margin-bottom: 30px;
     margin-top: 40px;
 
-    @media all and (max-width: 1024px){
+    @media only screen and (max-width: 500px){
         font-size: 2.5rem;
     }
     `
@@ -61,6 +61,12 @@ const ParagraphHistory = styled.p`
     color: #ffffff;
     line-height: 40px;
     font-size: 20px;
+
+    @media only screen and (max-width: 500px){
+        text-align: justify;
+        font-size: 1rem;
+        padding-right: 1rem;
+    }
     `
 
 
@@ -71,16 +77,16 @@ const Ourhistory = () => {
                 <ImgHistory src={image_history} alt="" />
                 <BackOurHistory>
                     <TitleHistory>our history</TitleHistory>
-                    <TitleBestSource>the best source of <br />energy for the <br />better tomorrow</TitleBestSource>
-                    <ParagraphHistory>Tempus quisque taciti luctus laoreet sagittis hac quis habitasse <br />
-                        mattis parturient. Fringilla a dictumst scelerisque nisi phasellus <br />
-                        lectus lacus per tortor ipsum. Volutpat proin vestibulum <br />
-                        senectus donec et massa justo hac nec facilisis mus. Aliquam <br />
-                        ornare rutrum eget per primis in posuere rhoncus tempor. <br /><br />
-                        Tempus quisque taciti luctus laoreet sagittis hac quis habitasse <br />
-                        mattis parturient. Fringilla a dictumst scelerisque nisi phasellus <br />
-                        lectus lacus per tortor ipsum. Volutpat proin vestibulum <br />
-                        senectus donec et massa justo hac nec facilisis mus. Aliquam <br />
+                    <TitleBestSource>the best source of energy for the better tomorrow</TitleBestSource>
+                    <ParagraphHistory>Tempus quisque taciti luctus laoreet sagittis hac quis habitasse 
+                        mattis parturient. Fringilla a dictumst scelerisque nisi phasellus 
+                        lectus lacus per tortor ipsum. Volutpat proin vestibulum 
+                        senectus donec et massa justo hac nec facilisis mus. Aliquam 
+                        ornare rutrum eget per primis in posuere rhoncus tempor. 
+                        Tempus quisque taciti luctus laoreet sagittis hac quis habitasse 
+                        mattis parturient. Fringilla a dictumst scelerisque nisi phasellus 
+                        lectus lacus per tortor ipsum. Volutpat proin vestibulum 
+                        senectus donec et massa justo hac nec facilisis mus. Aliquam 
                         ornare rutrum eget per primis in posuere rhoncus tempor.
                     </ParagraphHistory>
                 </BackOurHistory>
