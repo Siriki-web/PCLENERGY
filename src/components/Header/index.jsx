@@ -21,7 +21,8 @@ const Lines = styled.div`
     background-color: white;
 
      @media only screen and (max-width: 500px){
-        width: 150px;
+        width: 100px;
+        margin-right: 10px;
     }
     `
 
@@ -75,12 +76,15 @@ const ParagraphPCL = styled.p`
     color: white;
     font-size: 21px;
     line-height: 30px;
+    width: 35%;
 
     @media all and (max-width: 1024px){
-        margin-left: 16px;
-        margin-right: 16px;
-        font-size: 1rem;
-        text-align: justify;
+        padding-left: 16px;
+        padding-right: 16px;
+        font-size: 1.4rem;
+        text-align: left;
+        width: 100%;
+        margin-left: 0;
     }
     `
 
@@ -91,12 +95,11 @@ const TitleH1 = styled.h1`
     margin-bottom: 2px;
     font-size: 62px;
     font-weight: 900;
-    text-align: justify;
+    text-align: left;
 
     @media only screen and (max-width: 500px){
         margin-left: 16px;
-        // padding-left: 2rem;
-        font-size: 2.5rem;
+        font-size: 2.3rem;
         line-height: 60px;
     }
 `
@@ -115,7 +118,7 @@ const Header = () => {
                 <span style={{ color: "#EFA21F" }}>Better Tomorrow.</span>
             </TitleH1>
             <ParagraphPCL>
-                PCL Energy is your Environmentally friendly Energy Company offering a broad <br />
+                PCL Energy is your Environmentally friendly Energy Company offering a broad 
                 portfolio of Energy technologies, products and solutions Accross Africa.
             </ParagraphPCL>
             <DivButton>

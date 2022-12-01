@@ -1,12 +1,11 @@
 import React from 'react';
-import right_arrow from '../../assets/right-arrow.png'
-import logo from '../../assets/logo-pcll.png'
+// import right_arrow from '../../assets/right-arrow.png'
+import logo from '../../assets/logo-white.png'
 import styled from 'styled-components';
 import { Link } from 'react-router-dom'
 import '../../style/NavStyle.css'
 import { useState } from 'react';
-
-
+import ButtonDownload from '../ButtonDownload';
 
 
 const StyledLink = styled(Link)`
@@ -14,18 +13,6 @@ const StyledLink = styled(Link)`
     color: white;
     text-decoration: none;
     font-size: 15px;
-
-    ${(props) =>
-        props.$isFullLink &&
-        `color: white;
-        border-radius: 5px;
-        background-image: linear-gradient(to right, #2BAF49, #EE6B2A);
-        text-transform: uppercase;
-
-        @media only screen and (max-width: 500px){
-            margin-left: -75px;
-            }
-        `
     }
     `
 
@@ -37,14 +24,30 @@ const DivNav = styled.div`
     `
 
 const Img = styled.img`
-    height: 75px;
-    width: 79px;
-    margin-right: 150px;
+    width: 90px;
+    margin-right: 110px;
+    margin-left: 15px;
 
     @media all and (max-width: 1024px) {
         margin-left: -50px;
     }
     `
+
+// const Button = styled.div`
+//     color: white;
+//     border-radius: 5px;
+//     padding: 13px 20px;
+//     font-weight: bold;
+//     background-image: linear-gradient(to right, #2BAF49, #EE6B2A);
+//     text-transform: uppercase;
+//     font-size: .775rem;
+
+//     @media only screen and (max-width: 500px){
+//         margin-left: 10px;
+//         width: 50%;
+//     }
+//     `
+
 
 
 const Nav = () => {
@@ -74,9 +77,10 @@ const Nav = () => {
                         <li className="navItem">
                             <StyledLink to="/contact" className='navLinks' activeClassName="active" onClick={click ? handleClick : null} >Contact Us</StyledLink>
                         </li>
-                        <button style={{background: "none", border: "none"}}>
-                            <StyledLink to="/download" $isFullLink>Download report <img style={{ width: "15px", marginLeft: "4px" }} src={right_arrow} alt="" /></StyledLink>
-                        </button>
+                        {/* <Button>
+                            Download report <img style={{ width: "15px", marginLeft: "4px" }} src={right_arrow} alt="" />
+                        </Button> */}
+                        <ButtonDownload />
                     </ul>
                     <div className="nav-icon" onClick={handleClick}>
                         <i className={click ? 'fa fa-times' : 'fa fa-bars'}></i>

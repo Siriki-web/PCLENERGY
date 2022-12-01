@@ -21,8 +21,8 @@ const TitlePages = styled.h1`
     margin-top: 30px;
     margin-bottom: 25px;
 
-    @media all and (max-width: 1024px){
-        font-size: 50px;
+    @media only screen and (max-width: 500px){
+        font-size: 3rem;
     }
     `
 

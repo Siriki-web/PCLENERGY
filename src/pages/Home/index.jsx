@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import backImage from "../../assets/fond-header.png"
+// import backImage from "../../assets/fond-header.png"
+import backImage from '../../assets/hero-image.jpg'
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import OurIndustry from '../../components/OurIndustry';

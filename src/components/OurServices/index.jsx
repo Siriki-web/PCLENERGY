@@ -19,8 +19,9 @@ const TitleServices = styled.h1`
     color: #EFA21F;
     text-align: center;
 
-    @media all and (max-width: 1024px){
-        font-size: 1.625rem;
+    @media only screen and (max-width: 500px){
+        font-size: 1.5rem;
+        line-height: 100px;
     }
     `
 

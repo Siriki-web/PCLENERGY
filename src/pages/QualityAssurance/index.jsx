@@ -104,8 +104,10 @@ const PgH = styled.p`
     color: white;
     line-height: 35px;
 
-    @media all and (max-width: 1024px){
+    @media only screen and (max-width: 500px){
         font-size: 15px;
+        text-align: justify;
+       
     }
     `    
 
@@ -114,7 +116,8 @@ const DivStyle = styled.div`
     align-items: baseline;
 
     @media all and (max-width: 1024px){
-        padding-left: 25px;
+        padding-left: 1rem;
+        padding-right: 1rem;
         }
     `    
 
@@ -134,16 +137,26 @@ const Text = styled.p`
     line-height: 40px;
 
     @media all and (max-width: 1024px){
-        font-size: 12px;
-        padding-left: 25px;
+        font-size: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        text-align: justify;
     }
     `
+
+const Br = styled.br`
+    @media only screen and (max-width: 500px){
+        display: none;
+    }
+    `
+
 const DivQ = styled.div`
     display: flex;
     align-items: center; 
 
     @media all and (max-width: 1024px){
-        padding-left: 25px;
+        padding-left: 1rem;
+        padding-right: 1rem;
         }
 `
 
@@ -156,6 +169,16 @@ const TitreH2 = styled.h2`
         padding-left: 25px;
         }
     `
+
+const Org = styled.p`
+    color: white;
+
+    @media only screen and (max-width: 500px){
+        font-size: 15px;
+        }
+    
+    `
+
 
 const QualityAssurance = () => {
 
@@ -181,26 +204,26 @@ const QualityAssurance = () => {
                 <div>
                     <TitreH2>Quality Assurance</TitreH2>
                     <Text>
-                        PCL Energy provides the very best of services, one of which is <span style={{ color: "#EFA21F" }}>QUALITY <br />
-                            ASSURANCE</span> Services. We offer you an unexampled Experience cutting <br />
-                        across the Energy Sector. We provide this service across Nigeria and <br />
-                        beyond. As a result, we can help you to assure quality across all your <br />
+                        PCL Energy provides the very best of services, one of which is <span style={{ color: "#EFA21F" }}>QUALITY <Br />
+                            ASSURANCE</span> Services. We offer you an unexampled Experience cutting <Br />
+                        across the Energy Sector. We provide this service across Nigeria and <Br />
+                        beyond. As a result, we can help you to assure quality across all your <Br />
                         business processes and runnings.<br /><br />
                         Our out- point Quality Assurance Services include:
                     </Text>
                     <DivQ>
                         <CircleButton></CircleButton>
-                        <p style={{ color: "white" }}>Organisation Of Quality Assurance Training Courses</p>
+                        <Org>Organisation Of Quality Assurance Training Courses</Org>
                     </DivQ>
                     <DivStyle>
                         <CircleButton></CircleButton>
-                        <PgH>Backing In Defining A Quality Assurance Program That Meets The Full <br />
+                        <PgH>Backing In Defining A Quality Assurance Program That Meets The Full <Br />
                         Compass Of All Regulatory Conditions.</PgH>
                     </DivStyle>
                     <DivStyle>
                         <CircleButton></CircleButton>
-                        <PgH>Performing Pre-award or Pre-qualification checks, including a <br />
-                            complete review of suppliers' quality assurance program to meet <br />
+                        <PgH>Performing Pre-award or Pre-qualification checks, including a <Br />
+                            complete review of suppliers' quality assurance program to meet <Br />
                             Government or Purchasers' Conditions</PgH>
                     </DivStyle>
                     <Img src={gra} alt="" />

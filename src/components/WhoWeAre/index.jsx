@@ -50,8 +50,8 @@ const TitleWhoWeAre = styled.h1`
     `
 
 const ImgUsine = styled.img`
-    height: 710px;
-    width: 540px;
+    height: 600px;
+    width: 450px;
     margin-top: 25px;
 
     @media all and (max-width: 1024px){
@@ -93,7 +93,7 @@ const WhoWeAre = () => {
                     efficiency and operational performance while reducing their carbon 
                     footprint and operational costs. we also provide our clients with 
                     innovative energy technology solutions for the modernization of their 
-                    facilities and Energy Infrastructure. <br /><br /> We’re your <span style={{ color: "#EFA21F" }}>No 1</span> Energy Consulting Firm in the whole of Africa! <br /><br />
+                    facilities and Energy Infrastructure. <br /> We’re your <span style={{ color: "#EFA21F" }}>No 1</span> Energy Consulting Firm in the whole of Africa!<br />
                     We’re providing Consulting services in all of Africa and its Environs. Our Services are the most efficient and reasonably priced in the 
                     industry.
                 </StyleParagraph>

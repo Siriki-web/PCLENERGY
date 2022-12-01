@@ -119,8 +119,8 @@ const GblCarre = styled.div`
 
 const Carre = styled.div`
     position: relative;
-    height: 65px;
-    width: 65px;
+    height: 40px;
+    width: 250px;
     background-image: linear-gradient(#30B24A, #EE6B2A);
 
     @media all and (max-width: 1024px){
@@ -148,10 +148,11 @@ const Testi = styled.h4`
 const Para = styled.p`
     color: white;
     font-size: 20px;
+    text-align: justify;
     margin-top: 75px;
 
-    @media all and (max-width: 1024px){
-        font-size: 13px;
+    @media only screen and (max-width: 500px){
+        font-size: 1rem;
         margin-top: 40px;
     }
     `
@@ -223,9 +224,10 @@ const NameService = styled.h3`
 
 const ImgVirgule = styled.img`
     position: absolute;
-    top: -40px; 
-    width: 120px;
+    top: -65px; 
+    width: 65px;
     height: 200px;
+    left: 8px;
 
     @media all and (max-width: 1024px){
         display: none;
@@ -234,6 +236,7 @@ const ImgVirgule = styled.img`
 
 const Advis = styled.p`
     color: white;
+    font-size: .675rem;
 
 `
 
@@ -376,18 +379,18 @@ const Service = () => {
                                 <Carre>
                                     <ImgVirgule src={virgule_debout} alt="" />
                                 </Carre>
-                                <div>
+                                <div style={{paddingLeft: "50px"}}>
                                     <Testi>TESTIMONIALS</Testi>
                                     <PeopleSay>people say about our services</PeopleSay>
                                     <Para>
-                                        Streamer fish California halibut Pacific saury. Slickhead grunion lake trout. Canthigaster <br />
-                                        rostrata spikefish brown trout loach summer flounder. European minnow black dragonfish <br />
-                                        orbicular batfish stingray tenpounder! Flying characin: herring. Moses Streamer fish <br />
-                                        California halibut Pacific saury. Slickhead grunion lake trout. Canthigaster rostrata spikefish <br />
-                                        brown trout loach summer flounder. European minnow black dragonfish orbicular batfish <br />
-                                        stingray tenpounder! Flying characin: herring. Moses Streamer fish California halibut Pacific <br />
-                                        saury. Slickhead grunion lake trout. Canthigaster rostrata spikefish brown trout loach <br />
-                                        summer flounder. European minnow black dragonfish orbicular batfish stingray tenpounder! <br />
+                                        Streamer fish California halibut Pacific saury. Slickhead grunion lake trout. Canthigaster 
+                                        rostrata spikefish brown trout loach summer flounder. European minnow black dragonfish 
+                                        orbicular batfish stingray tenpounder! Flying characin: herring. Moses Streamer fish 
+                                        California halibut Pacific saury. Slickhead grunion lake trout. Canthigaster rostrata spikefish 
+                                        brown trout loach summer flounder. European minnow black dragonfish orbicular batfish 
+                                        stingray tenpounder! Flying characin: herring. Moses Streamer fish California halibut Pacific 
+                                        saury. Slickhead grunion lake trout. Canthigaster rostrata spikefish brown trout loach 
+                                        summer flounder. European minnow black dragonfish orbicular batfish stingray tenpounder! 
                                         Flying characin: herring. Moses
                                     </Para>
                                     <Author>

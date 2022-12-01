@@ -34,7 +34,9 @@ const texte = `The Boolean Tech has a zeal in this sector that makes us one of t
 
                 Adaptation to the past history data, present observed and future predicted impacts will
                 in the coming decades be needed, as well as be complementary to global climate
-                mitigation actions. Narvik Science Park has made a report on this in the GREBE-Project.`
+                mitigation actions. Narvik Science Park has made a report on this in the GREBE-Project.
+                `
+                
 
 export const dataOurInsights = [
     {

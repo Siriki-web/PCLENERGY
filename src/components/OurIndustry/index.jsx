@@ -38,9 +38,19 @@ const StyleH2 = styled.h2`
     font-weight: 800;
     color: white;
 
-    @media all and (max-width: 1024px){
-        font-size: 28px;
+    @media only screen and (max-width: 500px){
+        font-size: 30px;
+        text-align: justify;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
+    `
+
+    const Br = styled.br`
+        @media only screen and (max-width: 500px){
+            display: none;
+            
+        }
     `
 
 
@@ -71,8 +81,8 @@ const OurIndustry = () => {
     return (
         <ContainerIndustry>
             <Container>
-                <StyleH2>Our Industry Experience Enables Us To Provide <br />
-                    In-depth Material Sourcing, Financing And <br />
+                <StyleH2>Our Industry Experience Enables Us To Provide <Br />
+                    In-depth Material Sourcing, Financing And <Br />
                     Supply Chain Expertise For Every Step!
                 </StyleH2>
                 <ButtonDownload>DOWNLOAD REPORT <Image src={arrow_right} alt="" /></ButtonDownload>

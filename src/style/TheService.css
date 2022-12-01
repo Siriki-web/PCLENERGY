@@ -41,36 +41,23 @@ td.first-col {
 
 
 
-@media only screen and (max-width: 760px),
-(min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (max-width: 500px){
 
-    td
-    {
-        display: block;
-        border: none;
-        border-bottom: 1px solid black;
-        position: relative;
-        padding-left: 50%;
+    td.sup{
+        display: none;
     }
 
-    td.bb{
-        border-bottom: 1px solid #EFA21F;
-    }
-
-    td:before {
-        position: absolute;
-        top: 6px;
-        left: 6px;
-        width: 45%;
-        padding-right: 10px;
-        white-space: nowrap;
-    }
-
-    .asktable td:last-child{
-        border-right: 1px solid #EFA21F;
+    td.first-col{
+        padding: 5px;
     }
 
     .asktable td {
-        border: 1px solid #EFA21F;
+    padding: 4px 8px;
+    border-right: 1px solid #EFA21F;
     }
+
+    .asktable td:nth-child(3){
+        border-right: 0;
+    }
+
 }

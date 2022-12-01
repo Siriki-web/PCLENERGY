@@ -16,17 +16,22 @@ const Container = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
+
+    @media only screen and (max-width: 500px){
+        display: flex;
+        flex-wrap: wrap;
+    }
     `
 
 const ShellsImage = styled.img`
-    height: 450px;
-    width: 500px;
+    height: 400px;
+    width: 450px;
     border-radius: 10px;
-    margin-left: 20px;
+    // margin-left: 20px;
 
     @media all and (max-width: 1024px){
-        width: 100%;
+        display: block;
+        width: 95%;
         margin-left: 0;
     }
     `
@@ -41,9 +46,9 @@ const TitleWork = styled.h3`
 
 const TextWork = styled.p`
     color: white;
-    font-size: 60px;
+    font-size: 25px;
     font-weight: bold;
-    line-height: 70px;
+    line-height: 50px;
     margin-top: 2px;
     margin-bottom: 40px;
 
@@ -92,7 +97,7 @@ const WorkStatistics = () => {
             <ShellsImage src={shells} alt="" />
             <Stats>
                 <TitleWork>work statistics</TitleWork>
-                <TextWork>How about some Fact <br />Numbers about us.</TextWork>
+                <TextWork>How about some Fact Numbers about us.</TextWork>
                 <div style={{display: "flex"}}>
                     <div style={{ marginRight: "80px" }}>
                         <div>

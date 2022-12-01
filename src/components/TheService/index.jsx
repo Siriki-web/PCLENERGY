@@ -19,63 +19,28 @@ import transaction from '../../assets/transaction.png'
 import '../../style/TheService.css'
 
 
-// const Td = styled.td`
-//     padding: 20px;
-//     border-right: 1px solid #EFA21F;
-//     border-bottom: 1px solid #EFA21F;
-//     &:last-child {
-//         border-right: 0;
-//     }
-
-//     @media only screen and (max-width: 760px),
-//         (min-device-width: 768px) and (max-device-width: 1024px) {
-//         td {
-//             display: block;
-//             border: none;
-//             border-bottom: 1px solid #EFA21F;
-//             position: relative;
-//             padding-left: 50%;
-//         }
-
-//         td:before {
-//             position: absolute;
-//             top: 6px;
-//             left: 6px;
-//             width: 45%;
-//             padding-right: 10px;
-//             white-space: nowrap;
-//         }
-//     }
-// `
-
-// const Table = styled.table`
-//     width: 80%;
-//     margin: auto;
-//     border-collapse: collapse;
-//     margin-bottom: 70px;
-//     `
-
-
-// const CercleImage = styled.div`
-//     margin: auto;
-//     width: 40px; 
-//     height: 40px;
-//     background-image: linear-gradient(#32B34A, #EFA21F);
-//     border-radius: 50%;
-// `
-
 const H4 = styled.h4`
     text-transform: uppercase;
     font-size: 12px;
     color: #EFA21F;
     text-align: center;
     font-weight: 100;
+
+    @media only screen and (max-width: 500px){
+        font-size : 0.5rem;
+    }
 `
 
 const Img = styled.img`
     height: 25px;
     width: 25px;
     padding: 8px;
+
+    @media only screen and (max-width: 500px){
+        height: 20px;
+        width: 20px;
+        padding: 10px;
+    }
     `
 
 
@@ -102,14 +67,13 @@ const TheService = () => {
                 </td>
                 <td className='first-col'>
                     <Link to="/support-function" style={{ textDecoration: "none" }}>
-
                         <div className='cercle'>
                             <Img src={sf} alt="" />
                         </div>
                         <H4>support functions <br />outsourcing</H4>
                     </Link>
                 </td>
-                <td className='first-col'>
+                <td className='first-col sup'>
                     <Link to="/strategic-advisory" style={{ textDecoration: "none" }}>
                         <div className='cercle'>
                             <Img src={sa} alt="" />
@@ -117,7 +81,7 @@ const TheService = () => {
                         <H4>strategic advisory <br />services</H4>
                     </Link>
                 </td>
-                <td className='first-col'>
+                <td className='first-col sup'>
                     <Link to="/quality-assurance" style={{ textDecoration: "none" }}>
                         <div className='cercle'>
                             <Img src={qa} alt="" />
@@ -152,7 +116,7 @@ const TheService = () => {
                         <H4>ENERGY <br />CONCEPTS</H4>
                     </Link>
                 </td>
-                <td className='first-col'>
+                <td className='first-col sup'>
                     <Link to="/bankable" style={{ textDecoration: "none" }}>
                         <div className='cercle'>
                             <Img src={bfs} alt="" />
@@ -160,7 +124,7 @@ const TheService = () => {
                         <H4>BANKABLE FEASIBILITY <br />STUDIES</H4>
                     </Link>
                 </td>
-                <td className='first-col'>
+                <td className='first-col sup'>
                     <Link to="/master-plans" style={{ textDecoration: "none" }}>
                         <div className='cercle'>
                             <Img src={mp} alt="" />
@@ -194,7 +158,7 @@ const TheService = () => {
                         <H4>PRE-FEASIBILITY <br />STUDIES</H4>
                     </Link>
                 </td>
-                <td className='first-col bb'>
+                <td className='first-col bb sup'>
                     <Link to="/transaction-advisory" style={{ textDecoration: "none" }}>
                         <div className='cercle'>
                             <Img src={transaction} alt="" />
@@ -202,7 +166,7 @@ const TheService = () => {
                         <H4>TRANSACTION ADVISORY <br />&DUE DILIGENCE</H4>
                     </Link>
                 </td>
-                <td className='first-col bb'>
+                <td className='first-col bb sup'>
                     <Link to="/lobbying" style={{ textDecoration: "none" }}>
                         <div className='cercle'>
                             <Img src={lgr} alt="" />

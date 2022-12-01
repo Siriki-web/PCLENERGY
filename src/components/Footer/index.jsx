@@ -1,5 +1,5 @@
 import React from 'react';
-import logo_pcl from '../../assets/logo-pcll.png'
+import logo_pcl from '../../assets/logo-white.png'
 import right_arrow from '../../assets/right-arrow.png'
 import { Link } from 'react-router-dom'
 import { GrLinkedinOption } from 'react-icons/gr'
@@ -47,8 +47,11 @@ const UnderContainer = styled.div`
     `
 
 const ImgLogo = styled.img`
-    height: 145px;
-    width: 158px;
+    width: 120px;
+
+    @media only screen and (max-width: 500px){
+        padding-left: 20px;
+    }
     `
 
 const StyledLink = styled(Link)`

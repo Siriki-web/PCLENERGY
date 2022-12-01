@@ -11,6 +11,8 @@ const StyledGlobalStyle = createGlobalStyle`
 
     body {
         margin: 0;
+        box-sizing: border-box;
+        
     }
 `
 const GlobalStyle = () => {
