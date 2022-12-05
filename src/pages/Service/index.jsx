@@ -183,7 +183,7 @@ const NameAuthor = styled.h2`
     margin-top: 20px;
 
     @media all and (max-width: 1024px){
-        font-size: .775rem;
+        font-size: .675rem;
         // margin-top: 20px;
     }
     `
@@ -370,7 +370,9 @@ const Service = () => {
                         </div>
                     </SusCtnService>
                     <Btn>
-                        <ButtonContact>contact us now <img style={{ height: "15px", marginLeft: "5px" }} src={arrow_up} alt="" /></ButtonContact>
+                        <Link to="/contact">
+                            <ButtonContact>contact us now <img style={{ height: "15px", marginLeft: "5px" }} src={arrow_up} alt="" /></ButtonContact>
+                        </Link>
                     </Btn>
                     <CtnTestimonials>
                         <LeftBorder></LeftBorder>

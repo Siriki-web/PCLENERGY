@@ -27,7 +27,6 @@ const ShellsImage = styled.img`
     height: 400px;
     width: 450px;
     border-radius: 10px;
-    // margin-left: 20px;
 
     @media all and (max-width: 1024px){
         display: block;
@@ -89,6 +88,17 @@ const Stats = styled.div`
         }
     `
 
+const ContainerChiffre = styled.div`
+    display: flex;
+    `    
+
+const ContainerChiffreLeft = styled.div`
+    margin-right: 80px;
+
+    @media only screen and (max-width: 500px){
+        padding-left: 1rem;
+    }
+    `
 
 
 const WorkStatistics = () => {
@@ -98,8 +108,8 @@ const WorkStatistics = () => {
             <Stats>
                 <TitleWork>work statistics</TitleWork>
                 <TextWork>How about some Fact Numbers about us.</TextWork>
-                <div style={{display: "flex"}}>
-                    <div style={{ marginRight: "80px" }}>
+                <ContainerChiffre>
+                    <ContainerChiffreLeft>
                         <div>
                             <FirstLinesImage src={deux_cent_cinquante} alt="" />
                             <TextDescription>Completed Projects</TextDescription>
@@ -108,7 +118,7 @@ const WorkStatistics = () => {
                             <SecondLinesImage src={cinquantes} alt="" />
                             <TextDescription>Team Experts</TextDescription>
                         </div>
-                    </div>
+                    </ContainerChiffreLeft>
 
                     <div>
                         <div>
@@ -120,7 +130,7 @@ const WorkStatistics = () => {
                             <TextDescription>Winning Awards</TextDescription>
                         </div>
                     </div>
-                </div>
+                </ContainerChiffre>
             </Stats>
         </Container>
     );

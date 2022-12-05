@@ -12,6 +12,7 @@ import { IoIosSend } from 'react-icons/io'
 import { RiSearch2Fill } from 'react-icons/ri'
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser'
+import { useEffect } from 'react';
 
 
 
@@ -86,6 +87,11 @@ const UnderDivContact = styled.div`
 
 
 const Contact = () => {
+
+    useEffect(() => {
+        window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+    }, [])
+
     const form = useRef()
 
     const sendEmail = (e) => {
