@@ -6,13 +6,15 @@ import { Helmet } from 'react-helmet';
 
 const StyledGlobalStyle = createGlobalStyle`
     *{
-        font-family: 'Outfit', Helvetica, Arial, sans-serif
+        font-family: 'Outfit', Helvetica, Arial, sans-serif;
+        // margin: 0;
+        // box-sizing: border-box;
+        text-decoration: none;
     }
 
     body {
-        margin: 0;
+        margin: 0px;
         box-sizing: border-box;
-        
     }
 `
 const GlobalStyle = () => {
