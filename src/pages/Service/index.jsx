@@ -183,8 +183,8 @@ const NameAuthor = styled.h2`
     margin-top: 20px;
 
     @media all and (max-width: 1024px){
-        font-size: 15px;
-        margin-top: 20px;
+        font-size: .775rem;
+        // margin-top: 20px;
     }
     `
 

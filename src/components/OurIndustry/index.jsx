@@ -1,6 +1,6 @@
 import React from 'react';
 import img_our_industry from '../../assets/image-our-industry.png'
-import arrow_right from '../../assets/right-arrow.png'
+// import arrow_right from '../../assets/right-arrow.png'
 import styled from 'styled-components';
 import ButtonDownload from '../ButtonDownload';
 
@@ -55,26 +55,26 @@ const StyleH2 = styled.h2`
     `
 
 
-const ButtonDownloade = styled.button`
-    display: flex;
-    align-items: center;
-    border: none;
-    padding: 12px 15px;
-    color: white;
-    border-radius: 5px;
-    background-image: linear-gradient(to right, #EE6B2A, #2BAF49);
-    text-align: center;
-    &:hover{
-        border: 1px solid #EFA21F;
-        color: #EFA21F;
-        background: rgb(0,0,0,0.9);
-    }
-    `
+// const ButtonDownloade = styled.button`
+//     display: flex;
+//     align-items: center;
+//     border: none;
+//     padding: 12px 15px;
+//     color: white;
+//     border-radius: 5px;
+//     background-image: linear-gradient(to right, #EE6B2A, #2BAF49);
+//     text-align: center;
+//     &:hover{
+//         border: 1px solid #EFA21F;
+//         color: #EFA21F;
+//         background: rgb(0,0,0,0.9);
+//     }
+//     `
 
-const Image = styled.img`
-    height: 10px;
-    margin-left: 5px;
-    `
+// const Image = styled.img`
+//     height: 10px;
+//     margin-left: 5px;
+//     `
 
 
 

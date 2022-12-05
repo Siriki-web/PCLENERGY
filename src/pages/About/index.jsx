@@ -118,6 +118,10 @@ const ParagraphTeam = styled.p`
     font-size: 25px;
     text-align: center;
     margin-bottom: 70px;
+
+    @media only screen and (max-width: 500px){
+        font-size: 1rem;
+    }
     `
  
 const DivButton = styled.div`

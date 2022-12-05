@@ -10,9 +10,10 @@ const ContainerValue = styled.div`
     align-items: center; 
     margin-top: 48px;
 
-    @media all and (max-width:1024px){
+    @media only screen and (max-width: 500px){
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
     `
 
@@ -31,12 +32,13 @@ const BackOurValue = styled.div`
     border-top-right-radius: 55px;
     padding-left: 100px;
     width: 45%;
-    height: 700px;
+    // height: 700px;
 
     @media only screen and (max-width: 500px){
-        padding-left: 1rem;
+        padding-left: 0;
+        // padding-right: 1rem;
         width: 100%;
-        height: 100%;
+        // height: 100%;
     }
     `
 
@@ -83,9 +85,9 @@ const ParagrahValue = styled.p`
 
     @media only screen and (max-width: 500px){
         text-align: justify;
+        font-size: 18px;
         padding-left: 1rem;
         padding-right: 1rem;
-        font-size: 18px;
     }
     `
 
@@ -93,6 +95,11 @@ const ImageVisionMissipn = styled.img`
     width: 80px;
     height: 80px;
     margin-right: 30px;
+
+    @media only screen and (max-width: 500px){
+        width: 40px;
+        height: 40px;
+    }
     `    
 
 const TitleVisionMission = styled.h3`
@@ -100,6 +107,10 @@ const TitleVisionMission = styled.h3`
     text-transform: uppercase;
     font-size: 30px;
     margin-bottom: 10px;
+
+    @media only screen and (max-width:500px){
+        font-size: 1.2rem;
+    }
     `    
 
 const ParagrahDescribe = styled.p`

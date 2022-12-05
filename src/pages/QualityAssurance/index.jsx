@@ -56,17 +56,14 @@ const ImageQuality = styled.img`
 `
 
 const H1 = styled.h1`
-    // position: absolute;
-    // top: 65px;
-    // left: 319px;
     margin-top: -120px;
     font-size: 70px;
     color: #EFA21F;
     text-align: center;
 
     @media all and (max-width: 1024px){
-        left: 0;
-        font-size: 50px;
+        font-size: 35px;
+        margin-top: -95px;
         }
 `
 const DivServices = styled.div`
@@ -122,12 +119,12 @@ const DivStyle = styled.div`
     `    
 
 const H3 = styled.h3`
-    margin-left: 125px;
+    margin-left: 100px;
     color: white;
 
     @media all and (max-width: 1024px){
         margin-left: 0;
-        padding-left: 5px;
+        padding-left: .6rem;
         }
 }
 `
@@ -166,7 +163,7 @@ const TitreH2 = styled.h2`
     color: #EFA21F;
 
     @media all and (max-width: 1024px){
-        padding-left: 25px;
+        padding-left: 1rem;
         }
     `
 
@@ -176,8 +173,18 @@ const Org = styled.p`
     @media only screen and (max-width: 500px){
         font-size: 15px;
         }
-    
     `
+
+const DivQu = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media only screen and (max-width: 500px){
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    `    
 
 
 const QualityAssurance = () => {
@@ -192,10 +199,10 @@ const QualityAssurance = () => {
                 <Nav />
                 <HeaderQualityAssurance>
                     <UnderHeader>
-                        <div style={{display: "flex", flexDirection: "column", justifyContent: "center"}}>
+                        <DivQu>
                             <ImageQuality src={img_text} alt="" />
                             <H1>QUALITY ASSURANCE</H1>
-                        </div>
+                        </DivQu>
                     </UnderHeader>
                 </HeaderQualityAssurance>
             </div>
