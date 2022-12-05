@@ -41,6 +41,7 @@ const texte = `The Boolean Tech has a zeal in this sector that makes us one of t
 export const dataOurInsights = [
     {
         id: 1,
+        name: 't1',
         picture: mariana_proenca,
         date:'30th October, 2022',
         author: '',
@@ -52,6 +53,7 @@ export const dataOurInsights = [
     },
     {
         id: 2,
+        name: 't2',
         picture: mariana_proenca,
         date:'30th October, 2022',
         author: '',
@@ -63,6 +65,7 @@ export const dataOurInsights = [
     },
     {
         id: 3,
+        name: 't3',
         picture: mariana_proenca,
         date:'30th October, 2022',
         author: '',
@@ -74,6 +77,7 @@ export const dataOurInsights = [
     },
     {
         id: 4,
+        name: 't4',
         picture: '',
         date:'',
         author: '',
@@ -85,6 +89,7 @@ export const dataOurInsights = [
     },
     {
         id: 5,
+        name: 't5',
         picture: '',
         date:'',
         author: '',

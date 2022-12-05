@@ -74,14 +74,14 @@ const ParagraphPCL = styled.p`
     margin-left: 80px;
     margin-bottom: 35px;
     color: white;
-    font-size: 21px;
+    font-size: 20px;
     line-height: 30px;
-    width: 35%;
+    width: 52%;
 
     @media all and (max-width: 1024px){
         padding-left: 16px;
         padding-right: 16px;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         text-align: left;
         width: 100%;
         margin-left: 0;

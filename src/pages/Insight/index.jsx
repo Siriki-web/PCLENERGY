@@ -85,7 +85,7 @@ const RecentPosts = styled.div`
     @media all and (max-width: 1024px){
         width: auto;
     }
-`    
+`
 
 const LookingInsights = styled.div`
     display: flex;
@@ -117,14 +117,14 @@ const Div = styled.div`
     @media all and (max-width: 1024px){
         margin-right:0;
     }
-    `    
+    `
 
 const TitleP = styled.p`
     color: white;
-    `    
+    `
 const Pg = styled.p`
     font-size: 15px;
-    `    
+    `
 
 const ColorTextTags = styled.div`
     color: white;
@@ -137,7 +137,7 @@ const Insight = () => {
     const [activeCategory, setActiveCategory] = useState('')
     const categories = dataOurInsights.reduce((acc, ins) => acc.includes(ins.categoryPost) ? acc : acc.concat(ins.categoryPost), [])
 
-   
+
 
     return (
         <div style={{ backgroundColor: "#0D0D0D" }}>
@@ -145,8 +145,7 @@ const Insight = () => {
                 <CoverOverlay>
                     <Nav />
                 </CoverOverlay>
-                
-               <TitlePage name="our insights" paragraph="Renewable Energy for a Sustainable World." />
+                <TitlePage name="our insights" paragraph="Renewable Energy for a Sustainable World." />
             </Cover>
             <Categories
                 categories={categories}
@@ -155,20 +154,21 @@ const Insight = () => {
 
             <TheInsights>
                 <Div>
-                    {dataOurInsights.map(({ id, picture, author, titlePost, contentPost, comment, date, categoryPost }) =>
-                        !activeCategory || activeCategory === categoryPost ? (
-                            <div key={id}>
-                                <InsightItem
-                                    picture={picture}
-                                    author={author}
-                                    titlePost={titlePost}
-                                    contentPost={contentPost}
-                                    comment={comment}
-                                    date={date}
-                                />
-                            </div>
-                        ) : null
-                    )
+                    {
+                        dataOurInsights.map(({ id, picture, author, titlePost, contentPost, comment, date, categoryPost }) =>
+                            !activeCategory || activeCategory === categoryPost ? (
+                                <div key={id}>
+                                    <InsightItem
+                                        picture={picture}
+                                        author={author}
+                                        titlePost={titlePost}
+                                        contentPost={contentPost}
+                                        comment={comment}
+                                        date={date}
+                                    />
+                                </div>
+                            ) : null
+                        )
                     }
                 </Div>
                 <div>
@@ -176,11 +176,12 @@ const Insight = () => {
                         <LookingInsights>
                             <div style={{ paddingBottom: "25px" }}>
                                 <H3>Looking For Insights?</H3>
-                                <input style={{ 
-                                    width: "330px", 
-                                    height: "35px", 
-                                    borderRadius: "5px", 
-                                    border: "none" }} type="search" placeholder='Search Here' />
+                                <input style={{
+                                    width: "330px",
+                                    height: "35px",
+                                    borderRadius: "5px",
+                                    border: "none"
+                                }} type="search" placeholder='Search Here' />
                             </div>
                         </LookingInsights>
                         <RecentPosts>

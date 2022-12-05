@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { Button, Modal, Form, Input, Popover } from 'antd';
 // import 'antd/dist/reset.css';
 import right_arrow from '../../assets/right-arrow.png'
+import '../../style/ButtonDownload.css'
 
 const layout = {
     labelCol: {
@@ -84,13 +85,7 @@ const ButtonDownload = () => {
                             onOpenChange={handleOpenChange}
                         >
 
-                            <Button style={{
-                                backgroundImage: "linear-gradient(to right, #EE6B2A, #2BAF49)",
-                                color: 'white',
-                                marginLeft: '-100px',
-                                height: '40px',
-                                width: '150px'
-                            }} htmlType="submit">Submit</Button>
+                            <Button className="btn-submit" htmlType="submit">Submit</Button>
                         </Popover>
                     </Form.Item>
                 </Form>

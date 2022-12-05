@@ -1,0 +1,14 @@
+Button.btn-submit{
+    background-image: linear-gradient(to right, #EE6B2A, #2BAF49);
+    color: white;
+    height: 40px;
+    width: 150px;
+    margin-left: -160px;
+}
+
+
+@media only screen and (max-width: 500px){
+    Button.btn-submit{
+        margin-left: -112px;
+    }
+}

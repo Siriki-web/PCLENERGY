@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import arrow_gold from '../../assets/arrow_orange.png'
+
 // import { CiSearch } from 'react-icons/ci'
 
 
@@ -44,9 +45,10 @@ const LineHeight = styled.div`
     background-color: orange;
     height: 30px;
     width: 1px;
-    `    
+    `
 
 const InsightItem = ({ id, picture, date, author, comment, titlePost, contentPost }) => {
+
     return (
         <div>
             <Image src={picture} alt="" />
@@ -59,9 +61,11 @@ const InsightItem = ({ id, picture, date, author, comment, titlePost, contentPos
             </DataPost>
             <TitlePost>{titlePost}</TitlePost>
             <p>{contentPost}</p>
-            <Link to={`/insight/${id}`}>
-                <Button>READ NOW <img style={{ height: "8px", marginLeft: "5px" }} src={arrow_gold} alt="" /></Button>
-            </Link>
+            <div key={id}>
+                <Link to={`/insight/${id}`}>
+                    <Button>READ NOW <img style={{ height: "8px", marginLeft: "5px" }} src={arrow_gold} alt="" /></Button>
+                </Link>
+            </div>
         </div>
     );
 };

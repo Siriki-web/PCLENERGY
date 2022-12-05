@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import AllServices from '../../components/AllServices';
 import soft from '../../assets/software.png'
+import Nav from '../../components/Nav';
 
 
 const Container = styled.div`
@@ -21,6 +22,7 @@ const Header = styled.div`
 const SoftwareDevelopment = () => {
     return (
         <Container>
+            <Nav />
             <Header>
                 <AllServices service ="software deplyment and development" />
             </Header>

@@ -2,6 +2,7 @@ import React from 'react';
 import img_our_industry from '../../assets/image-our-industry.png'
 import arrow_right from '../../assets/right-arrow.png'
 import styled from 'styled-components';
+import ButtonDownload from '../ButtonDownload';
 
 
 
@@ -54,7 +55,7 @@ const StyleH2 = styled.h2`
     `
 
 
-const ButtonDownload = styled.button`
+const ButtonDownloade = styled.button`
     display: flex;
     align-items: center;
     border: none;
@@ -85,7 +86,8 @@ const OurIndustry = () => {
                     In-depth Material Sourcing, Financing And <Br />
                     Supply Chain Expertise For Every Step!
                 </StyleH2>
-                <ButtonDownload>DOWNLOAD REPORT <Image src={arrow_right} alt="" /></ButtonDownload>
+                {/* <ButtonDownload>DOWNLOAD REPORT <Image src={arrow_right} alt="" /></ButtonDownload> */}
+                <ButtonDownload />
             </Container>
         </ContainerIndustry>
     );
