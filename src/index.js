@@ -36,8 +36,8 @@ root.render(
                 <Route exact path='/' element={<Home />} />
                 <Route path='/about' element={<About />} />
                 <Route path='/service' element={<Service />} />    
-                <Route path='/insight' exact element={<Insight />} /> 
-                <Route path='/insight/:id' element={<InsightDetail />} />
+                <Route exact path='/insight' element={<Insight />} /> 
+                <Route path='/insight/:name' element={<InsightDetail />} />
                 <Route path='/contact' element={<Contact />} />
                 <Route path='/quality-assurance' element={<QualityAssurance />} />
                 <Route path='/training-service' element={<TrainingService />} />

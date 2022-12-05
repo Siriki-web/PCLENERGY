@@ -32,13 +32,12 @@ const BackOurValue = styled.div`
     border-top-right-radius: 55px;
     padding-left: 100px;
     width: 45%;
-    // height: 700px;
+    height: 700px;
 
     @media only screen and (max-width: 500px){
         padding-left: 0;
-        // padding-right: 1rem;
         width: 100%;
-        // height: 100%;
+        height: 100%;
     }
     `
 

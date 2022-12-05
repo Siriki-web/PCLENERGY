@@ -3,19 +3,21 @@ import { dataOurInsights } from "../../data/dataOurInsights"
 // import { test } from '../../data/test'
 
 
-const InsightDetail = () => {
-    const { id } = useParams()
+const InsightDetail = ({match}) => {
+    // const { id } = useParams()
 
     return(
         <div>
-            
             {
                 dataOurInsights
-                    .map(({ picture, titlePost, categoryPost, description}) =>
+                    .filter((list) => list.id === match.params.id)
+                    .map(({id, picture, titlePost, categoryPost, description}) =>
                         (
-                            <div>
-                                <p>Bienvenue {id}</p>
-                                
+                            <div key={id}>
+                                <img src={picture} alt="" />
+                                <h2>{titlePost}</h2>
+                                <h3>{categoryPost}</h3>
+                                <p>{description}</p>
                             </div>
                         ))
             }
