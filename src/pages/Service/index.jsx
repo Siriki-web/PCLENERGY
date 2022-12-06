@@ -109,6 +109,10 @@ const TextCtn = styled.div`
     width: 90%;
     background-color: #000000;
     border-radius: 5px;
+
+    @media only screen and (max-width: 500px){
+        width: 100%;
+    }
     `
 
 const GblCarre = styled.div`
@@ -152,8 +156,9 @@ const Para = styled.p`
     margin-top: 75px;
 
     @media only screen and (max-width: 500px){
-        font-size: 1rem;
+        font-size: .875rem;
         margin-top: 40px;
+        // text-align: left;
     }
     `
 
@@ -163,6 +168,10 @@ const Author = styled.div`
 
 const GblCircle = styled.div`
     display: flex;
+
+    @media only screen and (max-width: 500px){
+        display: none;
+    }
     `
 
 const Lines = styled.div`
@@ -238,7 +247,19 @@ const Advis = styled.p`
     color: white;
     font-size: .675rem;
 
+    @media all and (max-width: 1024px){
+        font-size: .575rem;
+    }
 `
+
+const CadreTestimonials = styled.div`
+    padding-left: 50px;
+
+    @media only screen and (max-width: 500px){
+        padding-left: 0;
+    }
+`
+
 
 const Service = () => {
 
@@ -381,7 +402,7 @@ const Service = () => {
                                 <Carre>
                                     <ImgVirgule src={virgule_debout} alt="" />
                                 </Carre>
-                                <div style={{paddingLeft: "50px"}}>
+                                <CadreTestimonials>
                                     <Testi>TESTIMONIALS</Testi>
                                     <PeopleSay>people say about our services</PeopleSay>
                                     <Para>
@@ -402,7 +423,7 @@ const Service = () => {
                                             <Advis>MD, ADVIS HOLDINGS</Advis>
                                         </div>
                                     </Author>
-                                </div>
+                                </CadreTestimonials>
                                 <GblCircle>
                                     <Rond></Rond>
                                     <Rond></Rond>

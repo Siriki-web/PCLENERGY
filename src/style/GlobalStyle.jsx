@@ -1,7 +1,6 @@
 import React from 'react';
 import { createGlobalStyle } from 'styled-components';
 import "../assets/css/font.css"
-import { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 
 const StyledGlobalStyle = createGlobalStyle`
@@ -18,14 +17,15 @@ const StyledGlobalStyle = createGlobalStyle`
     }
 `
 const GlobalStyle = () => {
-    useEffect(() => {
-        document.title = "PCL ENERGY"
-    }, [])
+    // useEffect(() => {
+    //     document.title = "PCL ENERGY"
+    // }, [])
     return (
         <div>
             <StyledGlobalStyle />
             <Helmet>
-                {/* <title>My Title</title> */}
+                <meta charSet='utf-8' />
+                <title>PCL ENERGY</title>   
                 <meta name="description" content="The best source of energy for the better tomorrow" />
             </Helmet>
         </div>
