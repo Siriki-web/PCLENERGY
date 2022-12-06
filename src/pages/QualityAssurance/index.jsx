@@ -119,7 +119,7 @@ const DivStyle = styled.div`
     `    
 
 const H3 = styled.h3`
-    margin-left: 100px;
+    margin-left: 130px;
     color: white;
 
     @media all and (max-width: 1024px){

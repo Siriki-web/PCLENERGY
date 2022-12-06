@@ -16,7 +16,7 @@ const ContainerHome = styled.div`
     `
 
 const Lines = styled.div`
-    width: 280px;
+    width: 340px;
     height: 1px;
     background-color: white;
 
@@ -32,7 +32,7 @@ const Welcome = styled.div`
     margin-top: 40px;
     margin-left: 80px;
 
-    @media all and (max-width: 1024px){
+    @media only screen and (max-width: 500px){
         margin-left: 2px;
     }
     `
@@ -78,10 +78,10 @@ const ParagraphPCL = styled.p`
     line-height: 30px;
     width: 52%;
 
-    @media all and (max-width: 1024px){
+    @media only screen and (max-width: 500px){
         padding-left: 16px;
         padding-right: 16px;
-        font-size: 1.2rem;
+        font-size: 1rem;
         text-align: left;
         width: 100%;
         margin-left: 0;
@@ -93,7 +93,7 @@ const TitleH1 = styled.h1`
     margin-left: 80px;
     margin-top: 10px;
     margin-bottom: 2px;
-    font-size: 62px;
+    font-size: 58px;
     font-weight: 900;
     text-align: left;
 

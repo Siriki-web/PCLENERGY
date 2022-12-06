@@ -21,6 +21,10 @@ const Container = styled.div`
         display: flex;
         flex-wrap: wrap;
     }
+
+    @media only screen and (max-width: 820px){
+        flex-wrap: wrap;
+    }
     `
 
 const ShellsImage = styled.img`

@@ -33,20 +33,7 @@ const Img = styled.img`
     }
     `
 
-// const Button = styled.div`
-//     color: white;
-//     border-radius: 5px;
-//     padding: 13px 20px;
-//     font-weight: bold;
-//     background-image: linear-gradient(to right, #2BAF49, #EE6B2A);
-//     text-transform: uppercase;
-//     font-size: .775rem;
 
-//     @media only screen and (max-width: 500px){
-//         margin-left: 10px;
-//         width: 50%;
-//     }
-//     `
 
 
 
@@ -77,9 +64,6 @@ const Nav = () => {
                         <li className="navItem">
                             <StyledLink to="/contact" className='navLinks' activeClassName="active" onClick={click ? handleClick : null} >Contact Us</StyledLink>
                         </li>
-                        {/* <Button>
-                            Download report <img style={{ width: "15px", marginLeft: "4px" }} src={right_arrow} alt="" />
-                        </Button> */}
                         <ButtonDownload />
                     </ul>
                     <div className="nav-icon" onClick={handleClick}>

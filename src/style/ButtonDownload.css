@@ -9,6 +9,6 @@ Button.btn-submit{
 
 @media only screen and (max-width: 500px){
     Button.btn-submit{
-        margin-left: -112px;
+        margin-left: -105px;
     }
 }

@@ -15,6 +15,10 @@ const ContainerValue = styled.div`
         flex-direction: column;
         width: 100%;
     }
+
+    @media only screen and (max-width: 820px){
+        flex-wrap: wrap;
+    }
     `
 
 const VisionAndmission = styled.div`
@@ -38,6 +42,10 @@ const BackOurValue = styled.div`
         padding-left: 0;
         width: 100%;
         height: 100%;
+    }
+
+    @media only screen and (max-width: 820px){
+        width: 100%;
     }
     `
 

@@ -7,9 +7,13 @@ const ContainerCategory = styled.div`
     padding-top: 150px;
     margin-left: 154px;
     
-    @media all and (max-width: 1024px){
+    @media only screen and (max-width: 500px){
         margin-left: 0;
     }
+
+    // @media only screen and (max-width: 820px){
+    //     margin-left: 135px;
+    // }
     `
 
 const ButtonAll = styled.button`

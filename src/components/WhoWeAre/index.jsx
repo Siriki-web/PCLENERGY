@@ -9,7 +9,7 @@ const ContainerWhoWeAre = styled.div`
     background-color: #0D0D0D;
     display: flex;
     justify-content: space-around;
-    // flex-wrap: wrap;
+    flex-wrap: wrap;
     padding-top: 10px;
     padding-bottom: 50px;
     height: 100%;
@@ -59,6 +59,10 @@ const ImgUsine = styled.img`
     }
 
     @media only screen and (max-width:500px){
+        display: none;
+    }
+
+    @media only screen and (max-width: 820px){
         display: none;
     }
     `
