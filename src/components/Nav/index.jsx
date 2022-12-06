@@ -39,7 +39,7 @@ const DivNav = styled.div`
 const Img = styled.img`
     height: 75px;
     width: 79px;
-    margin-right: 150px;
+    margin-right: 140px;
 
     @media all and (max-width: 1024px) {
         margin-left: -50px;
