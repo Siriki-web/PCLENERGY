@@ -10,6 +10,10 @@ const ContainerTitle = styled.div`
     color: white;
     border-radius: 5px;
     z-index: 1;
+
+    @media only screen and (max-width: 500px){
+        height: 140px;
+    }
     `
 
 const TitlePages = styled.h1`
@@ -23,6 +27,7 @@ const TitlePages = styled.h1`
 
     @media only screen and (max-width: 500px){
         font-size: 3rem;
+        line-height: 40px;
     }
     `
 
@@ -36,6 +41,10 @@ const Div = styled.div`
     justify-content: center;
     align-items: center;
     margin-top: -105px;
+
+    @media only screen and (max-width: 500px){
+        margin-top: 2px;
+    }
     `
 
 const TitlePage = ({ name, paragraph }) => {

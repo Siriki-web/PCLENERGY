@@ -161,6 +161,7 @@ const Insight = () => {
                             !activeCategory || activeCategory === categoryPost ? (
                                 <div key={id}>
                                     <InsightItem
+                                        id={id}
                                         picture={picture}
                                         author={author}
                                         titlePost={titlePost}

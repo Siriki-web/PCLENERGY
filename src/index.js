@@ -2,16 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import App from './App';
-import Bankable from './pages/Bankable';
-import Home from './pages/Home';
-import About from './pages/About';
-import Service from './pages/Service';
-import Insight from './pages/Insight';
-import InsightDetail from './pages/InsightDetail'
-import Contact from './pages/Contact';
-import QualityAssurance from './pages/QualityAssurance';
 import GlobalStyle from './style/GlobalStyle';
-import Articles from './pages/Articles';
+// import Articles from './pages/Articles';
 import TrainingService from './pages/TrainingService';
 import Lobbying from './pages/Lobbying';
 import StrategicAdvisory from './pages/StrategicAdvisory';
@@ -23,6 +15,14 @@ import MasterPlans from './pages/MasterPlans';
 import SupportFunction from './pages/SupportFunction';
 import Portfolio from './pages/Portfolio';
 import Program from './pages/Program';
+import Bankable from './pages/Bankable';
+import Home from './pages/Home';
+import About from './pages/About';
+import Service from './pages/Service';
+import Insight from './pages/Insight';
+import InsightDetail from './pages/InsightDetail'
+import Contact from './pages/Contact';
+import QualityAssurance from './pages/QualityAssurance';
 import OperationMaintenance from './pages/OperationMaintenance'
 
 
@@ -45,7 +45,7 @@ root.render(
                 <Route path='/lobbying' element={<Lobbying />} />
                 <Route path='/strategic-advisory' element={<StrategicAdvisory />} />
                 <Route path='/partnership' element={<Partnership />} />
-                <Route path='/article' element={<Articles />} />
+                {/* <Route path='/article' element={<Articles />} /> */}
                 <Route path='/software' element={<SoftwareDevelopment />} />
                 <Route path='/energy-concept' element={<EnergyConcept />} />
                 <Route path='/transaction-advisory' element={<TransactionAdvisory />} />

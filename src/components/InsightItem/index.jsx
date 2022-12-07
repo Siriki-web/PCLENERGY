@@ -2,10 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import arrow_gold from '../../assets/arrow_orange.png'
-import { unstable_HistoryRouter } from 'react-router-dom';
-
-// import { CiSearch } from 'react-icons/ci'
-
 
 
 const Image = styled.img`
@@ -63,8 +59,9 @@ const InsightItem = ({ id, picture, date, author, comment, titlePost, contentPos
             <TitlePost>{titlePost}</TitlePost>
             <p>{contentPost}</p>
             <div key={id}>
+            
                 <Link to={`/insight/${id}`}>
-                    <Button>READ NOW <img style={{ height: "8px", marginLeft: "5px" }} src={arrow_gold} alt="" /></Button>
+                    <Button>READ NOW <img style={{ height: "8px", marginLeft: "5px" }} src={arrow_gold} alt="" /> </Button>
                 </Link>
             </div>
         </div>

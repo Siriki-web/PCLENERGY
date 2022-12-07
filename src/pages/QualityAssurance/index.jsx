@@ -8,6 +8,7 @@ import Footer from '../../components/Footer';
 import styled from 'styled-components';
 import { MdKeyboardArrowRight } from 'react-icons/md'
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom'
 
 
 
@@ -71,6 +72,7 @@ const DivServices = styled.div`
     align-items: center;
 `
 
+
 const Img = styled.img`
     height: 300px;
     width: 325px;
@@ -94,6 +96,11 @@ const Container = styled.div`
     justify-content: space-around;
     flex-wrap: wrap;
     margin-bottom: 40px;
+
+    // @media only screen and (max-width: 500px){
+    //     padding-left: 1rem;
+    //     padding-right: 1rem;
+    // }
     `
 
 
@@ -113,8 +120,8 @@ const DivStyle = styled.div`
     align-items: baseline;
 
     @media all and (max-width: 1024px){
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
         }
     `    
 
@@ -133,10 +140,10 @@ const Text = styled.p`
     color: white;
     line-height: 40px;
 
-    @media all and (max-width: 1024px){
+    @media only screen and (max-width: 500px){
         font-size: 1rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
         text-align: justify;
     }
     `
@@ -152,8 +159,8 @@ const DivQ = styled.div`
     align-items: center; 
 
     @media all and (max-width: 1024px){
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
         }
 `
 
@@ -163,7 +170,7 @@ const TitreH2 = styled.h2`
     color: #EFA21F;
 
     @media all and (max-width: 1024px){
-        padding-left: 1rem;
+        padding-left: 2rem;
         }
     `
 
@@ -185,6 +192,10 @@ const DivQu = styled.div`
         padding-right: 1rem;
     }
     `    
+
+const LeftSection = styled.div`
+`
+
 
 
 const QualityAssurance = () => {
@@ -208,7 +219,7 @@ const QualityAssurance = () => {
             </div>
             <H3><span style={{color: "#EFA21F" }}>Our Services <MdKeyboardArrowRight style={{height: "15px"}}/></span> Quality Assurance</H3>
             <Container>
-                <div>
+                <LeftSection>
                     <TitreH2>Quality Assurance</TitreH2>
                     <Text>
                         PCL Energy provides the very best of services, one of which is <span style={{ color: "#EFA21F" }}>QUALITY <Br />
@@ -234,66 +245,71 @@ const QualityAssurance = () => {
                             Government or Purchasers' Conditions</PgH>
                     </DivStyle>
                     <Img src={gra} alt="" />
-                </div>
+                </LeftSection>
 
                 {/* Services */}
                 <div>
                     <h2 style={{ color: "#EFA21F", textAlign: "left", fontSize: "20px" }}>Other Services Provided by <br />PCL Energy</h2>
+                    
                     <DivServices>
                         <TheServices></TheServices>
-                        <Pg>Training Service</Pg>
+                        <Pg><Link to="/training-service" style={{color: 'white'}}>Quality Assurance</Link></Pg>
                     </DivServices>
                     <DivServices>
                         <TheServices></TheServices>
-                        <Pg>Energy Concept</Pg>
+                        <Pg><Link to="/training-service" style={{color: 'white'}}>Training service</Link></Pg>
                     </DivServices>
                     <DivServices>
                         <TheServices></TheServices>
-                        <Pg>Bankable Feasibility Studies</Pg>
+                        <Pg><Link to="/energy-concept" style={{color: 'white'}}>Energy Concept</Link></Pg>
                     </DivServices>
                     <DivServices>
                         <TheServices></TheServices>
-                        <Pg>Public Private Partnership (PPP)</Pg>
+                        <Pg><Link to="/bankable" style={{color: 'white'}}>Bankable Feasibility Studies</Link></Pg>
                     </DivServices>
                     <DivServices>
                         <TheServices></TheServices>
-                        <Pg>Program And project Management</Pg>
+                        <Pg><Link to="/partnership" style={{color: 'white'}}>Public Private Partnership (PPP)</Link></Pg>
                     </DivServices>
                     <DivServices>
                         <TheServices></TheServices>
-                        <Pg>Support Functions Outsourcing</Pg>
+                        <Pg><Link to="/program-project-management" style={{color: 'white'}}>Program And project Management</Link></Pg>
                     </DivServices>
                     <DivServices>
                         <TheServices></TheServices>
-                        <Pg>Strategic Advisory Services</Pg>
+                        <Pg><Link to="/support-function" style={{color: 'white'}}>Support Functions Outsourcing</Link></Pg>
                     </DivServices>
                     <DivServices>
                         <TheServices></TheServices>
-                        <Pg>Software Deployment Development</Pg>
+                        <Pg><Link to="/strategic-advisory" style={{color: 'white'}}>Strategic Advisory Services</Link></Pg>
                     </DivServices>
                     <DivServices>
                         <TheServices></TheServices>
-                        <Pg>Master Plans</Pg>
+                        <Pg><Link to="/software" style={{color: 'white'}}>Software Deployment Development</Link></Pg>
                     </DivServices>
                     <DivServices>
                         <TheServices></TheServices>
-                        <Pg>Operation And maintenance Consultancy</Pg>
+                        <Pg><Link to="/master-plans" style={{color: 'white'}}>Master Plans</Link></Pg>
                     </DivServices>
                     <DivServices>
                         <TheServices></TheServices>
-                        <Pg>Pre-Feasibility Studies</Pg>
+                        <Pg><Link to="/operation-maintenace" style={{color: 'white'}}>Operation And maintenance Consultancy</Link></Pg>
                     </DivServices>
                     <DivServices>
                         <TheServices></TheServices>
-                        <Pg>Transaction Advisory & Due Diligence</Pg>
+                        <Pg><Link to="" style={{color: 'white'}}>Pre-Feasibility Studies</Link></Pg>
                     </DivServices>
                     <DivServices>
                         <TheServices></TheServices>
-                        <Pg>Lobbying & Government Relations</Pg>
+                        <Pg><Link to="/transaction-advisory" style={{color: 'white'}}>Transaction Advisory & Due Diligence</Link></Pg>
                     </DivServices>
                     <DivServices>
                         <TheServices></TheServices>
-                        <Pg>Portfolio Advisory</Pg>
+                        <Pg><Link to="/lobbying" style={{color: 'white'}}>Lobbying & Government Relations</Link></Pg>
+                    </DivServices>
+                    <DivServices>
+                        <TheServices></TheServices>
+                        <Pg><Link to="/portfolio-advisory" style={{color: 'white'}}>Portfolio Advisory</Link></Pg>
                     </DivServices>
                 </div>
             </Container>

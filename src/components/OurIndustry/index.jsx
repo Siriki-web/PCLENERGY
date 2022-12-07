@@ -40,8 +40,8 @@ const StyleH2 = styled.h2`
     color: white;
 
     @media only screen and (max-width: 500px){
-        font-size: 30px;
-        text-align: justify;
+        font-size: 1.5rem;
+        text-align: left;
         padding-left: 1rem;
         padding-right: 1rem;
     }

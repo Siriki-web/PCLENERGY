@@ -1,28 +1,33 @@
 import { useParams } from "react-router-dom"
+import Articles from "../../components/Articles"
 import { dataOurInsights } from "../../data/dataOurInsights"
 // import { test } from '../../data/test'
 
 
 const InsightDetail = ({match}) => {
-    // const { id } = useParams()
-
+    const { name } = useParams()
+    
     return(
         <div>
             {
                 dataOurInsights
-                    .filter((list) => list.id === match.params.id)
-                    .map(({id, picture, titlePost, categoryPost, description}) =>
+                    .filter((list) => list.id === name)
+                    .map(({id, picture, date, author, comment, titlePost, categoryPost, description}) =>
                         (
                             <div key={id}>
-                                <img src={picture} alt="" />
-                                <h2>{titlePost}</h2>
-                                <h3>{categoryPost}</h3>
-                                <p>{description}</p>
+                                <Articles
+                                    id={id}
+                                    picture={picture}
+                                    date={date}
+                                    author={author}
+                                    comment={comment}
+                                    titlePost={titlePost}
+                                    categoryPost={categoryPost}
+                                    description={description} />
                             </div>
                         ))
             }
         </div>
     )
 }
-
 export default InsightDetail

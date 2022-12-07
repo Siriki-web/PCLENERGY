@@ -1,10 +1,9 @@
 import React from 'react';
 import shells from '../../assets/shell.png'
-import dix_plus from '../../assets/dix.png'
-import cinquantes from '../../assets/cinquante.png'
-import cent_cinquante from '../../assets/cent-cinquante.png'
-import deux_cent_cinquante from '../../assets/deux-cent-cinq.png'
 import styled from 'styled-components';
+import CountUp from 'react-countup'
+import ScrollTrigger from 'react-scroll-trigger'
+import { useState } from 'react';
 
 
 
@@ -68,18 +67,6 @@ const TextDescription = styled.p`
     margin-top: 2px;
     `
 
-const FirstLinesImage = styled.img`
-    height: 63px;
-    width: 123px;
-
-   
-    `
-
-const SecondLinesImage = styled.img`
-    height: 63px;
-    width: 93px;
-    `
-
 
 const Stats = styled.div`
     margin-right: "60px";
@@ -94,7 +81,7 @@ const Stats = styled.div`
 
 const ContainerChiffre = styled.div`
     display: flex;
-    `    
+    `
 
 const ContainerChiffreLeft = styled.div`
     margin-right: 80px;
@@ -106,6 +93,7 @@ const ContainerChiffreLeft = styled.div`
 
 
 const WorkStatistics = () => {
+    const [counterOn, setCounterOn] = useState(false)
     return (
         <Container>
             <ShellsImage src={shells} alt="" />
@@ -114,25 +102,90 @@ const WorkStatistics = () => {
                 <TextWork>How about some Fact Numbers about us.</TextWork>
                 <ContainerChiffre>
                     <ContainerChiffreLeft>
-                        <div>
-                            <FirstLinesImage src={deux_cent_cinquante} alt="" />
-                            <TextDescription>Completed Projects</TextDescription>
-                        </div>
-                        <div>
-                            <SecondLinesImage src={cinquantes} alt="" />
-                            <TextDescription>Team Experts</TextDescription>
-                        </div>
+                        <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
+                            <div>
+                                {/* <FirstLinesImage src={deux_cent_cinquante} alt="" /> */}
+                                {
+                                    counterOn && <CountUp
+                                        style={{
+                                            color: "#EFA21F",
+                                            fontSize: "50px",
+                                            fontWeight: "bold"
+                                        }}
+                                        start={0}
+                                        end={250}
+                                        duration={5}
+                                        delay={0}>
+                                    </CountUp>
+                                }
+                                <span style={{ color: "#EFA21F", fontSize: "50px", fontWeight: "bold" }}>+</span>
+                                <TextDescription>Completed Projects</TextDescription>
+                            </div>
+                        </ScrollTrigger>
+                        <ScrollTrigger>
+                            <div>
+                                {/* <SecondLinesImage src={cinquantes} alt="" /> */}
+                                {
+                                    counterOn && <CountUp
+                                        style={{
+                                            color: "#EFA21F",
+                                            fontSize: "50px",
+                                            fontWeight: "bold"
+                                        }}
+                                        start={0}
+                                        end={50}
+                                        duration={5}
+                                        delay={0}>
+                                    </CountUp>
+                                }
+                                <span style={{ color: "#EFA21F", fontSize: "50px", fontWeight: "bold" }}>+</span>
+                                <TextDescription>Team Experts</TextDescription>
+                            </div>
+                        </ScrollTrigger>
                     </ContainerChiffreLeft>
 
                     <div>
-                        <div>
-                            <FirstLinesImage src={cent_cinquante} alt="" />
-                            <TextDescription>Happy Clients</TextDescription>
-                        </div>
-                        <div>
-                            <SecondLinesImage src={dix_plus} alt="" />
-                            <TextDescription>Winning Awards</TextDescription>
-                        </div>
+                        <ScrollTrigger>
+                            <div>
+                                {/* <FirstLinesImage src={cent_cinquante} alt="" /> */}
+                                {
+                                    counterOn && <CountUp
+                                        style={{
+                                            color: "#EFA21F",
+                                            fontSize: "50px",
+                                            fontWeight: "bold"
+                                        }}
+                                        start={0}
+                                        end={150}
+                                        duration={5}
+                                        delay={0}>
+                                    </CountUp>
+                                }
+                                <span style={{ color: "#EFA21F", fontSize: "50px", fontWeight: "bold" }}>+</span>
+                                <TextDescription>Happy Clients</TextDescription>
+                            </div>
+                        </ScrollTrigger>
+                        <ScrollTrigger>
+                            <div>
+                                {/* <SecondLinesImage src={dix_plus} alt="" /> */}
+                                {
+                                    counterOn && <CountUp
+                                        style={{
+                                            color: "#EFA21F",
+                                            fontSize: "50px",
+                                            fontWeight: "bold"
+                                        }}
+                                        start={0}
+                                        end={10}
+                                        duration={5}
+                                        delay={0}>
+                                    </CountUp>
+                                }
+                                <span style={{ color: "#EFA21F", fontSize: "50px", fontWeight: "bold" }}>+</span>
+                                <TextDescription>Winning Awards</TextDescription>
+                            </div>
+                        </ScrollTrigger>
+
                     </div>
                 </ContainerChiffre>
             </Stats>

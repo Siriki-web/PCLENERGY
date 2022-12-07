@@ -3,6 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 import "../assets/css/font.css"
 import { Helmet } from 'react-helmet';
 
+
 const StyledGlobalStyle = createGlobalStyle`
     *{
         font-family: 'Outfit', Helvetica, Arial, sans-serif;

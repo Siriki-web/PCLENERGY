@@ -26,6 +26,11 @@ const ContactForm = styled.div`
 const TitleGeTInTouches = styled.h1`
     color: #D8921C;
     text-transform: uppercase;
+
+    @media only screen and (max-width: 500px){
+        font-size: 2.5rem;
+        text-align: center;
+    }
     `
 
 const Paragraph = styled.p`
@@ -36,6 +41,10 @@ const Paragraph = styled.p`
 const TextIcon = styled.h3`
     text-transform: uppercase;
     color: #D8921C;
+
+    // @media only screen and (max-width: 500px){
+    //     font-size: .875rem;
+    // }
     `
 
 const ButtonSend = styled.button`
@@ -48,10 +57,12 @@ const ButtonSend = styled.button`
     text-transform: uppercase;
     width: 215px;
 
-    @media all and (max-width: 1024px){
+    @media only screen and (max-width: 500px){
         width: auto;
         padding: 10px 15px;
-        font-size: 9px;
+        font-size: .775rem;
+        font-weight: bold;
+        justify-content: center;
     }
     `
 
@@ -83,13 +94,70 @@ const UnderDivContact = styled.div`
     background-color: #D8921C;
     border-radius: 5px;
     margin-right: 10px;
+
+    @media only screen and (max-width: 500px){
+        margin-right: 2px;
+    }
 `
+
+const TextForm = styled.div`
+    margin-top: 250px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    @media only screen and (max-width: 500px){
+        flex-direction: column;
+    }
+    `
+
+const TextInfo = styled.div`
+    width: 35%;
+
+    @media only screen and (max-width: 500px){
+        width: 100%;
+    }
+    `
+
+const PhoneEmail = styled.div`
+    @media only screen and (max-width: 500px){
+        margin-right: 1rem;
+    }
+    `
+
+const WebSiteInfo = styled.div`
+`
+
+const DivForm = styled.div`
+    width: 45%;
+    border: 1px solid #D8921C4D;
+
+    @media only screen and (max-width: 500px){
+        width: 90%;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    `
+
+const InfoContact = styled.div`
+    display: flex;
+    padding-left: 2rem;
+    `
+
+
+const Br = styled.br`
+    @media only screen and (max-width: 500px){
+        display: none;
+    }`
+
+
+
 
 
 const Contact = () => {
 
     useEffect(() => {
-        window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
     }, [])
 
     const form = useRef()
@@ -98,17 +166,17 @@ const Contact = () => {
         e.preventDefault();
 
         emailjs.sendForm(
-            'service_cz66unx', 
-            'template_jv8pi09', 
-            form.current, 
+            'service_cz66unx',
+            'template_jv8pi09',
+            form.current,
             '5OUjZDpQTL0yYOLpQ')
-        .then((result) => {
-            console.log(result.txt);
-            alert("SUCCESS");
-        }, (error) => {
-            console.log(error.text);
-            alert("FAILED...", error)
-        })
+            .then((result) => {
+                console.log(result.txt);
+                alert("SUCCESS");
+            }, (error) => {
+                console.log(error.text);
+                alert("FAILED...", error)
+            })
     }
 
     return (
@@ -117,43 +185,57 @@ const Contact = () => {
                 <UnderContainer>
                     <Nav />
                 </UnderContainer>
-                    <TitlePage name="contact us" paragraph="Renewable Energy for a Sustainable World." />
+                <TitlePage name="contact us" paragraph="Renewable Energy for a Sustainable World." />
             </ContainerHeader>
             <ContactForm>
-                <div style={{ marginTop: "250px", display: "flex", justifyContent: "space-around", flexWrap: "wrap" }}>
-                    <div style={{ width: "35%" }}>
+                <TextForm>
+                    <TextInfo>
                         <TitleGeTInTouches>get in touch</TitleGeTInTouches>
-                        <DivContact>
-                            <UnderDivContact>
-                                <BsTelephoneFill style={{ padding: "4px", color: "white" }} />
-                            </UnderDivContact>
-                            <TextIcon>phone</TextIcon>
-                        </DivContact>
-                        <Paragraph>+234 909 426 7360</Paragraph>
-                        <DivContact>
-                            <UnderDivContact>
-                                <IoIosMail style={{ padding: "4px", color: "white" }} />
-                            </UnderDivContact>
-                            <TextIcon>e-mail</TextIcon>
-                        </DivContact>
-                        <Paragraph>info@pclenergy.com</Paragraph>
-                        <DivContact>
-                            <UnderDivContact>
-                                <RiSearch2Fill style={{ padding: "4px", color: "white" }} />
-                            </UnderDivContact>
-                            <TextIcon>website</TextIcon>
-                        </DivContact>
-                        <Paragraph>www.pclenergy.com</Paragraph>
-                        <DivContact>
-                            <UnderDivContact>
-                                <MdLocationOn style={{ padding: "4px", color: "white" }} />
-                            </UnderDivContact>
-                            <TextIcon>office address</TextIcon>
-                        </DivContact>
-                        <Paragraph>2nd Floor, <br />Nexim Bank<br />Central Business District, <br />Abuja. </Paragraph>
+                        <InfoContact>
+                            <PhoneEmail>
+                                <div>
+                                    <DivContact>
+                                        <UnderDivContact>
+                                            <BsTelephoneFill style={{ padding: "4px", color: "white" }} />
+                                        </UnderDivContact>
+                                        <TextIcon>phone</TextIcon>
+                                    </DivContact>
+                                    <Paragraph>+234 909 426 7360</Paragraph>
+                                </div>
+                                <div>
+                                    <DivContact>
+                                        <UnderDivContact>
+                                            <IoIosMail style={{ padding: "4px", color: "white" }} />
+                                        </UnderDivContact>
+                                        <TextIcon>e-mail</TextIcon>
+                                    </DivContact>
+                                    <Paragraph>info@pclenergy.com</Paragraph>
+                                </div>
+                            </PhoneEmail>
+                            <WebSiteInfo>
+                                <div>
+                                    <DivContact>
+                                        <UnderDivContact>
+                                            <RiSearch2Fill style={{ padding: "4px", color: "white" }} />
+                                        </UnderDivContact>
+                                        <TextIcon>website</TextIcon>
+                                    </DivContact>
+                                    <Paragraph>www.pclenergy.com</Paragraph>
+                                </div>
+                                <div>
+                                    <DivContact>
+                                        <UnderDivContact>
+                                            <MdLocationOn style={{ padding: "4px", color: "white" }} />
+                                        </UnderDivContact>
+                                        <TextIcon>office address</TextIcon>
+                                    </DivContact>
+                                    <Paragraph>2nd Floor, <Br />Nexim Bank<br />Central Business District, <br />Abuja. </Paragraph>
+                                </div>
+                            </WebSiteInfo>
+                        </InfoContact>
 
-                    </div>
-                    <div style={{ width: "45%", border: "1px solid #D8921C4D" }}>
+                    </TextInfo>
+                    <DivForm>
                         <form ref={form} onSubmit={sendEmail} style={{ display: "flex", flexDirection: "column", padding: "40px" }} >
                             <label style={{ color: "#D8921C", marginBottom: "10px" }}>Full Name</label>
                             <input type="text" name="name" id="name" style={{
@@ -196,8 +278,8 @@ const Contact = () => {
                             <ButtonSend type='submit' value="Send">send us a message <IoIosSend style={{ marginLeft: "5px", color: "white" }} /><img src="" alt="" /></ButtonSend>
 
                         </form>
-                    </div>
-                </div>
+                    </DivForm>
+                </TextForm>
             </ContactForm>
             <OurIndustry />
             <Footer />

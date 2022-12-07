@@ -1,14 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
-import Nav from '../../components/Nav';
+import Nav from '../Nav';
 import human from '../../assets/human-figurines.png'
-import mariana from '../../assets/mariana-proenca.png';
+// import mariana from '../../assets/mariana-proenca.png';
+import OurIndustry from '../OurIndustry';
+import Footer from '../Footer';
+import RecentPost from '../RecentPost';
 import { dataOurInsights } from '../../data/dataOurInsights'
 import { GrTwitter } from 'react-icons/gr'
 import { GrFacebookOption } from 'react-icons/gr'
-import OurIndustry from '../../components/OurIndustry';
-import Footer from '../../components/Footer';
-import RecentPost from '../../components/RecentPost';
+import { MdKeyboardArrowRight } from 'react-icons/md'
 import { FiDownload } from 'react-icons/fi';
 
 
@@ -131,7 +132,7 @@ const DivInputSearch = styled.input`
 
 
 
-const Articles = ({id, categoryPost, picture, date, comments, titlePost, author, description}) => {
+const Articles = ({categoryPost, picture, date, comment, titlePost, author, description}) => {
     return (
         <div style={{ backgroundColor: "#0D0D0D" }}>
             <Header>
@@ -145,44 +146,24 @@ const Articles = ({id, categoryPost, picture, date, comments, titlePost, author,
                 </OurInsights>
             </Header>
             <div style={{ paddingTop: "120px", marginBottom: "90px" }}>
-                <h3 style={{ fontWeight: "normal", marginLeft: "150px", color: "white" }}><span>Home Our Insights Articles</span> How to Add Battery Backup to an Existing Grid... ... ... ... </h3>
+                <h3 style={{ fontWeight: "normal", marginLeft: "170px", color: "white", marginBottom: "30px" }}>
+                    <span style={{color: "#EFA21F"}}>Home 
+                        <MdKeyboardArrowRight style={{height: "15px"}}/>Our Insights 
+                        <MdKeyboardArrowRight style={{height: "15px"}}/>{categoryPost}
+                        <MdKeyboardArrowRight style={{height: "15px"}}/></span> How to Add Battery Backup to an Existing Grid... ... ... ... </h3>
                 <div style={{ display: "flex", justifyContent: "space-around" }}>
                     <div style={{marginLeft: "150px", marginRight: "70px"}}>
-                        <img style={{ height: '280px', width: '500px' }} src={mariana} alt="" />
+                        <img style={{ height: '280px', width: '500px' }} src={picture} alt="" />
                         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                            <p style={{ color: "white", fontSize: ".5rem" }}>30th October, 2022</p>
+                            <p style={{ color: "white", fontSize: ".5rem" }}>{date}</p>
                             <div style={{ width: "1px", height: "25px", backgroundColor: "#EFA21F" }}></div>
-                            <p style={{ color: "white", fontSize: ".5rem" }}><span style={{ color: "#EFA21F" }}>Author: </span>Daniels Williams</p>
+                            <p style={{ color: "white", fontSize: ".5rem" }}><span style={{ color: "#EFA21F" }}>Author: </span>{author}</p>
                             <div style={{ width: "1px", height: "25px", backgroundColor: "#EFA21F" }}></div>
-                            <p style={{ color: "white", fontSize: ".5rem" }}><span style={{ color: "#EFA21F" }}>Comments: </span>5</p>
+                            <p style={{ color: "white", fontSize: ".5rem" }}><span style={{ color: "#EFA21F" }}>Comments: </span>{comment}</p>
                         </div>
-                        <h2 style={{ color: "#EFA21F", textAlign: "left" }}>How to Add Battery Backup to an Existing Grid Tied Solar System by Yourself!</h2>
+                        <h2 style={{ color: "#EFA21F", textAlign: "left" }}>{titlePost}</h2>
 
-                        <p style={{ color: "white", fontSize: ".795rem" }}>The Boolean Tech has a zeal in this sector that makes us one of the most sought after <br />
-                            development companies in the region. The Boolean Tech has a zeal in this sector that. <br />
-                            The key requirement of this work package is the development of a database (and <br /> supporting summary report),
-                            compiling information for potential renewable energy <br />
-                            business and technology solutions to help overcome environmental and climatic <br />
-                            challenges in the NPA programme region. Technology solutions cover installation, <br />
-                            operation and maintenance of equipment, not the design and manufacture of <br /> components. <br /><br />
-                            The objective of the database is to identify the main environmental and climatic <br />
-                            challenges, and outline technological and business solutions to these challenges, creating <br />
-                            a database of these for 8 different categories of renewable energy technology. It is <br />
-                            designed for use by new and existing renewable energy businesses, to inform them of <br />
-                            the challenges they may face in developing their business and how these will be <br /> overcome. <br /><br />
-                            A range of examples (where available) have been highlighted on how the challenges <br />
-                            identified have been overcome. Specific regional related innovations and smart solutions <br />
-                            from local business on technology driven RE-solutions have been documented, with the <br />
-                            intention of passing on this knowledge to other regions in the NPA not involved in the <br /> GREBE Project. <br /><br />
-                            Global climate change impacts Europe in many ways, including: changes in average and <br />
-                            extreme temperature and precipitation, warmer oceans, rising sea level and shrinking <br />
-                            snow and ice cover on land and at sea. These weather phenomenons have led to a <br />
-                            range of impacts on ecosystems, socio-economic sectors and human health and safety. <br />
-                            There is no doubt that the changes in climate will have a strong impact in our daily life, <br />
-                            whether we accept extreme weather conditions as a new phenomenon or not. <br /><br />
-                            Adaptation to the past history data, present observed and future predicted impacts will <br />
-                            in the coming decades be needed, as well as be complementary to global climate <br />
-                            mitigation actions. Narvik Science Park has made a report on this in the GREBE-Project.</p>
+                        <p style={{ color: "white", fontSize: ".795rem" }}>{description}</p>
 
                         <DivIcon>
                             <p style={{ color: "white", marginLeft: "50px" }}>Share This Insight?</p>
