@@ -159,7 +159,7 @@ const Footer = () => {
                 </div>
             </UnderContainer>
             <Divizer />
-            <Copyright>&copy; PCL Energy 2022</Copyright>
+            <Copyright>&copy; PCL Energy {new Date().getFullYear()}</Copyright>
         </Container>
 
     );

@@ -140,8 +140,10 @@ const DivForm = styled.div`
     `
 
 const InfoContact = styled.div`
-    display: flex;
-    padding-left: 2rem;
+    @media only screen and (max-width: 500px){
+        display: flex;
+        padding-left: 2rem;
+    }
     `
 
 
