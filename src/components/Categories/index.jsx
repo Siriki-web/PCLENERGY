@@ -5,7 +5,7 @@ import '../../style/Insight.css'
 
 const ContainerCategory = styled.div`
     padding-top: 150px;
-    margin-left: 154px;
+    margin-left: 190px;
     
     @media only screen and (max-width: 500px){
         margin-left: 0;

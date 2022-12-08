@@ -48,7 +48,6 @@ const UnderContainer = styled.div`
     `
 
 const ImgLogo = styled.img`
-    // height: 145px;
     margin-left: 20px;
     width: 90px;
     `
@@ -57,6 +56,10 @@ const StyledLink = styled(Link)`
     text-decoration: none;
     color: white;
     margin-right: 20px;
+
+    @media only screen and (max-width: 500px){
+        margin: 10px;
+    }
 `
 
 const FirstRowLink = styled.div`
@@ -65,7 +68,9 @@ const FirstRowLink = styled.div`
     margin-top: 0px;
 
     @media all and (max-width: 1024px){
-        margin-left: 20px;
+        flex-direction: column;
+        margin-right: 20px;
+        margin-left: -120px;
     }
     `
 
@@ -76,15 +81,11 @@ const SecondRowLink = styled.div`
     margin-bottom: 10px;
 
     @media all and (max-width: 1024px){
-        margin-right: 48px;
+        flex-direction: column;
+        margin-bottom: 0;
     }
     `
 
-const LinkLegacyPolicy = styled(Link)`
-    text-decoration: none;
-    color: white;
-    margin-right: 70px;
-    `
 
 const DivIcon = styled.div`
     display: flex;
@@ -95,6 +96,7 @@ const DivIcon = styled.div`
         display: flex;
         justify-content: center;
         margin-right: 20px;
+        margin-left: -60px;
     }
     `
 
@@ -104,6 +106,10 @@ const IconSocialNetwork = styled.div`
     width: 40px;
     border-radius: 50%;
     margin-left: 20px;
+
+    @media only screen and (max-width: 500px){
+    
+    }
 `
 
 const Copyright = styled.p`
@@ -130,6 +136,21 @@ const SubscribeNewsletter = styled.div`
     }
     `
 
+const LinkMob = styled.div`
+    @media only screen and (max-width: 500px){
+        display: flex;
+
+    }`
+
+const Logo = styled.div`
+    display: flex;
+
+    @media only screen and (max-width: 500px){
+        margin-left: -75px;
+    }
+    `
+
+
 const Footer = () => {
     return (
         <Container>
@@ -142,22 +163,24 @@ const Footer = () => {
                     </SubscribeNewsletter>
                 </div>
                 <div>
-                    <FirstRowLink>
-                        <StyledLink to='/contact'>Contact Us</StyledLink>
-                        <StyledLink to='/faq'>FAQ</StyledLink>
-                        <StyledLink to='/privacy'>Privacy Policy</StyledLink>
-                        <Link style={{ textDecoration: "none", color: "white" }} to='/cookies'>Cookies preference</Link>
-                    </FirstRowLink>
-                    <SecondRowLink>
-                        <LinkLegacyPolicy to='/legal'>Legal Policy</LinkLegacyPolicy>
-                        <Link style={{ textDecoration: "none", color: "white" }} to='/term'>Term of Use</Link>
-                    </SecondRowLink>
+                    <LinkMob>
+                        <FirstRowLink>
+                            <StyledLink to='/contact'>Contact Us</StyledLink>
+                            <StyledLink to='/faq'>FAQ</StyledLink>
+                        </FirstRowLink>
+                        <SecondRowLink>
+                            <StyledLink to='/privacy'>Privacy Policy</StyledLink>
+                            <StyledLink to='/legal'>Legal Policy</StyledLink>
+                        </SecondRowLink>
+                    </LinkMob>
 
                     <DivIcon>
-                        <IconSocialNetwork><GrLinkedinOption style={{ padding: "11px", color: "white" }} /></IconSocialNetwork>
-                        <IconSocialNetwork><GrTwitter style={{ padding: "11px", color: "white" }} /></IconSocialNetwork>
-                        <IconSocialNetwork><MdEmail style={{ padding: "11px", color: "white" }} /></IconSocialNetwork>
-                        <IconSocialNetwork><GrFacebookOption style={{ padding: "11px", color: "white" }} /></IconSocialNetwork>
+                        <Logo>
+                            <IconSocialNetwork><GrLinkedinOption style={{ padding: "11px", color: "white" }} /></IconSocialNetwork>
+                            <IconSocialNetwork><GrTwitter style={{ padding: "11px", color: "white" }} /></IconSocialNetwork>
+                            <IconSocialNetwork><MdEmail style={{ padding: "11px", color: "white" }} /></IconSocialNetwork>
+                            <IconSocialNetwork><GrFacebookOption style={{ padding: "11px", color: "white" }} /></IconSocialNetwork>
+                        </Logo>
                     </DivIcon>
                 </div>
             </UnderContainer>

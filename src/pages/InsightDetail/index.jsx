@@ -1,10 +1,15 @@
 import { useParams } from "react-router-dom"
 import Articles from "../../components/Articles"
 import { dataOurInsights } from "../../data/dataOurInsights"
+import { useEffect } from "react"
 // import { test } from '../../data/test'
 
 
 const InsightDetail = ({match}) => {
+
+    useEffect(() => {
+        window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+    }, [])
     const { name } = useParams()
     
     return(

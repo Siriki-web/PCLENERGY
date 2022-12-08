@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Nav from '../Nav';
 import human from '../../assets/human-figurines.png'
-// import mariana from '../../assets/mariana-proenca.png';
+import TitlePage from '../../components/TitlePage'
 import OurIndustry from '../OurIndustry';
 import Footer from '../Footer';
 import RecentPost from '../RecentPost';
@@ -13,47 +13,21 @@ import { MdKeyboardArrowRight } from 'react-icons/md'
 import { FiDownload } from 'react-icons/fi';
 
 
-const Header = styled.div`
+const Cover = styled.div`
     position: relative;
     background-image: url(${human});
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 415px;
-    `
+`
 
-const UnderHeader = styled.div`
-    position: absolute;
+const CoverOverlay = styled.div`
     background: rgba(0,0,0,0.8);
     opacity: 0.8;
     height: 100%;
     width: 100%;
-    `    
-
-
-const OurInsights = styled.div`
-    position: absolute;
-    top: 310px;
-    right: 15%;
-    background-color: black;
-    height: 210px;
-    width: 945px;
-    color: white;
-    border-radius: 5px;
-    `
-
-const TitleInsight = styled.h1`
-    text-align: center;
-    font-size: 90px;
-    line-height: 100px;
-    color: #EFA21F;
-    margin-top: 30px;
-    margin-bottom: 25px;
-    `
-
-const ParagrahInsight = styled.p`
-    text-align: center;
-    `
+`
 
 const DivIcon = styled.div`
     display: flex;
@@ -63,6 +37,10 @@ const DivIcon = styled.div`
     width: 490px;
     height: 70px;
     border: 1px solid #EFA21F;
+
+    @media only screen and (max-width: 500px){
+        width: auto;
+    }
     `    
 
 const Icon = styled.div`
@@ -80,6 +58,10 @@ const Input = styled.input`
     margin-bottom: 15px; 
     width: 490px;
     height: 45px;
+
+    @media only screen and (max-width: 500px){
+        width: 100%;
+    }
  `    
 
 const Textarea = styled.textarea`
@@ -88,6 +70,10 @@ const Textarea = styled.textarea`
     border: none;
     margin-bottom: 15px;
     width: 490px;
+
+    @media only screen and (max-width: 500px){
+        width: 100%;
+    }
 ` 
 
 const Button = styled.button`
@@ -102,10 +88,14 @@ const DivDownload = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 65%;
+    width: 71%;
     border: 1px solid #EFA21F;
     height: 40px;
     margin-bottom: 20px;
+
+    @media only screen and (max-width: 500px){
+        width: 100%;
+    }
     `
 
 const DivIconFiDownload = styled.div`
@@ -127,33 +117,130 @@ const DivInputSearch = styled.input`
     border: none;
     `     
 
-// const DivComment = styled.div`
-// `    
+const ContainerLeft = styled.div`
+    margin-left: 150px;
+    margin-right: 70px;
+    width: 33%;
+
+    @media only screen and (max-width: 500px){
+        width: 90%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    `   
+
+const ContainerRight = styled.div`
+    @media only screen and (max-width: 500px){
+        width: 90%;
+    }
+    `
+
+
+const Description = styled.p`
+    color: white;
+    font-size: 1rem;
+    text-align: justify;
+
+    @media only screen and (max-width: 500px){
+        width: 80%;
+    }
+    `
+
+const ImgDescription = styled.img`
+    height: 280px;
+    width: 500px;
+
+    @media only screen and (max-width: 500px){
+        width: 100%;
+    }
+    `    
+
+const PrincipalContainer = styled.div`
+    background-color: #0D0D0D;
+    
+    @media only screen and (max-width: 500px){
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    } `
+
+const DivSearch = styled.div`
+    display: flex;
+    justify-content: center;
+    background-color: #333333;
+    padding: 20px;
+    border-radius: 5px;
+    width: 65%;
+
+    @media only screen and (max-width: 500px){
+        width: auto;
+    }
+    `    
+
+const TitlePost = styled.h2`
+    color: #EFA21F;
+    text-align: left;
+    font-size: 1rem;
+`    
+
+const Form = styled.form`
+    @media only screen and (max-width: 500px){
+        width: auto;
+        margin-bottom: 40px;
+    }`
+
+
+const RecentPosts = styled.div`
+    display: flex;
+    justify-content: center;
+    background-color: #707070;
+    border-radius: 5px;
+    padding: 20px;
+    width: 65%;
+    margin-top: 30px;
+
+    @media all and (max-width: 1024px){
+        width: auto;
+    }
+`
+
+const TitleH3 = styled.h3`
+    font-weight: normal;
+    margin-left: 200px;
+    color: white;
+    margin-bottom: 30px;
+
+    @media only screen and (max-width: 500px){
+        margin-left: 0;
+        padding-left: .5rem;
+        margin-top: 50px;
+    }
+    `
 
 
 
 const Articles = ({categoryPost, picture, date, comment, titlePost, author, description}) => {
     return (
-        <div style={{ backgroundColor: "#0D0D0D" }}>
-            <Header>
-                <UnderHeader>
+        <PrincipalContainer>
+            <Cover>
+                <CoverOverlay>
                     <Nav />
-                </UnderHeader>
-
-                <OurInsights>
-                    <TitleInsight>OUR INSIGHTS</TitleInsight>
-                    <ParagrahInsight>Renewable Energy for a Sustainable World.</ParagrahInsight>
-                </OurInsights>
-            </Header>
+                </CoverOverlay>
+                <TitlePage name="our insights" paragraph="Renewable Energy for a Sustainable World." />
+            </Cover>
             <div style={{ paddingTop: "120px", marginBottom: "90px" }}>
-                <h3 style={{ fontWeight: "normal", marginLeft: "170px", color: "white", marginBottom: "30px" }}>
+                <TitleH3>
                     <span style={{color: "#EFA21F"}}>Home 
                         <MdKeyboardArrowRight style={{height: "15px"}}/>Our Insights 
                         <MdKeyboardArrowRight style={{height: "15px"}}/>{categoryPost}
-                        <MdKeyboardArrowRight style={{height: "15px"}}/></span> How to Add Battery Backup to an Existing Grid... ... ... ... </h3>
-                <div style={{ display: "flex", justifyContent: "space-around" }}>
-                    <div style={{marginLeft: "150px", marginRight: "70px"}}>
-                        <img style={{ height: '280px', width: '500px' }} src={picture} alt="" />
+                        <MdKeyboardArrowRight style={{height: "15px"}}/>
+                    </span> How to Add Battery Backup to an Existing Grid... ... ... ... 
+                </TitleH3>
+                <div style={{ display: "flex", justifyContent: "space-around", flexWrap: "wrap" }}>
+                    <ContainerLeft>
+                        <ImgDescription src={picture} alt="" />
                         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                             <p style={{ color: "white", fontSize: ".5rem" }}>{date}</p>
                             <div style={{ width: "1px", height: "25px", backgroundColor: "#EFA21F" }}></div>
@@ -161,9 +248,9 @@ const Articles = ({categoryPost, picture, date, comment, titlePost, author, desc
                             <div style={{ width: "1px", height: "25px", backgroundColor: "#EFA21F" }}></div>
                             <p style={{ color: "white", fontSize: ".5rem" }}><span style={{ color: "#EFA21F" }}>Comments: </span>{comment}</p>
                         </div>
-                        <h2 style={{ color: "#EFA21F", textAlign: "left" }}>{titlePost}</h2>
+                        <TitlePost>{titlePost}</TitlePost>
 
-                        <p style={{ color: "white", fontSize: ".795rem" }}>{description}</p>
+                        <Description>{description}</Description>
 
                         <DivIcon>
                             <p style={{ color: "white", marginLeft: "50px" }}>Share This Insight?</p>
@@ -173,40 +260,25 @@ const Articles = ({categoryPost, picture, date, comment, titlePost, author, desc
                             </div>
                         </DivIcon>
                         <h2 style={{ color: "#EFA21F", textAlign: "left" }}>COMMENTS</h2>
-                        <form>
+                        <Form>
                             <Input type="text" placeholder='Enter Name' /> <br />
                             <Textarea name="" id="" cols="30" rows="10" placeholder='Enter your Comment'></Textarea><br />
                             <Button>LEAVE A COMMENT</Button>
-                        </form>
-                    </div>
+                        </Form>
+                    </ContainerLeft>
 
-                    <div>
+                    <ContainerRight>
                         <DivDownload>
-                            <p style={{ color: "#EFA21F" }}>Free Download</p>
+                            <p style={{ color: "#EFA21F", marginLeft: "5px" }}>Free Download</p>
                             <DivIconFiDownload><FiDownload /></DivIconFiDownload>
                         </DivDownload>
-                        <div style={{
-                            display: "flex",
-                            justifyContent: "center",
-                            backgroundColor: "#333333",
-                            padding: "20px",
-                            borderRadius: "5px",
-                            width: "65%"
-                        }}>
+                        <DivSearch>
                             <div style={{ paddingBottom: "25px" }}>
                                 <h3 style={{ color: "white", }}>Looking For Insights?</h3>
                                 <DivInputSearch type="search" placeholder='Search Here' />
                             </div>
-                        </div>
-                        <div style={{
-                            display: "flex",
-                            justifyContent: "center",
-                            backgroundColor: "#333333",
-                            borderRadius: "5px",
-                            padding: "20px",
-                            width: "65%",
-                            marginTop: "30px"
-                        }}>
+                        </DivSearch>
+                        <RecentPosts>
                             <div>
                                 <h3 style={{ color: "white" }}>Recent Posts</h3>
                                 <div>
@@ -218,13 +290,13 @@ const Articles = ({categoryPost, picture, date, comment, titlePost, author, desc
                                     }
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                        </RecentPosts>
+                    </ContainerRight>
                 </div>
             </div>
             <OurIndustry />
             <Footer />
-        </div>
+        </PrincipalContainer>
     );
 };
 

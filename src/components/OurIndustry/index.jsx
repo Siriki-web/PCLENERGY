@@ -40,10 +40,10 @@ const StyleH2 = styled.h2`
     color: white;
 
     @media only screen and (max-width: 500px){
-        font-size: 1.5rem;
-        text-align: left;
-        padding-left: 1rem;
-        padding-right: 1rem;
+        font-size: 1.2rem;
+        text-align: center;
+        width: 88%;
+        
     }
     `
 
@@ -55,29 +55,6 @@ const StyleH2 = styled.h2`
     `
 
 
-// const ButtonDownloade = styled.button`
-//     display: flex;
-//     align-items: center;
-//     border: none;
-//     padding: 12px 15px;
-//     color: white;
-//     border-radius: 5px;
-//     background-image: linear-gradient(to right, #EE6B2A, #2BAF49);
-//     text-align: center;
-//     &:hover{
-//         border: 1px solid #EFA21F;
-//         color: #EFA21F;
-//         background: rgb(0,0,0,0.9);
-//     }
-//     `
-
-// const Image = styled.img`
-//     height: 10px;
-//     margin-left: 5px;
-//     `
-
-
-
 const OurIndustry = () => {
     return (
         <ContainerIndustry>
@@ -86,7 +63,6 @@ const OurIndustry = () => {
                     In-depth Material Sourcing, Financing And <Br />
                     Supply Chain Expertise For Every Step!
                 </StyleH2>
-                {/* <ButtonDownload>DOWNLOAD REPORT <Image src={arrow_right} alt="" /></ButtonDownload> */}
                 <ButtonDownload />
             </Container>
         </ContainerIndustry>

@@ -45,7 +45,6 @@ root.render(
                 <Route path='/lobbying' element={<Lobbying />} />
                 <Route path='/strategic-advisory' element={<StrategicAdvisory />} />
                 <Route path='/partnership' element={<Partnership />} />
-                {/* <Route path='/article' element={<Articles />} /> */}
                 <Route path='/software' element={<SoftwareDevelopment />} />
                 <Route path='/energy-concept' element={<EnergyConcept />} />
                 <Route path='/transaction-advisory' element={<TransactionAdvisory />} />

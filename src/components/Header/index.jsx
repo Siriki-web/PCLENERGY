@@ -65,8 +65,8 @@ const ParagraphWelcome = styled.p`
     font-size: 20px;           
 
     @media only screen and (max-width: 500px){
-        padding-left: 1rem;
-        // padding-right: 1rem;
+        padding-left: .75rem;
+        
     }
     `
 
@@ -79,11 +79,10 @@ const ParagraphPCL = styled.p`
     width: 52%;
 
     @media only screen and (max-width: 500px){
-        padding-left: 16px;
-        padding-right: 16px;
+        padding-left: 12px;
         font-size: 1rem;
-        text-align: left;
-        width: 100%;
+        text-align: justify;
+        width: 92%;
         margin-left: 0;
     }
     `
@@ -98,7 +97,7 @@ const TitleH1 = styled.h1`
     text-align: left;
 
     @media only screen and (max-width: 500px){
-        margin-left: 16px;
+        margin-left: 12px;
         font-size: 2.3rem;
         line-height: 60px;
     }

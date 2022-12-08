@@ -3,6 +3,7 @@ import plak_solaire from '../../assets/plaque-solaire.png'
 import arrow_gold from '../../assets/arrow_orange.png'
 import styled from 'styled-components';
 import arrow_up from '../../assets/arrow-up.png'
+import { Link } from 'react-router-dom';
 
 
 const TitleInsight = styled.h1`
@@ -45,7 +46,7 @@ const NameAuthor = styled.p`
     font-size: 12px;
     line-height: 25px;
     color: white;
-`        
+`
 
 const Button = styled.button`
     background: none;
@@ -72,9 +73,9 @@ const ButtonMoreArticle = styled.button`
 
 const RecentInsights = () => {
     return (
-        <div style={{ backgroundColor: "#0D0D0D", paddingTop: "20px", paddingBottom: "70px"}}>
+        <div style={{ backgroundColor: "#0D0D0D", paddingTop: "20px", paddingBottom: "70px" }}>
             <TitleInsight>recent insights</TitleInsight>
-            <div style={{ display: "flex", justifyContent: "space-around", flexWrap: "wrap"}}>
+            <div style={{ display: "flex", justifyContent: "space-around", flexWrap: "wrap" }}>
                 <div>
                     <ImgPlak src={plak_solaire} alt="" />
                     <DateAndAuthor>
@@ -88,7 +89,7 @@ const RecentInsights = () => {
                         development companies in the region. The <br />
                         Boolean Tech has a zeal in this sector that.
                     </SecondParagraph>
-                    <Button>READ NOW <img style={{marginLeft: "10px", height: "8px"}} src={arrow_gold} alt="" /></Button>
+                    <Button>READ NOW <img style={{ marginLeft: "10px", height: "8px" }} src={arrow_gold} alt="" /></Button>
                 </div>
                 <div>
                     <ImgPlak src={plak_solaire} alt="" />
@@ -103,7 +104,7 @@ const RecentInsights = () => {
                         development companies in the region. The <br />
                         Boolean Tech has a zeal in this sector that.
                     </SecondParagraph>
-                    <Button>READ NOW <img style={{marginLeft: "10px", height: "8px"}} src={arrow_gold} alt="" /></Button>
+                    <Button>READ NOW <img style={{ marginLeft: "10px", height: "8px" }} src={arrow_gold} alt="" /></Button>
                 </div>
                 <div>
                     <ImgPlak src={plak_solaire} alt="" />
@@ -118,11 +119,13 @@ const RecentInsights = () => {
                         development companies in the region. The <br />
                         Boolean Tech has a zeal in this sector that.
                     </SecondParagraph>
-                    <Button>READ NOW <img style={{marginLeft: "10px", height: "8px"}} src={arrow_gold} alt="" /></Button>
+                    <Button>READ NOW <img style={{ marginLeft: "10px", height: "8px" }} src={arrow_gold} alt="" /></Button>
                 </div>
             </div>
-            <div style={{display: "flex", justifyContent: "center", marginTop: "70px"}}>
-                <ButtonMoreArticle>more articles <img style={{marginLeft: "5px", height: "12px"}} src={arrow_up} alt="" /></ButtonMoreArticle>
+            <div style={{ display: "flex", justifyContent: "center", marginTop: "70px" }}>
+                <Link to='/insight'>
+                    <ButtonMoreArticle>more articles <img style={{ marginLeft: "5px", height: "12px" }} src={arrow_up} alt="" /></ButtonMoreArticle>
+                </Link>
             </div>
         </div>
     );

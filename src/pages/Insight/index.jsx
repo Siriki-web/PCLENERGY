@@ -2,7 +2,7 @@ import React from 'react';
 import human from '../../assets/human-figurines.png'
 import styled from 'styled-components';
 import { dataOurInsights } from '../../data/dataOurInsights'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Nav from '../../components/Nav';
 import Categories from '../../components/Categories';
@@ -136,10 +136,12 @@ const H3 = styled.h3`
     `
 
 const Insight = () => {
+
+    useEffect(() => {
+        window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+    }, [])
     const [activeCategory, setActiveCategory] = useState('')
     const categories = dataOurInsights.reduce((acc, ins) => acc.includes(ins.categoryPost) ? acc : acc.concat(ins.categoryPost), [])
-
-
 
     return (
         <div style={{ backgroundColor: "#0D0D0D" }}>
