@@ -29,13 +29,17 @@ const H3 = styled.h3`
     color: white;
 
     @media all and (max-width: 1024px){
-        margin-left: 0;
-        padding-left: .6rem;
+        margin-left: 2rem;
         }
 }
 `
 
 const LeftSection = styled.div`
+    width: 38%;
+
+    @media only screen and (max-width: 500px){
+        width: 100%;
+    }
 `
 
 const TitreH2 = styled.h2`
@@ -51,6 +55,7 @@ const TitreH2 = styled.h2`
 const Text = styled.p`
     color: white;
     line-height: 40px;
+    text-align: justify;
     
 
     @media only screen and (max-width: 500px){
@@ -126,17 +131,16 @@ const Img = styled.img`
     height: 300px;
     width: 325px;
     margin: 50px;
+
+    @media only screen and (max-width: 500px){
+        margin-left: 30px;
+    }
     `
 const Container2 = styled.div`
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     margin-bottom: 40px;
-
-    // @media only screen and (max-width: 500px){
-    //     padding-left: 1rem;
-    //     padding-right: 1rem;
-    // }
     `
 
 const Pg = styled.p`
@@ -149,6 +153,20 @@ const Br = styled.br`
     }
     `
 
+const PrincipalContainer = styled.div`
+    background-color: #0D0D0D;
+    
+    @media only screen and (max-width: 500px){
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    `
+
+
+
 const Portfolio = () => {
 
     useEffect(() => {
@@ -156,7 +174,7 @@ const Portfolio = () => {
     }, [])
     return (
 
-        <div style={{ backgroundColor: '#0D0D0D' }}>
+        <PrincipalContainer>
             <Container>
                 <Nav />
                 <Header>
@@ -168,13 +186,13 @@ const Portfolio = () => {
                 <LeftSection>
                     <TitreH2>Portfolio Advisory</TitreH2>
                     <Text>
-                        Any investment and asset management decision rely completely on <Br />the expertise 
-                        of your Portfolio advisory services. Your expertise and <Br />competence in this area will
-                        enable your organization to spot <Br />higher-yielding long-term investment opportunities with low risk.<Br />
-                        pcl. energy represents a diverse professional discipline offering <Br />financial 
-                        advisory services in areas of asset management in the <Br />Energy industry. 
-                        Working closely to provide the necessary information <Br />for a better transition of 
-                        organizational finances. Offering professional  <Br />strategies to potentially capture market returns with low risk.
+                        Any investment and asset management decision rely completely on the expertise 
+                        of your Portfolio advisory services. Your expertise and competence in this area will
+                        enable your organization to spot higher-yielding long-term investment opportunities with low risk.<Br /><Br />
+                        pcl. energy represents a diverse professional discipline offering financial 
+                        advisory services in areas of asset management in the Energy industry. 
+                        Working closely to provide the necessary information for a better transition of 
+                        organizational finances. Offering professional  strategies to potentially capture market returns with low risk.
 
                         <br /><br />
                         Focus Area:
@@ -262,7 +280,7 @@ const Portfolio = () => {
             </Container2>
             <OurIndustry />
             <Footer />
-        </div>
+        </PrincipalContainer>
 
     );
 };

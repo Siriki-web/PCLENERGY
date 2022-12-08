@@ -142,6 +142,16 @@ const DivText = styled.div`
     }
     `
 
+const PrincipalContainer = styled.div`
+    @media only screen and (max-width: 500px){
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    `
+
 
 const About = () => {
     useEffect(() => {
@@ -149,7 +159,7 @@ const About = () => {
     }, [])
 
     return (
-        <div>
+        <PrincipalContainer>
             <ContainerAbout>
                 <SubContainerAbout>
                     <Nav />
@@ -193,7 +203,7 @@ const About = () => {
                 <Footer />
             </WhoWheAre>
 
-        </div>
+        </PrincipalContainer>
 
     );
 };

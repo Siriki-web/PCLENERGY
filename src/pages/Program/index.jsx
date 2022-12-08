@@ -31,13 +31,17 @@ const H3 = styled.h3`
     color: white;
 
     @media all and (max-width: 1024px){
-        margin-left: 0;
-        padding-left: .6rem;
+        margin-left: 2rem;
         }
 }
 `
 
 const LeftSection = styled.div`
+    width: 38%;
+
+    @media only screen and (max-width: 500px){
+        width: 100%;
+    }
 `
 
 const TitreH2 = styled.h2`
@@ -53,6 +57,7 @@ const TitreH2 = styled.h2`
 const Text = styled.p`
     color: white;
     line-height: 40px;
+    text-align: justify;
 
     @media only screen and (max-width: 500px){
         font-size: 1rem;
@@ -127,17 +132,16 @@ const Img = styled.img`
     height: 300px;
     width: 325px;
     margin: 50px;
+    @media only screen and (max-width: 500px){
+        margin-left: 30px;
+    }
     `
+
 const Container2 = styled.div`
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     margin-bottom: 40px;
-
-    // @media only screen and (max-width: 500px){
-    //     padding-left: 1rem;
-    //     padding-right: 1rem;
-    // }
     `
 
 const Pg = styled.p`
@@ -150,14 +154,29 @@ const Br = styled.br`
     }
     `
 
+
+const PrincipalContainer = styled.div`
+    background-color: #0D0D0D;
+    
+    @media only screen and (max-width: 500px){
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    `
+
+
+
 const Program = () => {
 
     useEffect(() => {
-        window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
     }, [])
-    
+
     return (
-        <div style={{ backgroundColor: '#0D0D0D' }}>
+        <PrincipalContainer>
             <Container>
                 <Nav />
                 <Header>
@@ -169,10 +188,13 @@ const Program = () => {
                 <LeftSection>
                     <TitreH2>Program and Project Management</TitreH2>
                     <Text>
-                        The success of your company is dependent on the effectiveness <Br />and efficiency  of your project and <span style={{ color: "#EFA21F" }}>PROGRAM 
-                            MANAGEMENT</span>.<Br /> Excellence and quality must be embedded from the project<Br /> initiation stage up until the closing and monitoring stage.
-                        <Br />Pcl. Energy has executed multiple projects with her team of experts. <Br />Working relentlessly,
-                        with our expertise we will help you make the right <Br />decisions for your company's growth.<Br />
+
+                        The success of your company is dependent on the effectiveness and efficiency  of your 
+                        project and <span style={{ color: "#EFA21F" }}>PROGRAM
+                        MANAGEMENT</span>. Excellence and quality must be embedded from the project initiation 
+                        stage up until the closing and monitoring stage.<Br /><Br />
+                        Pcl. Energy has executed multiple projects with her team of experts. Working relentlessly,
+                        with our expertise we will help you make the right decisions for your company's growth.
                         <br /><br />
                         Focus Area:
                     </Text>
@@ -188,11 +210,11 @@ const Program = () => {
                         <CircleButton></CircleButton>
                         <PgH>Prototype</PgH>
                     </DivStyle>
-                     <DivStyle>
+                    <DivStyle>
                         <CircleButton></CircleButton>
                         <PgH>Monitoring and Avaluation</PgH>
                     </DivStyle>
-                     <DivStyle>
+                    <DivStyle>
                         <CircleButton></CircleButton>
                         <PgH>Management tools</PgH>
                     </DivStyle>
@@ -267,7 +289,7 @@ const Program = () => {
             </Container2>
             <OurIndustry />
             <Footer />
-        </div>
+        </PrincipalContainer>
 
     );
 };

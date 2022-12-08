@@ -1,5 +1,6 @@
 import React from 'react';
-import logo_pcl from '../../assets/logo-pcll.png'
+// import logo_pcl from '../../assets/logo-pcll.png'
+import logo from '../../assets/logo-white.png'
 import right_arrow from '../../assets/right-arrow.png'
 import { Link } from 'react-router-dom'
 import { GrLinkedinOption } from 'react-icons/gr'
@@ -47,8 +48,9 @@ const UnderContainer = styled.div`
     `
 
 const ImgLogo = styled.img`
-    height: 145px;
-    width: 158px;
+    // height: 145px;
+    margin-left: 20px;
+    width: 90px;
     `
 
 const StyledLink = styled(Link)`
@@ -60,7 +62,7 @@ const StyledLink = styled(Link)`
 const FirstRowLink = styled.div`
     display: flex;
     justify-content: flex-end;
-    margin-top: 75px;
+    margin-top: 0px;
 
     @media all and (max-width: 1024px){
         margin-left: 20px;
@@ -71,7 +73,7 @@ const SecondRowLink = styled.div`
     display: flex;
     justify-content: flex-end;
     margin-top: 25px;
-    margin-bottom: 60px;
+    margin-bottom: 10px;
 
     @media all and (max-width: 1024px){
         margin-right: 48px;
@@ -124,6 +126,7 @@ const Divizer = styled.hr`
 const SubscribeNewsletter = styled.div`
     @media all and (max-width: 1024px){
         margin-left: 18px;
+        margin-bottom: 30px;
     }
     `
 
@@ -132,7 +135,7 @@ const Footer = () => {
         <Container>
             <UnderContainer>
                 <div>
-                    <ImgLogo src={logo_pcl} alt="" /> <br />
+                    <ImgLogo src={logo} alt="" /> <br />
                     <SubscribeNewsletter>
                         <p style={{ color: "white" }}>Subscribe to Our Newsletter</p>
                         <InputText type="email" /><ButtonSubmitted>SUBMIT <img style={{ width: "15px", marginLeft: "4px" }} src={right_arrow} alt="" /></ButtonSubmitted>

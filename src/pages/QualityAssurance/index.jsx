@@ -14,6 +14,16 @@ import { Link } from 'react-router-dom'
 
 const ContainerQualityAssurance = styled.div`
     background-color: #0D0D0D;
+    @media only screen and (max-width: 500px){
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    
+    }
     `
 
 const HeaderQualityAssurance = styled.div`
@@ -24,6 +34,10 @@ const HeaderQualityAssurance = styled.div`
     background-size: cover;
     height: 415px;
     margin-top: 30px;
+
+    @media only screen and (max-width: 500px){
+        width: 100%;
+    }
 `
 
 const TheServices = styled.div`
@@ -44,15 +58,11 @@ const UnderHeader = styled.div`
 `
 
 const ImageQuality = styled.img`
-    // position: relative; 
-    // top: 90px; 
-    // left: 125px; 
     margin-top: 50px;
     height: 140px;
 
-    @media all and (max-width: 1024px){
-        width: 100%;
-        left: 0;
+    @media only screen and (max-width: 500px){
+       display: none;
         }
 `
 
@@ -63,8 +73,8 @@ const H1 = styled.h1`
     text-align: center;
 
     @media all and (max-width: 1024px){
-        font-size: 35px;
-        margin-top: -95px;
+        font-size: 2rem;
+        margin-top: -0px;
         }
 `
 
@@ -78,6 +88,9 @@ const Img = styled.img`
     height: 300px;
     width: 325px;
     margin: 50px;
+    @media only screen and (max-width: 500px){
+        margin-left: 30px;
+    }
     `
 
 const Pg = styled.p`
@@ -97,11 +110,6 @@ const Container = styled.div`
     justify-content: space-around;
     flex-wrap: wrap;
     margin-bottom: 40px;
-
-    // @media only screen and (max-width: 500px){
-    //     padding-left: 1rem;
-    //     padding-right: 1rem;
-    // }
     `
 
 
@@ -131,8 +139,7 @@ const H3 = styled.h3`
     color: white;
 
     @media all and (max-width: 1024px){
-        margin-left: 0;
-        padding-left: .6rem;
+        margin-left: 1.9rem;
         }
 }
 `
@@ -140,6 +147,7 @@ const H3 = styled.h3`
 const Text = styled.p`
     color: white;
     line-height: 40px;
+    text-align: justify;
 
     @media only screen and (max-width: 500px){
         font-size: 1rem;
@@ -179,7 +187,7 @@ const Org = styled.p`
     color: white;
 
     @media only screen and (max-width: 500px){
-        font-size: 15px;
+        font-size: 1rem;
         }
     `
 
@@ -195,6 +203,11 @@ const DivQu = styled.div`
     `    
 
 const LeftSection = styled.div`
+    width: 38%;
+
+    @media only screen and (max-width: 500px){
+        width: 100%;
+    }
 `
 
 
@@ -223,10 +236,10 @@ const QualityAssurance = () => {
                 <LeftSection>
                     <TitreH2>Quality Assurance</TitreH2>
                     <Text>
-                        PCL Energy provides the very best of services, one of which is <span style={{ color: "#EFA21F" }}>QUALITY <Br />
-                            ASSURANCE</span> Services. We offer you an unexampled Experience cutting <Br />
-                        across the Energy Sector. We provide this service across Nigeria and <Br />
-                        beyond. As a result, we can help you to assure quality across all your <Br />
+                        PCL Energy provides the very best of services, one of which is <span style={{ color: "#EFA21F" }}>QUALITY 
+                        ASSURANCE</span> Services. We offer you an unexampled Experience cutting 
+                        across the Energy Sector. We provide this service across Nigeria and 
+                        beyond. As a result, we can help you to assure quality across all your 
                         business processes and runnings.<br /><br />
                         Our out- point Quality Assurance Services include:
                     </Text>

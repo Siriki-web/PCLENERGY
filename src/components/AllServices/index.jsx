@@ -20,6 +20,10 @@ const H1 = styled.h1`
     color: #EFA21F;
     z-index: 1;
     text-transform: uppercase;
+
+    @media only screen and (max-width: 500px){
+        text-align: center
+    }
 `
 const AllServices = ({ service }) => {
     return (

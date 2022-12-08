@@ -25,12 +25,19 @@ const SubDiv = styled.div`
     }
     `
 
-
+const Container = styled.div`
+    @media only screen and (max-width: 500px){
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }`
 
 const Home = () => {
 
     return (
-        <div>
+        <Container>
             <SubDiv>
                 <Header />
             </SubDiv>
@@ -41,7 +48,7 @@ const Home = () => {
             <RecentInsights />
             <OurIndustry />
             <Footer />
-        </div>
+        </Container>
 
     );
 };

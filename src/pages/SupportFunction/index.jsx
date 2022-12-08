@@ -30,13 +30,17 @@ const H3 = styled.h3`
     color: white;
 
     @media all and (max-width: 1024px){
-        margin-left: 0;
-        padding-left: .6rem;
+        margin-left: 2rem;
         }
 }
 `
 
 const LeftSection = styled.div`
+    width: 38%;
+
+    @media only screen and (max-width: 500px){
+        width: 100%;
+    }
 `
 
 const TitreH2 = styled.h2`
@@ -52,7 +56,7 @@ const TitreH2 = styled.h2`
 const Text = styled.p`
     color: white;
     line-height: 40px;
-    
+    text-align: justify;
 
     @media only screen and (max-width: 500px){
         font-size: 1rem;
@@ -127,17 +131,16 @@ const Img = styled.img`
     height: 300px;
     width: 325px;
     margin: 50px;
+    @media only screen and (max-width: 500px){
+        margin-left: 30px;
+    }
     `
+
 const Container2 = styled.div`
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     margin-bottom: 40px;
-
-    // @media only screen and (max-width: 500px){
-    //     padding-left: 1rem;
-    //     padding-right: 1rem;
-    // }
     `
 
 const Pg = styled.p`
@@ -150,45 +153,66 @@ const Br = styled.br`
     }
     `
 
+const PrincipalContainer = styled.div`
+    background-color: #0D0D0D;
+    
+    @media only screen and (max-width: 500px){
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    } `
+
 const SupportFunction = () => {
     useEffect(() => {
         window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
     }, [])
     return (
-        <div style={{ backgroundColor: '#0D0D0D' }}>
+        <PrincipalContainer>
             <Container>
                 <Nav />
                 <Header>
                     <AllServices service="support functions outsourcings" />
                 </Header>
             </Container>
-            <H3><span style={{ color: "#EFA21F" }}>Our Services <MdKeyboardArrowRight style={{ height: "15px" }} /></span>Support </H3>
+            <H3><span style={{ color: "#EFA21F" }}>Our Services <MdKeyboardArrowRight style={{ height: "15px" }} /></span>Support function and outsourcing</H3>
             <Container2>
                 <LeftSection>
-                    <TitreH2>Portfolio Advisory</TitreH2>
+                    <TitreH2>Support Function and Outsourcing</TitreH2>
                     <Text>
-                        Any investment and asset management decision rely completely on <Br />the expertise
-                        of your Portfolio advisory services. Your expertise and <Br />competence in this area will
-                        enable your organization to spot <Br />higher-yielding long-term investment opportunities with low risk.<Br />
-                        pcl. energy represents a diverse professional discipline offering <Br />financial
-                        advisory services in areas of asset management in the <Br />Energy industry.
-                        Working closely to provide the necessary information <Br />for a better transition of
-                        organizational finances. Offering professional  <Br />strategies to potentially capture market returns with low risk.
+                        Creating value and making profits are the main target of every organization.
+                        Improving the focus on your core business activities and building an ecosystem
+                        of professionals and specialists will increase efficiency and control cost in
+                        your company.<Br /><Br /> Pcl. Energy can support you with our vast experience in outsourcing,
+                        having built a network of reliable independent professionals with specialties in all areas of services.
 
                         <br /><br />
                         Focus Area:
                     </Text>
                     <DivQ>
                         <CircleButton></CircleButton>
-                        <Org>Risk management</Org>
+                        <Org>Quality Assurance</Org>
                     </DivQ>
                     <DivStyle>
                         <CircleButton></CircleButton>
-                        <PgH>Strategic analysis</PgH>
+                        <PgH>Administrative Services</PgH>
                     </DivStyle>
                     <DivStyle>
                         <CircleButton></CircleButton>
-                        <PgH>Portfolio management</PgH>
+                        <PgH>Data analysis</PgH>
+                    </DivStyle>
+                    <DivStyle>
+                        <CircleButton></CircleButton>
+                        <PgH>Report</PgH>
+                    </DivStyle>
+                    <DivStyle>
+                        <CircleButton></CircleButton>
+                        <PgH>Project management</PgH>
+                    </DivStyle>
+                    <DivStyle>
+                        <CircleButton></CircleButton>
+                        <PgH>Information technology</PgH>
                     </DivStyle>
                     <Img src={gra} alt="" />
                 </LeftSection>
@@ -261,7 +285,7 @@ const SupportFunction = () => {
             </Container2>
             <OurIndustry />
             <Footer />
-        </div>
+        </PrincipalContainer>
     );
 };
 
