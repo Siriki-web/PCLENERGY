@@ -26,7 +26,6 @@ const Header = styled.div`
 `
 
 const H3 = styled.h3`
-    margin-left: 130px;
     color: white;
 
     @media all and (max-width: 1024px){
@@ -187,9 +186,9 @@ const EnergyConcept = () => {
                     <AllServices service="energy concept" />
                 </Header>
             </Container>
-            <H3><span style={{ color: "#EFA21F" }}>Our Services <MdKeyboardArrowRight style={{ height: "15px" }} /></span>Energy Concept</H3>
             <Container2>
                 <LeftSection>
+                    <H3><span style={{ color: "#EFA21F" }}>Our Services <MdKeyboardArrowRight style={{ height: "15px" }} /></span>Energy Concept</H3>
                     <TitreH2>Energy Concept</TitreH2>
                     <Text>
                         The world is in demand of advancing sources of energy to balance consumption rates with

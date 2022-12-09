@@ -34,14 +34,14 @@ const DivIcon = styled.div`
     align-items: center;
     justify-content: space-between;
     border-radius: 10px;
-    width: 490px;
+    width: 100%;
     height: 70px;
     border: 1px solid #EFA21F;
 
     @media only screen and (max-width: 500px){
         width: auto;
     }
-    `    
+    `
 
 const Icon = styled.div`
     height: 20px;
@@ -49,32 +49,32 @@ const Icon = styled.div`
     background-image: linear-gradient(#32B34A, #EFA21F);
     border-radius: 50%;
     margin: 5px;
-    `    
+    `
 
 const Input = styled.input`
     background-color: #333333;
     color: white;
     border: none;
     margin-bottom: 15px; 
-    width: 490px;
+    width: 100%;
     height: 45px;
 
     @media only screen and (max-width: 500px){
         width: 100%;
     }
- `    
+ `
 
 const Textarea = styled.textarea`
     background-color: #333333;
     color: white;
     border: none;
     margin-bottom: 15px;
-    width: 490px;
+    width:100%;
 
     @media only screen and (max-width: 500px){
         width: 100%;
     }
-` 
+`
 
 const Button = styled.button`
     border-radius: 5px;
@@ -108,52 +108,56 @@ const DivIconFiDownload = styled.div`
     margin-right: 5px;
     background-color: #EFA21F;
     border-radius: 5px;
-    `   
+    `
 
 const DivInputSearch = styled.input`
     width: 330px;
     height: 35px;
     border-radius: 5px;
     border: none;
-    `     
+    `
 
 const ContainerLeft = styled.div`
     margin-left: 150px;
     margin-right: 70px;
-    width: 33%;
+    width: 40%;
 
     @media only screen and (max-width: 500px){
         width: 90%;
         margin-left: 0;
         margin-right: 0;
     }
-    `   
+    `
 
 const ContainerRight = styled.div`
+    margin-top: 100px;
+
     @media only screen and (max-width: 500px){
+        margin-top: 0;
         width: 90%;
     }
     `
 
 
 const Description = styled.p`
+    // white-space: pre-wrap;
     color: white;
     font-size: 1rem;
     text-align: justify;
 
     @media only screen and (max-width: 500px){
-        width: 80%;
+        width: 100%;
     }
     `
 
 const ImgDescription = styled.img`
     height: 280px;
-    width: 500px;
+    width: 100%;
 
     @media only screen and (max-width: 500px){
         width: 100%;
     }
-    `    
+    `
 
 const PrincipalContainer = styled.div`
     background-color: #0D0D0D;
@@ -169,7 +173,7 @@ const PrincipalContainer = styled.div`
 const DivSearch = styled.div`
     display: flex;
     justify-content: center;
-    background-color: #333333;
+    background-color: #707070;
     padding: 20px;
     border-radius: 5px;
     width: 65%;
@@ -177,13 +181,13 @@ const DivSearch = styled.div`
     @media only screen and (max-width: 500px){
         width: auto;
     }
-    `    
+    `
 
 const TitlePost = styled.h2`
     color: #EFA21F;
     text-align: left;
     font-size: 1rem;
-`    
+`
 
 const Form = styled.form`
     @media only screen and (max-width: 500px){
@@ -208,7 +212,7 @@ const RecentPosts = styled.div`
 
 const TitleH3 = styled.h3`
     font-weight: normal;
-    margin-left: 200px;
+    // margin-left: 200px;
     color: white;
     margin-bottom: 30px;
 
@@ -219,9 +223,15 @@ const TitleH3 = styled.h3`
     }
     `
 
+const Separator = styled.div`
+    width: 1px;
+    height: 25px; 
+    background-color: #EFA21F;
+    `
 
 
-const Articles = ({categoryPost, picture, date, comment, titlePost, author, description}) => {
+
+const Articles = ({ categoryPost, picture, date, comment, titlePost, author, description }) => {
     return (
         <PrincipalContainer>
             <Cover>
@@ -231,21 +241,21 @@ const Articles = ({categoryPost, picture, date, comment, titlePost, author, desc
                 <TitlePage name="our insights" paragraph="Renewable Energy for a Sustainable World." />
             </Cover>
             <div style={{ paddingTop: "120px", marginBottom: "90px" }}>
-                <TitleH3>
-                    <span style={{color: "#EFA21F"}}>Home 
-                        <MdKeyboardArrowRight style={{height: "15px"}}/>Our Insights 
-                        <MdKeyboardArrowRight style={{height: "15px"}}/>{categoryPost}
-                        <MdKeyboardArrowRight style={{height: "15px"}}/>
-                    </span> How to Add Battery Backup to an Existing Grid... ... ... ... 
-                </TitleH3>
                 <div style={{ display: "flex", justifyContent: "space-around", flexWrap: "wrap" }}>
                     <ContainerLeft>
+                        <TitleH3>
+                            <span style={{ color: "#EFA21F" }}>Home
+                                <MdKeyboardArrowRight style={{ height: "15px" }} />Our Insights
+                                <MdKeyboardArrowRight style={{ height: "15px" }} />{categoryPost}
+                                <MdKeyboardArrowRight style={{ height: "15px" }} />
+                            </span> How to Add Battery Backup to an Existing Grid... ... 
+                        </TitleH3>
                         <ImgDescription src={picture} alt="" />
                         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                             <p style={{ color: "white", fontSize: ".5rem" }}>{date}</p>
-                            <div style={{ width: "1px", height: "25px", backgroundColor: "#EFA21F" }}></div>
+                            <Separator></Separator>
                             <p style={{ color: "white", fontSize: ".5rem" }}><span style={{ color: "#EFA21F" }}>Author: </span>{author}</p>
-                            <div style={{ width: "1px", height: "25px", backgroundColor: "#EFA21F" }}></div>
+                            <Separator></Separator>
                             <p style={{ color: "white", fontSize: ".5rem" }}><span style={{ color: "#EFA21F" }}>Comments: </span>{comment}</p>
                         </div>
                         <TitlePost>{titlePost}</TitlePost>
@@ -255,8 +265,8 @@ const Articles = ({categoryPost, picture, date, comment, titlePost, author, desc
                         <DivIcon>
                             <p style={{ color: "white", marginLeft: "50px" }}>Share This Insight?</p>
                             <div style={{ display: "flex", marginRight: "50px" }}>
-                                <Icon><GrTwitter style={{padding: "2px"}}/></Icon>
-                                <Icon><GrFacebookOption style={{padding: "2px"}}/></Icon>
+                                <Icon><GrTwitter style={{ padding: "2px" }} /></Icon>
+                                <Icon><GrFacebookOption style={{ padding: "2px" }} /></Icon>
                             </div>
                         </DivIcon>
                         <h2 style={{ color: "#EFA21F", textAlign: "left" }}>COMMENTS</h2>

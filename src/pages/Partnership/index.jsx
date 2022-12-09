@@ -25,7 +25,6 @@ const Header = styled.div`
 `
 
 const H3 = styled.h3`
-    margin-left: 130px;
     color: white;
 
     @media all and (max-width: 1024px){
@@ -179,9 +178,9 @@ const Partnership = () => {
                     <AllServices service="public private partnership (ppp) advisory" />
                 </Header>
             </Container>
-            <H3><span style={{ color: "#EFA21F" }}>Our Services <MdKeyboardArrowRight style={{ height: "15px" }} /></span>Public-Private Partnership Advisory</H3>
             <Container2>
                 <LeftSection>
+                    <H3><span style={{ color: "#EFA21F" }}>Our Services <MdKeyboardArrowRight style={{ height: "15px" }} /></span>Public-Private Partnership Advisory</H3>
                     <TitreH2>Public-Private Partnership Advisory</TitreH2>
                     <Text>
                         PPP Advisory is a specialist finance consultancy that focuses on improving and smooth

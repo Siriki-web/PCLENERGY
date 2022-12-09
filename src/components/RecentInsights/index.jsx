@@ -89,7 +89,9 @@ const RecentInsights = () => {
                         development companies in the region. The <br />
                         Boolean Tech has a zeal in this sector that.
                     </SecondParagraph>
-                    <Button>READ NOW <img style={{ marginLeft: "10px", height: "8px" }} src={arrow_gold} alt="" /></Button>
+                    <Link to="/insight/1">
+                        <Button>READ NOW <img style={{ marginLeft: "10px", height: "8px" }} src={arrow_gold} alt="" /></Button>
+                    </Link>
                 </div>
                 <div>
                     <ImgPlak src={plak_solaire} alt="" />
@@ -104,7 +106,9 @@ const RecentInsights = () => {
                         development companies in the region. The <br />
                         Boolean Tech has a zeal in this sector that.
                     </SecondParagraph>
-                    <Button>READ NOW <img style={{ marginLeft: "10px", height: "8px" }} src={arrow_gold} alt="" /></Button>
+                    <Link to="/insight/2">
+                        <Button>READ NOW <img style={{ marginLeft: "10px", height: "8px" }} src={arrow_gold} alt="" /></Button>
+                    </Link>
                 </div>
                 <div>
                     <ImgPlak src={plak_solaire} alt="" />
@@ -119,7 +123,9 @@ const RecentInsights = () => {
                         development companies in the region. The <br />
                         Boolean Tech has a zeal in this sector that.
                     </SecondParagraph>
-                    <Button>READ NOW <img style={{ marginLeft: "10px", height: "8px" }} src={arrow_gold} alt="" /></Button>
+                    <Link to="/insight/3">
+                        <Button>READ NOW <img style={{ marginLeft: "10px", height: "8px" }} src={arrow_gold} alt="" /></Button>
+                    </Link>
                 </div>
             </div>
             <div style={{ display: "flex", justifyContent: "center", marginTop: "70px" }}>

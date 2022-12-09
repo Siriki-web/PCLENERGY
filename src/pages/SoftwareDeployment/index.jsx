@@ -26,7 +26,6 @@ const Header = styled.div`
 `
 
 const H3 = styled.h3`
-    margin-left: 130px;
     color: white;
 
     @media all and (max-width: 1024px){
@@ -166,7 +165,7 @@ const SoftwareDevelopment = () => {
     useEffect(() => {
         window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
     }, [])
-    
+
     return (
         <PrincipalContainer>
             <Container>
@@ -175,9 +174,9 @@ const SoftwareDevelopment = () => {
                     <AllServices service="software deployment and development" />
                 </Header>
             </Container>
-            <H3><span style={{ color: "#EFA21F" }}>Our Services <MdKeyboardArrowRight style={{ height: "15px" }} /></span>Software Deployment and Development</H3>
             <Container2>
                 <LeftSection>
+                    <H3><span style={{ color: "#EFA21F" }}>Our Services <MdKeyboardArrowRight style={{ height: "15px" }} /></span>Software Deployment and Development</H3>
                     <TitreH2>Software Deployment and Development</TitreH2>
                     <Text>
                         Automation is an extensive ingredient in achieving seamless work ethics and environment,

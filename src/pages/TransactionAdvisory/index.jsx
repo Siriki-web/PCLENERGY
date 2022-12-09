@@ -26,7 +26,7 @@ const Header = styled.div`
 `
 
 const H3 = styled.h3`
-    margin-left: 130px;
+    // margin-left: 130px;
     color: white;
 
     @media all and (max-width: 1024px){
@@ -181,9 +181,9 @@ const TransactionAdvisory = () => {
                     <AllServices service="transaction advisory & due diligence" />
                 </Header>
             </Container>
-            <H3><span style={{ color: "#EFA21F" }}>Our Services <MdKeyboardArrowRight style={{ height: "15px" }} /></span>Transaction Advisory & Due Diligence</H3>
             <Container2>
                 <LeftSection>
+                    <H3><span style={{ color: "#EFA21F" }}>Our Services <MdKeyboardArrowRight style={{ height: "15px" }} /></span>Transaction Advisory & Due Diligence</H3>
                     <TitreH2>Transaction Advisory & Due Diligence</TitreH2>
                     <Text>
                         Capital investment operational expenditures, commercial, contractual and regulatory

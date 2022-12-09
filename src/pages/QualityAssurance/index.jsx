@@ -135,7 +135,6 @@ const DivStyle = styled.div`
     `    
 
 const H3 = styled.h3`
-    margin-left: 130px;
     color: white;
 
     @media all and (max-width: 1024px){
@@ -231,9 +230,9 @@ const QualityAssurance = () => {
                     </UnderHeader>
                 </HeaderQualityAssurance>
             </div>
-            <H3><span style={{color: "#EFA21F" }}>Our Services <MdKeyboardArrowRight style={{height: "15px"}}/></span> Quality Assurance</H3>
             <Container>
                 <LeftSection>
+                    <H3><span style={{color: "#EFA21F" }}>Our Services <MdKeyboardArrowRight style={{height: "15px"}}/></span> Quality Assurance</H3>
                     <TitreH2>Quality Assurance</TitreH2>
                     <Text>
                         PCL Energy provides the very best of services, one of which is <span style={{ color: "#EFA21F" }}>QUALITY 

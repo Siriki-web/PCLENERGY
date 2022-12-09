@@ -27,7 +27,6 @@ const Header = styled.div`
 `
 
 const H3 = styled.h3`
-    margin-left: 130px;
     color: white;
 
     @media all and (max-width: 1024px){
@@ -188,9 +187,9 @@ const Lobbying = () => {
                     <AllServices service="lobbying & government relations" />
                 </Header>
             </Container>
-            <H3><span style={{ color: "#EFA21F" }}>Our Services <MdKeyboardArrowRight style={{ height: "15px" }} /></span>Lobbying and government relations</H3>
             <Container2>
                 <LeftSection>
+                    <H3><span style={{ color: "#EFA21F" }}>Our Services <MdKeyboardArrowRight style={{ height: "15px" }} /></span>Lobbying and government relations</H3>
                     <TitreH2>Lobbying and government relations</TitreH2>
                     <Text>
                         The management and maintenance of a business are channeled on the relationship 

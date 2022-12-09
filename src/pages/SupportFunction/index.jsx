@@ -26,7 +26,6 @@ const Header = styled.div`
 `
 
 const H3 = styled.h3`
-    margin-left: 130px;
     color: white;
 
     @media all and (max-width: 1024px){
@@ -176,9 +175,9 @@ const SupportFunction = () => {
                     <AllServices service="support functions outsourcings" />
                 </Header>
             </Container>
-            <H3><span style={{ color: "#EFA21F" }}>Our Services <MdKeyboardArrowRight style={{ height: "15px" }} /></span>Support function and outsourcing</H3>
             <Container2>
                 <LeftSection>
+                    <H3><span style={{ color: "#EFA21F" }}>Our Services <MdKeyboardArrowRight style={{ height: "15px" }} /></span>Support function and outsourcing</H3>
                     <TitreH2>Support Function and Outsourcing</TitreH2>
                     <Text>
                         Creating value and making profits are the main target of every organization.

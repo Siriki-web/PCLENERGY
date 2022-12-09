@@ -26,7 +26,6 @@ const Header = styled.div`
 `
 
 const H3 = styled.h3`
-    margin-left: 130px;
     color: white;
 
     @media all and (max-width: 1024px){
@@ -181,9 +180,9 @@ const MasterPlans = () => {
                     <AllServices service="master plans" />
                 </Header>
             </Container>
-            <H3><span style={{ color: "#EFA21F" }}>Our Services <MdKeyboardArrowRight style={{ height: "15px" }} /></span>Master Plans</H3>
             <Container2>
                 <LeftSection>
+                    <H3><span style={{ color: "#EFA21F" }}>Our Services <MdKeyboardArrowRight style={{ height: "15px" }} /></span>Master Plans</H3>
                     <TitreH2>Master Plans</TitreH2>
                     <Text>
                         The future growth and development of any industry depend on a dynamic long-term planning

@@ -27,7 +27,6 @@ const Header = styled.div`
 `
 
 const H3 = styled.h3`
-    margin-left: 130px;
     color: white;
 
     @media all and (max-width: 1024px){
@@ -183,15 +182,15 @@ const Program = () => {
                     <AllServices service='program and project management' />
                 </Header>
             </Container>
-            <H3><span style={{ color: "#EFA21F" }}>Our Services <MdKeyboardArrowRight style={{ height: "15px" }} /></span> Program and Project Management</H3>
             <Container2>
                 <LeftSection>
+                    <H3><span style={{ color: "#EFA21F" }}>Our Services <MdKeyboardArrowRight style={{ height: "15px" }} /></span> Program and Project Management</H3>
                     <TitreH2>Program and Project Management</TitreH2>
                     <Text>
 
-                        The success of your company is dependent on the effectiveness and efficiency  of your 
+                        The success of your company is dependent on the effectiveness and efficiency  of your
                         project and <span style={{ color: "#EFA21F" }}>PROGRAM
-                        MANAGEMENT</span>. Excellence and quality must be embedded from the project initiation 
+                            MANAGEMENT</span>. Excellence and quality must be embedded from the project initiation
                         stage up until the closing and monitoring stage.<Br /><Br />
                         Pcl. Energy has executed multiple projects with her team of experts. Working relentlessly,
                         with our expertise we will help you make the right decisions for your company's growth.

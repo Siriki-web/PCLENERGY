@@ -4,8 +4,7 @@ import '../../style/Insight.css'
 
 
 const ContainerCategory = styled.div`
-    padding-top: 150px;
-    margin-left: 190px;
+    margin-bottom: 20px;
     
     @media only screen and (max-width: 500px){
         margin-left: 0;
@@ -19,21 +18,22 @@ const ContainerCategory = styled.div`
 const ButtonAll = styled.button`
     border: 1px solid #B2B2B2;
     padding: 15px 25px;
-    margin: 10px;
+    margin-right: 40px;
     border-radius: 37px;
     background: #0D0D0D;
     color: white;
 
     @media all and (max-width: 1024px){
         padding: 10px 15px;
-        margin-left: 25px;
+        // margin-left: 25px;
+        margin: 10px;
     }
     `
 
 const ButtonCategories = styled.button`
     border: 1px solid #B2B2B2;
     padding: 15px 25px;
-    margin: 10px;
+    margin-right: 40px;
     border-radius: 37px;
     background-color: #0D0D0D;
     // background:  activeCategory? #EFA21F: #0D0D0D;
@@ -41,6 +41,7 @@ const ButtonCategories = styled.button`
 
     @media all and (max-width: 1024px){
         padding: 10px 15px;
+        margin: 10px;
     }
 
 `

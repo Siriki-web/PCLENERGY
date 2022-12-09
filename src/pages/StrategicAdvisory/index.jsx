@@ -26,7 +26,6 @@ const Header = styled.div`
 `
 
 const H3 = styled.h3`
-    margin-left: 130px;
     color: white;
 
     @media all and (max-width: 1024px){
@@ -179,17 +178,17 @@ const StrategicAdvisory = () => {
                     <AllServices service="Strategic Advisory services" />
                 </Header>
             </Container>
-            <H3><span style={{ color: "#EFA21F" }}>Our Services <MdKeyboardArrowRight style={{ height: "15px" }} /></span>Strategic Advisory Services</H3>
             <Container2>
                 <LeftSection>
+                    <H3><span style={{ color: "#EFA21F" }}>Our Services <MdKeyboardArrowRight style={{ height: "15px" }} /></span>Strategic Advisory Services</H3>
                     <TitreH2>Strategic Advisory Services</TitreH2>
                     <Text>
-                        Being able to quickly react and respond to the demands 
-                        of the ever­ changing business environment is one of the 
+                        Being able to quickly react and respond to the demands
+                        of the ever­ changing business environment is one of the
                         greatest challenges faced by every organization. <Br /><Br />
-                        At pcl. energy, we provide clients with the insights they 
-                        need to better understand their competitive landscape and 
-                        we then support them in the journey of implementing with 
+                        At pcl. energy, we provide clients with the insights they
+                        need to better understand their competitive landscape and
+                        we then support them in the journey of implementing with
                         agility, their revenue generation, and cost management strategic priorities.
                         <br /><br />
                         Services provided include:

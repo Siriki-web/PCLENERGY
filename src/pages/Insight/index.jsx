@@ -32,8 +32,11 @@ const CoverOverlay = styled.div`
 const TheInsights = styled.div`
     display: flex;
     justify-content: space-around;
+    // align-items: baseline;
+    // align-self:first baseline;
+    // align-content: start;
     margin-bottom: 50px;
-    margin-top: 30px;
+    margin-top: 190px;
     margin-left: 150px;
 
     @media all and (max-width: 1024px){
@@ -135,10 +138,16 @@ const H3 = styled.h3`
     color: white;
     `
 
+const DivRight = styled.div`
+    // align-self: flex-start;
+    margin-top: 90px;
+    `
+
+
 const Insight = () => {
 
     useEffect(() => {
-        window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
     }, [])
     const [activeCategory, setActiveCategory] = useState('')
     const categories = dataOurInsights.reduce((acc, ins) => acc.includes(ins.categoryPost) ? acc : acc.concat(ins.categoryPost), [])
@@ -151,13 +160,12 @@ const Insight = () => {
                 </CoverOverlay>
                 <TitlePage name="our insights" paragraph="Renewable Energy for a Sustainable World." />
             </Cover>
-            <Categories
-                categories={categories}
-                setActiveCategory={setActiveCategory}
-                activeCategory={activeCategory} />
-
             <TheInsights>
                 <Div>
+                    <Categories
+                        categories={categories}
+                        setActiveCategory={setActiveCategory}
+                        activeCategory={activeCategory} />
                     {
                         dataOurInsights.map(({ id, picture, author, titlePost, contentPost, comment, date, categoryPost }) =>
                             !activeCategory || activeCategory === categoryPost ? (
@@ -176,7 +184,7 @@ const Insight = () => {
                         )
                     }
                 </Div>
-                <div>
+                <DivRight>
                     <div>
                         <LookingInsights>
                             <div style={{ paddingBottom: "25px" }}>
@@ -240,7 +248,7 @@ const Insight = () => {
                             </ColorTextTags>
                         </Tags>
                     </DivTags>
-                </div>
+                </DivRight>
             </TheInsights>
             <OurIndustry />
             <Footer />

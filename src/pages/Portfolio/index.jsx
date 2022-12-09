@@ -25,7 +25,6 @@ const Header = styled.div`
 `
 
 const H3 = styled.h3`
-    margin-left: 130px;
     color: white;
 
     @media all and (max-width: 1024px){
@@ -181,9 +180,9 @@ const Portfolio = () => {
                     <AllServices service="portfolio advisory" />
                 </Header>
             </Container>
-            <H3><span style={{ color: "#EFA21F" }}>Our Services <MdKeyboardArrowRight style={{ height: "15px" }} /></span>Portfolio Advisory</H3>
             <Container2>
                 <LeftSection>
+                    <H3><span style={{ color: "#EFA21F" }}>Our Services <MdKeyboardArrowRight style={{ height: "15px" }} /></span>Portfolio Advisory</H3>
                     <TitreH2>Portfolio Advisory</TitreH2>
                     <Text>
                         Any investment and asset management decision rely completely on the expertise 

@@ -25,7 +25,6 @@ const Header = styled.div`
 `
 
 const H3 = styled.h3`
-    margin-left: 130px;
     color: white;
 
     @media all and (max-width: 1024px){
@@ -179,9 +178,9 @@ const OperationMaintenance = () => {
                     <AllServices service="operation and maintenance consultancy" />
                 </Header>
             </Container>
-            <H3><span style={{ color: "#EFA21F" }}>Our Services <MdKeyboardArrowRight style={{ height: "15px" }} /></span>Operations and Maintenance consultancy</H3>
             <Container2>
                 <LeftSection>
+                    <H3><span style={{ color: "#EFA21F" }}>Our Services <MdKeyboardArrowRight style={{ height: "15px" }} /></span>Operations and Maintenance consultancy</H3>
                     <TitreH2>Operations and Maintenance consultancy</TitreH2>
                     <Text>
                         Reaching a company's full potential is possible with a conducive operating environment

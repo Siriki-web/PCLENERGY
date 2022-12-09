@@ -28,7 +28,7 @@ const Header = styled.div`
 `
 
 const H3 = styled.h3`
-    margin-left: 130px;
+    // margin-left: 130px;
     color: white;
 
     @media all and (max-width: 1024px){
@@ -177,18 +177,18 @@ const TrainingService = () => {
                     <AllServices service="training services" />
                 </Header>
             </Container>
-            <H3><span style={{ color: "#EFA21F" }}>Our Services <MdKeyboardArrowRight style={{ height: "15px" }} /></span>Training Services</H3>
             <Container2>
                 <LeftSection>
+                    <H3><span style={{ color: "#EFA21F" }}>Our Services <MdKeyboardArrowRight style={{ height: "15px" }} /></span>Training Services</H3>
                     <TitreH2>Training Services</TitreH2>
                     <Text>
                         Learning should be a nonstop activity for every industry to be able to disrupt skills
-                        and experiences. It is crucial to empower people to perform at a very highest level 
+                        and experiences. It is crucial to empower people to perform at a very highest level
                         in every aspect. Understanding the importance of learning is why pcl. has carefully
                         designed programs to enhance your skill and become effective in your area of expertise.
                         Learning highly sought skills in a comfort zone from top-notch experts.
                         Capacity building is at the heart of what we do at pcl. With years of experience in
-                        training thousands of individuals from across companies and organizations. Services 
+                        training thousands of individuals from across companies and organizations. Services
                         like training require huge expertise to deliver.
 
                         <br /><br />
