@@ -37,9 +37,12 @@ const DivIcon = styled.div`
     width: 100%;
     height: 70px;
     border: 1px solid #EFA21F;
+    margin-bottom: 50px;
+    margin-top: 50px;
 
     @media only screen and (max-width: 500px){
         width: auto;
+        margin-bottom: 0;
     }
     `
 
@@ -82,6 +85,10 @@ const Button = styled.button`
     border: none;
     color: white;
     background-color: #EFA21F;
+
+    @media only screen and (max-width: 500px){
+        margin-left: 0;
+    }
 `
 
 const DivDownload = styled.div`
@@ -130,7 +137,7 @@ const ContainerLeft = styled.div`
     `
 
 const ContainerRight = styled.div`
-    margin-top: 100px;
+    margin-top: 93px;
 
     @media only screen and (max-width: 500px){
         margin-top: 0;
@@ -229,6 +236,49 @@ const Separator = styled.div`
     background-color: #EFA21F;
     `
 
+const Share = styled.p`
+    color: white;
+    margin-left: 50px;
+
+    @media only screen and (max-width: 500px){
+        margin-left: 10px;
+    }
+    `
+
+const ShareIcon = styled.div`
+    display: flex;
+    margin-right: 50px;
+
+    @media only screen and (max-width: 500px){
+        margin-right: 10px;
+    }
+    `        
+
+const DescInsight = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    `
+
+const IdentInsight = styled.p`
+    color: white;
+    font-size: .875rem;
+
+    @media only screen and (max-width: 500px){
+        font-size: .775rem
+    }
+`
+
+const TitleComment = styled.h2`
+    color: #EFA21F;
+    text-align: left;
+    font-size: 1rem;
+    
+    @media only screen and (max-width: 500px){
+        margin-top: 35px;
+    }
+    `
+
 
 
 const Articles = ({ categoryPost, picture, date, comment, titlePost, author, description }) => {
@@ -251,25 +301,25 @@ const Articles = ({ categoryPost, picture, date, comment, titlePost, author, des
                             </span> How to Add Battery Backup to an Existing Grid... ... 
                         </TitleH3>
                         <ImgDescription src={picture} alt="" />
-                        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                            <p style={{ color: "white", fontSize: ".5rem" }}>{date}</p>
+                        <DescInsight>
+                            <IdentInsight>{date}</IdentInsight>
                             <Separator></Separator>
-                            <p style={{ color: "white", fontSize: ".5rem" }}><span style={{ color: "#EFA21F" }}>Author: </span>{author}</p>
+                            <IdentInsight><span style={{ color: "#EFA21F" }}>Author: </span>{author}</IdentInsight>
                             <Separator></Separator>
-                            <p style={{ color: "white", fontSize: ".5rem" }}><span style={{ color: "#EFA21F" }}>Comments: </span>{comment}</p>
-                        </div>
+                            <IdentInsight><span style={{ color: "#EFA21F" }}>Comments: </span>{comment}</IdentInsight>
+                        </DescInsight>
                         <TitlePost>{titlePost}</TitlePost>
 
                         <Description>{description}</Description>
 
                         <DivIcon>
-                            <p style={{ color: "white", marginLeft: "50px" }}>Share This Insight?</p>
-                            <div style={{ display: "flex", marginRight: "50px" }}>
+                            <Share>Share This Insight?</Share>
+                            <ShareIcon>
                                 <Icon><GrTwitter style={{ padding: "2px" }} /></Icon>
                                 <Icon><GrFacebookOption style={{ padding: "2px" }} /></Icon>
-                            </div>
+                            </ShareIcon>
                         </DivIcon>
-                        <h2 style={{ color: "#EFA21F", textAlign: "left" }}>COMMENTS</h2>
+                        <TitleComment>COMMENTS</TitleComment>
                         <Form>
                             <Input type="text" placeholder='Enter Name' /> <br />
                             <Textarea name="" id="" cols="30" rows="10" placeholder='Enter your Comment'></Textarea><br />

@@ -20,8 +20,12 @@ const DataPost = styled.div`
     `
 
 const Para = styled.p`
-    font-size: 10px;
+    font-size: .875rem;
     color: white;
+
+    @media only screen and (max-width: 500px){
+        font-size: .775rem;
+    }
     `
 
 const TitlePost = styled.h1`
@@ -36,6 +40,11 @@ const Button = styled.button`
     background: none;
     border: none;
     margin-bottom: 35px;
+    margin-left: -5px;
+
+     @media all and (max-width: 1024px){
+        margin-bottom: 20px;
+    }
     `
 
 const LineHeight = styled.div`
@@ -59,7 +68,6 @@ const InsightItem = ({ id, picture, date, author, comment, titlePost, contentPos
             <TitlePost>{titlePost}</TitlePost>
             <p>{contentPost}</p>
             <div key={id}>
-            
                 <Link to={`/insight/${id}`}>
                     <Button>READ NOW <img style={{ height: "8px", marginLeft: "5px" }} src={arrow_gold} alt="" /> </Button>
                 </Link>

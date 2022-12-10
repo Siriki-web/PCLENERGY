@@ -47,7 +47,7 @@ const Nav = () => {
         <div className={click ? "main-container" : ""} onClick={() => Close()}>
             <nav className="navbar" onClick={e => e.stopPropagation()}>
                 <DivNav>
-                    <Img src={logo} alt="logo du site" />
+                    <Link to="/"><Img src={logo} alt="logo du site" /></Link>
                     <ul className={click ? "navMenu active" : "navMenu"}>
                         <li className="navItem">
                             <StyledLink to="/" className='navLinks' activeClassName="active" onClick={click ? handleClick : null} >Home</StyledLink>

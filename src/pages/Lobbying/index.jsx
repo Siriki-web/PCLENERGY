@@ -219,7 +219,7 @@ const Lobbying = () => {
                 </LeftSection>
 
                 {/* Services */}
-                <div>
+                <div style={{marginTop: "40px"}}>
                     <h2 style={{ color: "#EFA21F", textAlign: "left", fontSize: "20px" }}>Other Services Provided by <br />PCL Energy</h2>
                     <DivServices>
                         <TheServices></TheServices>

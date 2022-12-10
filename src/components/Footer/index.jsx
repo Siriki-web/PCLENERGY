@@ -1,5 +1,4 @@
 import React from 'react';
-// import logo_pcl from '../../assets/logo-pcll.png'
 import logo from '../../assets/logo-white.png'
 import right_arrow from '../../assets/right-arrow.png'
 import { Link } from 'react-router-dom'
@@ -25,8 +24,11 @@ const ButtonSubmitted = styled.button`
     padding: 12px 17px;
     background-image: linear-gradient(to right, #2BAF49, #EE6B2A);
     
-    @media all and (max-width: 1024px){
+    @media only screen and (max-width: 500px){
         margin-top: 10px;
+        border-radius: 0;
+        margin-left: 0;
+        font-weight: bold;
     }
     `
 

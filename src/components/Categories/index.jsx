@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import '../../style/Insight.css'
 
 
 const ContainerCategory = styled.div`
@@ -36,7 +35,6 @@ const ButtonCategories = styled.button`
     margin-right: 40px;
     border-radius: 37px;
     background-color: #0D0D0D;
-    // background:  activeCategory? #EFA21F: #0D0D0D;
     color: white;
 
     @media all and (max-width: 1024px){
@@ -47,6 +45,7 @@ const ButtonCategories = styled.button`
 `
 
 const Categories = ({ setActiveCategory, categories, activeCategory }) => {
+
 
     const handleClick = (e) => {
         setActiveCategory(e.target.value)
@@ -59,9 +58,9 @@ const Categories = ({ setActiveCategory, categories, activeCategory }) => {
 
             {
                 categories.map((cat) =>
-                    <ButtonCategories 
+                    <ButtonCategories
                         key={cat}
-                        className={activeCategory === "cat" ? "active" : undefined}
+                        // style={{backgroundColor: activeCategory ? "#EFA21F" : null}}
                         value={cat}
                         onClick={handleClick}>{cat}
                     </ButtonCategories>

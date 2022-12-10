@@ -57,6 +57,7 @@ const Button = styled.button`
 
     @media all and (max-width: 1024px){
         margin-bottom: 20px;
+        margin-left: -5px;
     }
     `
 
@@ -70,6 +71,7 @@ const ButtonMoreArticle = styled.button`
     border-radius: 5px;
     color: white;
     `
+
 
 const RecentInsights = () => {
     return (

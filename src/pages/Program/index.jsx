@@ -187,10 +187,9 @@ const Program = () => {
                     <H3><span style={{ color: "#EFA21F" }}>Our Services <MdKeyboardArrowRight style={{ height: "15px" }} /></span> Program and Project Management</H3>
                     <TitreH2>Program and Project Management</TitreH2>
                     <Text>
-
                         The success of your company is dependent on the effectiveness and efficiency  of your
                         project and <span style={{ color: "#EFA21F" }}>PROGRAM
-                            MANAGEMENT</span>. Excellence and quality must be embedded from the project initiation
+                        MANAGEMENT</span>. Excellence and quality must be embedded from the project initiation
                         stage up until the closing and monitoring stage.<Br /><Br />
                         Pcl. Energy has executed multiple projects with her team of experts. Working relentlessly,
                         with our expertise we will help you make the right decisions for your company's growth.
@@ -221,13 +220,8 @@ const Program = () => {
                 </LeftSection>
 
                 {/* Services */}
-                <div>
+                <div style={{marginTop: "40px"}}>
                     <h2 style={{ color: "#EFA21F", textAlign: "left", fontSize: "20px" }}>Other Services Provided by <br />PCL Energy</h2>
-
-                    {/* <DivServices>
-                        <TheServices></TheServices>
-                        <Pg><Link to="/training-service" style={{ color: 'white' }}>Quality Assurance</Link></Pg>
-                    </DivServices> */}
                     <DivServices>
                         <TheServices></TheServices>
                         <Pg><Link to="/training-service" style={{ color: 'white' }}>Training service</Link></Pg>

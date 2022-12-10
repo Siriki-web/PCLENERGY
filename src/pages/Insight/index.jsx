@@ -3,7 +3,6 @@ import human from '../../assets/human-figurines.png'
 import styled from 'styled-components';
 import { dataOurInsights } from '../../data/dataOurInsights'
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import Nav from '../../components/Nav';
 import Categories from '../../components/Categories';
 import InsightItem from '../../components/InsightItem';
@@ -32,9 +31,6 @@ const CoverOverlay = styled.div`
 const TheInsights = styled.div`
     display: flex;
     justify-content: space-around;
-    // align-items: baseline;
-    // align-self:first baseline;
-    // align-content: start;
     margin-bottom: 50px;
     margin-top: 190px;
     margin-left: 150px;
@@ -139,8 +135,7 @@ const H3 = styled.h3`
     `
 
 const DivRight = styled.div`
-    // align-self: flex-start;
-    margin-top: 90px;
+    margin-top: 67px;
     `
 
 
@@ -252,7 +247,6 @@ const Insight = () => {
             </TheInsights>
             <OurIndustry />
             <Footer />
-            <Link to="/article" >Articles</Link>
         </div>
     );
 };
