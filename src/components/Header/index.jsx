@@ -16,7 +16,7 @@ const ContainerHome = styled.div`
     `
 
 const Lines = styled.div`
-    width: 420px;
+    width: 300px;
     height: 1px;
     background-color: white;
 
@@ -88,7 +88,7 @@ const ParagraphPCL = styled.p`
     `
 
 const TitleH1 = styled.h1`
-    line-height: 90px;
+    line-height: 80px;
     margin-left: 80px;
     margin-top: 10px;
     margin-bottom: 2px;
