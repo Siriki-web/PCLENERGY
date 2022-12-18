@@ -142,8 +142,6 @@ const DivRight = styled.div`
 
 const Insight = () => {
 
-    const [currentPage, setCurrentPage] = useState(1);
-
     useEffect(() => {
         window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
     }, [])
