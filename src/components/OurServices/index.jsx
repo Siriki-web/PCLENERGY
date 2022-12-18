@@ -47,7 +47,9 @@ const OurServices = () => {
         <Container>
             <TitleServices>our services</TitleServices>
             <TextServices>Make the energy choice that's good for business - and the planet.</TextServices>
-            <TheService />
+            <div className="wow animate__animated animate__heartBeat">
+                <TheService />
+            </div>
             <ImageDiv>
                 <Link style={{textDecoration: "none"}} to='/service'>
                     <ButtonLearnMore />

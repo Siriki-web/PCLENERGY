@@ -73,7 +73,7 @@ const ParagraphHistory = styled.p`
 const Ourhistory = () => {
     return (
         <ContainerHistory>
-            <Container>
+            <Container className='wow animate_animated animate_fadeInUp'>
                 <ImgHistory src={image_history} alt="" />
                 <BackOurHistory>
                     <TitleHistory>our history</TitleHistory>

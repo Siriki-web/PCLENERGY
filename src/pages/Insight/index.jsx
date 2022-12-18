@@ -6,10 +6,10 @@ import { useState, useEffect } from 'react';
 import Nav from '../../components/Nav';
 import Categories from '../../components/Categories';
 import InsightItem from '../../components/InsightItem';
-import RecentPost from '../../components/RecentPost';
 import OurIndustry from '../../components/OurIndustry';
 import Footer from '../../components/Footer';
 import TitlePage from '../../components/TitlePage';
+import marianna from '../../assets/mariana-proenca.png'
 
 
 const Cover = styled.div`
@@ -139,11 +139,15 @@ const DivRight = styled.div`
     `
 
 
+
 const Insight = () => {
+
+    const [currentPage, setCurrentPage] = useState(1);
 
     useEffect(() => {
         window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
     }, [])
+
     const [activeCategory, setActiveCategory] = useState('')
     const categories = dataOurInsights.reduce((acc, ins) => acc.includes(ins.categoryPost) ? acc : acc.concat(ins.categoryPost), [])
 
@@ -161,6 +165,7 @@ const Insight = () => {
                         categories={categories}
                         setActiveCategory={setActiveCategory}
                         activeCategory={activeCategory} />
+
                     {
                         dataOurInsights.map(({ id, picture, author, titlePost, contentPost, comment, date, categoryPost }) =>
                             !activeCategory || activeCategory === categoryPost ? (
@@ -168,11 +173,8 @@ const Insight = () => {
                                     <InsightItem
                                         id={id}
                                         picture={picture}
-                                        author={author}
                                         titlePost={titlePost}
                                         contentPost={contentPost}
-                                        comment={comment}
-                                        date={date}
                                     />
                                 </div>
                             ) : null
@@ -196,12 +198,79 @@ const Insight = () => {
                             <div>
                                 <H3>Recent Posts</H3>
                                 <div>
-                                    {dataOurInsights.map(({ id, picture, titlePost, date }) =>
+                                    {/* {dataOurInsights.map(({ id, picture, titlePost, date }) =>
                                         <div key={id}>
                                             <RecentPost picture={picture} date={date} titlePost={titlePost} />
                                         </div>
                                     )
-                                    }
+                                    } */}
+                                    <div>
+                                        <div style={{ display: "flex", alignItems: "center" }}>
+                                            <a href="https://phillipsconsulting.net/articles_post/ghana-national-gas-company-partners-with-pcl-to-launch-a-corporate-digital-learning-platform/ ">
+                                                <img style={{ width: "110px", height: "85px", borderRadius: "10px" }} src={marianna} alt="" />
+                                            </a>
+                                            <a href="https://phillipsconsulting.net/articles_post/ghana-national-gas-company-partners-with-pcl-to-launch-a-corporate-digital-learning-platform/ ">
+
+                                                <div style={{ marginLeft: "20px" }}>
+                                                    {/* <p style={{ color: "#EFA21F", fontSize: "15px" }}>{date}</p> */}
+                                                    <p style={{ color: "white", fontSize: "12px" }}>Ghana National Gas Company Partners with pcl. to Launch a Corporate Digital Learning Platform</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <hr style={{ width: "300px" }} />
+
+                                        <div style={{ display: "flex", alignItems: "center" }}>
+                                            <a href="https://phillipsconsulting.net/articles_post/leveraging-capacity-building-to-boost-business-growth/ ">
+                                                <img style={{ width: "110px", height: "85px", borderRadius: "10px" }} src={marianna} alt="" />
+                                            </a>
+                                            <a href="https://phillipsconsulting.net/articles_post/leveraging-capacity-building-to-boost-business-growth/ ">
+                                                <div style={{ marginLeft: "20px" }}>
+                                                    {/* <p style={{ color: "#EFA21F", fontSize: "15px" }}>{date}</p> */}
+                                                    <p style={{ color: "white", fontSize: "12px" }}>Leveraging Capacity Building to Boost Business Growth </p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <hr style={{ width: "300px" }} />
+
+                                        <div style={{ display: "flex", alignItems: "center" }}>
+                                            <a href="https://phillipsconsulting.net/articles_post/data-governance-a-precursor-for-digital-transformation/ ">
+                                                <img style={{ width: "110px", height: "85px", borderRadius: "10px" }} src={marianna} alt="" />
+                                            </a>
+                                            <a href="https://phillipsconsulting.net/articles_post/data-governance-a-precursor-for-digital-transformation/ ">
+                                                <div style={{ marginLeft: "20px" }}>
+                                                    {/* <p style={{ color: "#EFA21F", fontSize: "15px" }}>{date}</p> */}
+                                                    <p style={{ color: "white", fontSize: "12px" }}>Data Governance: A Precursor for Digital Transformation </p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <hr style={{ width: "300px" }} />
+
+                                        <div style={{ display: "flex", alignItems: "center" }}>
+                                            <a href="https://phillipsconsulting.net/articles_post/leveraging-big-data-analytics-to-improve-business-performance/ ">
+                                                <img style={{ width: "110px", height: "85px", borderRadius: "10px" }} src={marianna} alt="" />
+                                            </a>
+                                            <a href="https://phillipsconsulting.net/articles_post/leveraging-big-data-analytics-to-improve-business-performance/ ">
+                                                <div style={{ marginLeft: "20px" }}>
+                                                    {/* <p style={{ color: "#EFA21F", fontSize: "15px" }}>{date}</p> */}
+                                                    <p style={{ color: "white", fontSize: "12px" }}>Leveraging Big Data Analytics to Improve Business Performance </p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <hr style={{ width: "300px" }} />
+
+                                        <div style={{ display: "flex", alignItems: "center" }}>
+                                            <a href="https://phillipsconsulting.net/articles_post/embracing-the-culture-of-digital-revolution-in-everyday-work/ ">
+                                                <img style={{ width: "110px", height: "85px", borderRadius: "10px" }} src={marianna} alt="" />
+                                            </a>
+                                            <a href="https://phillipsconsulting.net/articles_post/embracing-the-culture-of-digital-revolution-in-everyday-work/ ">
+                                                <div style={{ marginLeft: "20px" }}>
+                                                    {/* <p style={{ color: "#EFA21F", fontSize: "15px" }}>{date}</p> */}
+                                                    <p style={{ color: "white", fontSize: "12px" }}>Embracing the Culture of Digital Revolution in Everyday Work </p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <hr style={{ width: "300px" }} />
+                                    </div>
                                 </div>
                             </div>
                         </RecentPosts>
@@ -211,15 +280,15 @@ const Insight = () => {
                         <div style={{ display: "flex", justifyContent: "space-between" }}>
                             <div>
                                 <TitleP>Reports</TitleP>
-                                <TitleP>Insights</TitleP>
+                                <TitleP>Case Study</TitleP>
                                 <TitleP>Articles</TitleP>
                                 <TitleP>All</TitleP>
                             </div>
                             <div>
                                 <p><CategoriesInsights>1</CategoriesInsights></p>
-                                <p><CategoriesInsights>3</CategoriesInsights></p>
                                 <p><CategoriesInsights>1</CategoriesInsights></p>
-                                <p><CategoriesInsights>5</CategoriesInsights></p>
+                                <p><CategoriesInsights>14</CategoriesInsights></p>
+                                <p><CategoriesInsights>16</CategoriesInsights></p>
                             </div>
                         </div>
                     </TheCategories>

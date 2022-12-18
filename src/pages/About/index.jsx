@@ -167,8 +167,8 @@ const About = () => {
                 <TitlePage name="about us" paragraph="Renewable Energy for a Sustainable World." />
             </ContainerAbout>
             <WhoWheAre>
-                <ContainerWhoWeAre>
-                    <DivText >
+                <ContainerWhoWeAre className="wow animate__animated animate__zoomIn">
+                    <DivText>
                         <TitleWhoWeAre>who we are</TitleWhoWeAre>
                         <StyleParagraph>PCL Energy is an Energy consulting firm that provides sustainable 
                             energy solutions that allow our clients to maximize their energy 

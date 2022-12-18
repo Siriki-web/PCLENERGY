@@ -89,8 +89,8 @@ const DivText = styled.div`
 const WhoWeAre = () => {
     return (
         <ContainerWhoWeAre>
-            <ImgUsine src={usine_solaire} alt="" />
-            <DivText>
+            <ImgUsine className="wow animate__animated animate__fadeInUp" src={usine_solaire} alt="" />
+            <DivText className="wow animate__animated animate__fadeInUp">
                 <TitleWhoWeAre>WHO WE ARE</TitleWhoWeAre>
                 <StyleParagraph>PCL Energy is an Energy Consulting firm that provides sustainable 
                     energy solutions that allow our clients to maximize their energy 

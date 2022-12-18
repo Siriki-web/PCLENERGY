@@ -1,102 +1,118 @@
 import mariana_proenca from '../assets/mariana-proenca.png'
 
 
-const title = "How to Add Battery Backup to an Existing Grid Tied \n Solar System by Yourself!"
-
-const texte = `The Boolean Tech has a zeal in this sector that makes us one of the most sought after
-                development companies in the region. The Boolean Tech has a zeal in this sector that.
-                The key requirement of this work package is the development of a database (and
-                supporting summary report), compiling information for potential renewable energy
-                business and technology solutions to help overcome environmental and climatic
-                challenges in the NPA programme region. Technology solutions cover installation,
-                operation and maintenance of equipment, not the design and manufacture of
-                components.
-
-                The objective of the database is to identify the main environmental and climatic
-                challenges, and outline technological and business solutions to these challenges, creating
-                a database of these for 8 different categories of renewable energy technology. It is
-                designed for use by new and existing renewable energy businesses, to inform them of
-                the challenges they may face in developing their business and how these will be
-                overcome.
-
-                A range of examples (where available) have been highlighted on how the challenges
-                identified have been overcome. Specific regional related innovations and smart solutions
-                from local business on technology driven RE-solutions have been documented, with the
-                intention of passing on this knowledge to other regions in the NPA not involved in the
-                GREBE Project.
-
-                Global climate change impacts Europe in many ways, including: changes in average and
-                extreme temperature and precipitation, warmer oceans, rising sea level and shrinking
-                snow and ice cover on land and at sea. These weather phenomenons have led to a
-                range of impacts on ecosystems, socio-economic sectors and human health and safety.
-                There is no doubt that the changes in climate will have a strong impact in our daily life,
-                whether we accept extreme weather conditions as a new phenomenon or not.
-
-                Adaptation to the past history data, present observed and future predicted impacts will
-                in the coming decades be needed, as well as be complementary to global climate
-                mitigation actions. Narvik Science Park has made a report on this in the GREBE-Project.
-                `
-                
-
 export const dataOurInsights = [
     {
-        id: '1',
+        id:'https://phillipsconsulting.net/articles_post/ghana-national-gas-company-partners-with-pcl-to-launch-a-corporate-digital-learning-platform/',
         name: 't1',
         picture: mariana_proenca,
-        date:'30th October, 2022',
-        author: '',
-        comment: '3',
-        titlePost: title,
-        contentPost: '',
-        categoryPost: 'Insight',
-        description: texte
+        titlePost: 'Ghana National Gas Company Partners with pcl. to launch a Corporate Digital Learning Platform',
+        categoryPost: 'Articles',
     },
     {
-        id: '2',
+        id: 'https://phillipsconsulting.net/articles_post/leveraging-capacity-building-to-boost-business-growth/',
         name: 't2',
         picture: mariana_proenca,
-        date:'30th October, 2022',
-        author: '',
-        comment: '1',
-        titlePost: title,
-        contentPost: '',
-        categoryPost: 'Insight',
-        description: ""
+        titlePost: "Leveraging Capacity Building to Boost Business Growth",
+        categoryPost: 'Articles',
     },
     {
-        id: '3',
+        id: 'https://phillipsconsulting.net/articles_post/data-governance-a-precursor-for-digital-transformation/ ',
         name: 't3',
         picture: mariana_proenca,
-        date:'30th October, 2022',
-        author: '',
-        comment: '',
-        titlePost: title,
-        contentPost: '',
-        categoryPost: 'Insight',
-        description: ""
-    },
-    {
-        id: '4',
-        name: 't4',
-        picture: '',
-        date:'',
-        author: '',
-        comment: '',
-        titlePost: '',
-        contentPost: '',
-        categoryPost: 'Reports',
-        description: ""
-    },
-    {
-        id: '5',
-        name: 't5',
-        picture: '',
-        date:'',
-        author: '',
-        comment: '',
-        titlePost: '',
-        contentPost: '',
+        titlePost: 'Data Governance: A Precursor for Digital Transformation ',
         categoryPost: 'Articles',
-        description: ""
-    }
+    },
+    {
+        id: 'https://phillipsconsulting.net/articles_post/leveraging-big-data-analytics-to-improve-business-performance/',
+        name: 't4',
+        picture: mariana_proenca,
+        titlePost: 'Leveraging Big Data Analytics to Improve Business Performance',
+        categoryPost: 'Articles',
+    },
+    {
+        id: 'https://phillipsconsulting.net/articles_post/embracing-the-culture-of-digital-revolution-in-everyday-work/',
+        name: 't5',
+        picture: mariana_proenca,
+        titlePost: 'Embracing the Culture of Digital Revolution in Everyday Work',
+        categoryPost: 'Articles',
+    },
+    {
+        id: 'https://phillipsconsulting.net/articles_post/how-technology-advancement-revolutionised-fintech-big-data/',
+        name: 't6',
+        picture: mariana_proenca,
+        titlePost: 'How Technology Advancement Revolutionised Fintech: Big Data ',
+        categoryPost: 'Articles',
+    },
+    {
+        id: 'https://phillipsconsulting.net/articles_post/why-training-improves-organisational-efficiency/',
+        name: 't7',
+        picture: mariana_proenca,
+        titlePost: 'Why Training Improves Organisational Efficiency',
+        categoryPost: 'Articles',
+    },
+    {
+        id: 'https://phillipsconsulting.net/articles_post/phillips-consulting-strengthens-cbns-leadership-in-digital-learning/ ',
+        name: 't8',
+        picture: mariana_proenca,
+        titlePost: 'Phillips Consulting strengthens CBNs leadership in digital learning as over 5,000 \n of its employees learn while working remotely ',
+        categoryPost: 'Articles',
+    },
+    {
+        id: 'https://phillipsconsulting.net/articles_post/investing-in-a-culture-of-continuous-learning/ ',
+        name: 't9',
+        picture: mariana_proenca,
+        titlePost: 'Investing in a Culture of Continuous Learning',
+        categoryPost: 'Articles',
+    },
+    {
+        id: 'https://phillipsconsulting.net/articles_post/5-benefits-of-big-data/',
+        name: 't10',
+        picture: mariana_proenca,
+        titlePost: '5 benefits of Big Data',
+        categoryPost: 'Articles',
+    },
+    {
+        id: 'https://phillipsconsulting.net/articles_post/ikeja-electric-partners-with-phillips-consulting-to-take-leadership-in-digital-learning-in-the-electricity-distribution-sector/',
+        name: 't11',
+        picture: mariana_proenca,
+        titlePost: 'Ikeja Electric Partners with Phillips Consulting to Take Leadership In Digital Learning In the Electricity Distribution Sector ',
+        categoryPost: 'Articles',
+    },
+    {
+        id: 'https://phillipsconsulting.net/articles_post/creating-a-sustainable-work-environment/',
+        name: 't12',
+        picture: mariana_proenca,
+        titlePost: 'Creating a sustainable work environment',
+        categoryPost: 'Articles',
+    },
+    {
+        id: 'https://phillipsconsulting.net/articles_post/improving-business-efficiency-through-analytics/',
+        name: 't13',
+        picture: mariana_proenca,
+        titlePost: 'Improving Business Efficiency Through Analytics',
+        categoryPost: 'Articles',
+    },
+    {
+        id: 'https://phillipsconsulting.net/articles_post/what-to-look-out-for-in-the-world-of-learning-in-2021/',
+        name: 't14',
+        picture: mariana_proenca,
+        titlePost: 'What to Look Out For in The World Of Learning In 2021',
+        categoryPost: 'Articles',
+    },
+    {
+        id: 'https://phillipsconsulting.net/case_studies_post/a-pcl-learning-experience/',
+        name: 't15',
+        picture: mariana_proenca,
+        titlePost: 'A pcl. Learning experience',
+        categoryPost: 'Case Study',
+    },
+    {
+        id: 'https://phillipsconsulting.net/reports_post/towards-a-future-fit-learning-strategy/',
+        name: 't16',
+        picture: mariana_proenca,
+        titlePost: 'Towards a Future-fit Learning Strategy ',
+        categoryPost: 'Reports',
+    },
+    
 ]

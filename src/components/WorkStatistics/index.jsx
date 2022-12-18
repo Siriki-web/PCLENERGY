@@ -96,8 +96,8 @@ const WorkStatistics = () => {
     const [counterOn, setCounterOn] = useState(false)
     return (
         <Container>
-            <ShellsImage src={shells} alt="" />
-            <Stats>
+            <ShellsImage className="wow animate__animated animate__fadeInUp" src={shells} alt="" />
+            <Stats className="wow animate__animated animate__fadeInUp">
                 <TitleWork>work statistics</TitleWork>
                 <TextWork>How about some Fact Numbers about us.</TextWork>
                 <ContainerChiffre>

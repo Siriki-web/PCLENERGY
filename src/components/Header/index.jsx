@@ -16,7 +16,7 @@ const ContainerHome = styled.div`
     `
 
 const Lines = styled.div`
-    width: 300px;
+    width: 370px;
     height: 1px;
     background-color: white;
 
@@ -92,7 +92,7 @@ const TitleH1 = styled.h1`
     margin-left: 80px;
     margin-top: 10px;
     margin-bottom: 2px;
-    font-size: 65px;
+    font-size: 74px;
     font-weight: 900;
     text-align: left;
 
@@ -108,19 +108,19 @@ const Header = () => {
     return (
         <ContainerHome>
             <Nav />
-            <Welcome>
+            <Welcome className="wow animate__animated animate__fadeInLeft">
                 <ParagraphWelcome>welcome to pcl energy</ParagraphWelcome>
                 <Lines></Lines>
             </Welcome>
-            <TitleH1>
+            <TitleH1 className="wow animate__animated animate__fadeInLeft">
                 <span style={{ color: "white" }}>The Best Source Of <br />Energy For The</span><br />
                 <span style={{ color: "#EFA21F" }}>Better Tomorrow.</span>
             </TitleH1>
-            <ParagraphPCL>
+            <ParagraphPCL className="wow animate__animated animate__fadeInLeft">
                 PCL Energy is your Environmentally friendly Energy Company offering a broad 
                 portfolio of Energy technologies, products and solutions Accross Africa.
             </ParagraphPCL>
-            <DivButton>
+            <DivButton className="wow animate__animated animate__fadeInLeft">
                 <Link style={{textDecoration: "none"}} to='/service'>
                     <Button>DISCOVER MORE <img style={{
                         width: "15px",

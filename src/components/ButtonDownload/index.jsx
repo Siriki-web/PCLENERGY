@@ -1,9 +1,15 @@
 import React from 'react';
 import { useState } from 'react';
 import { Button, Modal, Form, Input, Popover } from 'antd';
-// import 'antd/dist/reset.css';
 import right_arrow from '../../assets/right-arrow.png'
 import '../../style/ButtonDownload.css'
+import styled from 'styled-components';
+
+
+
+const Div = styled.div`
+    margin-top: 5px;
+    `
 
 const layout = {
     labelCol: {
@@ -12,36 +18,39 @@ const layout = {
     wrapperCol: {
         span: 16,
     },
-};
+}
 
 const validateMessages = {
     required: '${label} is required!',
     types: {
         email: '${label} is not a valid email!',
     },
-};
+}
 
 const ButtonDownload = () => {
 
-    const [open, setOpen] = useState(false);
-  
+    const [open, setOpen] = useState(false)
+    const [isModalOpen, setIsModalOpen] = useState(false)
+
     const handleOpenChange = (newOpen) => {
         setOpen(newOpen);
-    };
+    }
 
     const onFinish = (values) => {
         console.log(values);
-    };
-    const [isModalOpen, setIsModalOpen] = useState(false);
+    }
+
     const showModal = () => {
         setIsModalOpen(true);
-    };
+    }
 
     const handleCancel = () => {
         setIsModalOpen(false);
-    };
+    }
+
+
     return (
-        <div style={{ marginTop: "5px" }}>
+        <Div className="wow animate_animated animate_rotateInDownLeft">
             <Button style={{
                 color: "white",
                 borderRadius: "5px",
@@ -88,7 +97,7 @@ const ButtonDownload = () => {
                     </Form.Item>
                 </Form>
             </Modal>
-        </div >
+        </Div >
     );
 };
 

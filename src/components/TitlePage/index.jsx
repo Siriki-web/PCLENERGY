@@ -49,7 +49,7 @@ const Div = styled.div`
 
 const TitlePage = ({ name, paragraph }) => {
     return (
-        <Div>
+        <Div className="wow animate__animated animate__fadeInUp">
             <ContainerTitle>
                 <TitlePages>{name}</TitlePages>
                 <Paragraph>{paragraph}</Paragraph>

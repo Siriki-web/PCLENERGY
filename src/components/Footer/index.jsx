@@ -161,7 +161,7 @@ const Footer = () => {
                     <ImgLogo src={logo} alt="" /> <br />
                     <SubscribeNewsletter>
                         <p style={{ color: "white" }}>Subscribe to Our Newsletter</p>
-                        <InputText type="email" /><ButtonSubmitted>SUBMIT <img style={{ width: "15px", marginLeft: "4px" }} src={right_arrow} alt="" /></ButtonSubmitted>
+                        <InputText type="email" /><ButtonSubmitted className='wow animate__animated animate__rotateInDownLeft'>SUBMIT <img style={{ width: "15px", marginLeft: "4px" }} src={right_arrow} alt="" /></ButtonSubmitted>
                     </SubscribeNewsletter>
                 </div>
                 <div>

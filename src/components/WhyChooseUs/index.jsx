@@ -92,7 +92,7 @@ const LiveP = styled.p`
 const WhyChooseUs = () => {
     return (
         <ContaierChoose>
-            <ContainerPrincial>
+            <ContainerPrincial className='wow animate__animated animate__fadeInUp'>
                 <div>
                     <Div>
                         <TitleChoose>WHY CHOOSE US ?</TitleChoose>

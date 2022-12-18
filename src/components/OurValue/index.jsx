@@ -132,7 +132,7 @@ const ParagrahDescribe = styled.p`
 
 const OurValue = () => {
     return (
-        <ContainerValue>
+        <ContainerValue className='wow animate__animated animate__fadeInUp'>
             <BackOurValue>
                 <TitleOurValue>our value</TitleOurValue>
                 <MeetsBusiness>where technology <br />meets busines.</MeetsBusiness>

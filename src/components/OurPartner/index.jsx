@@ -34,7 +34,7 @@ const ContainerPartners = styled.div`
 
 const OurPartners = () => {
     return (
-        <div>
+        <div className='wow animate__animated animate__fadeInUp'>
             <TitlePartners>our partners</TitlePartners>
             <ContainerPartners>
                 <ImgPartners src={phil_hmo} alt="" />

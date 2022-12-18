@@ -22,7 +22,7 @@ const GlobalStyle = () => {
             <StyledGlobalStyle />
             <Helmet>
                 <meta charSet='utf-8' />
-                <title>PCL ENERGY</title>   
+                <title>pcl energy</title>   
                 <meta name="description" content="The best source of energy for the better tomorrow" />
             </Helmet>
         </div>

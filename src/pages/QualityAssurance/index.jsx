@@ -209,6 +209,10 @@ const LeftSection = styled.div`
     }
 `
 
+const ServicesContainer= styled.div`
+    margin-top: 40px;
+    `
+
 
 
 const QualityAssurance = () => {
@@ -261,7 +265,7 @@ const QualityAssurance = () => {
                 </LeftSection>
 
                 {/* Services */}
-                <div style={{marginTop: "40px"}}>
+                <ServicesContainer>
                     <h2 style={{ color: "#EFA21F", textAlign: "left", fontSize: "20px" }}>Other Services Provided by <br />PCL Energy</h2>
                     <DivServices>
                         <TheServices></TheServices>
@@ -319,7 +323,7 @@ const QualityAssurance = () => {
                         <TheServices></TheServices>
                         <Pg><Link to="/portfolio-advisory" style={{color: 'white'}}>Portfolio Advisory</Link></Pg>
                     </DivServices>
-                </div>
+                </ServicesContainer>
             </Container>
             <OurIndustry />
             <Footer />

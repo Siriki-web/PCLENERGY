@@ -19,22 +19,20 @@ const StyledLink = styled(Link)`
 const DivNav = styled.div`
     display: flex; 
     align-items: center;
+    justify-content: space-around;
     padding-top: 20px;
-    margin-left: 65px;
+    // margin-left: 65px;
     `
 
 const Img = styled.img`
     width: 90px;
-    margin-right: 110px;
-    margin-left: 15px;
+    // margin-right: 100px;
+    // margin-left: 15px;
 
     @media all and (max-width: 1024px) {
-        margin-left: -50px;
+        margin-left: -180px;
     }
     `
-
-
-
 
 
 const Nav = () => {

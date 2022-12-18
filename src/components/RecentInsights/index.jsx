@@ -23,13 +23,13 @@ const ImgPlak = styled.img`
     height: 207px;
     `
 
-const Paragraph = styled.p`
-    color: #EFA21F;
-    font-size: 22px;
-    line-height: 28px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    `
+// const Paragraph = styled.p`
+//     color: #EFA21F;
+//     font-size: 22px;
+//     line-height: 28px;
+//     margin-top: 0px;
+//     margin-bottom: 0px;
+//     `
 
 const SecondParagraph = styled.p`
     color: white;
@@ -37,16 +37,16 @@ const SecondParagraph = styled.p`
     line-height: 30px;
     `
 
-const DateAndAuthor = styled.div`
-    display: flex;
-    justify-content: space-between;
-    `
+// const DateAndAuthor = styled.div`
+//     display: flex;
+//     justify-content: space-between;
+//     `
 
-const NameAuthor = styled.p`
-    font-size: 12px;
-    line-height: 25px;
-    color: white;
-`
+// const NameAuthor = styled.p`
+//     font-size: 12px;
+//     line-height: 25px;
+//     color: white;
+// `
 
 const Button = styled.button`
     background: none;
@@ -72,70 +72,63 @@ const ButtonMoreArticle = styled.button`
     color: white;
     `
 
+const DivPrincipal = styled.div`
+    background-color: #0D0D0D;
+    padding-top: 20px;
+    padding-bottom: 70px;
+    `
 
-const RecentInsights = () => {
+const UnderDiv = styled.div`
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    `
+
+const RecentInsights = ({id}) => {
     return (
-        <div style={{ backgroundColor: "#0D0D0D", paddingTop: "20px", paddingBottom: "70px" }}>
+        <DivPrincipal>
             <TitleInsight>recent insights</TitleInsight>
-            <div style={{ display: "flex", justifyContent: "space-around", flexWrap: "wrap" }}>
+            <UnderDiv className="wow animate__animated animate__fadeInUp">
                 <div>
-                    <ImgPlak src={plak_solaire} alt="" />
-                    <DateAndAuthor>
-                        <NameAuthor>30th October, 2022</NameAuthor>
-                        <NameAuthor>Daniels Williams</NameAuthor>
-                    </DateAndAuthor>
-                    <Paragraph>How to Add Battery Backup to an <br />Existing Grid Tied Solar System by <br />Yourself!</Paragraph>
+                    <a href="https://phillipsconsulting.net/articles_post/ghana-national-gas-company-partners-with-pcl-to-launch-a-corporate-digital-learning-platform/">
+                        <ImgPlak src={plak_solaire} alt="" />
+                    </a>
                     <SecondParagraph>
-                        The Boolean Tech has a zeal in this sector <br />
-                        that makes us one of the most sought after <br />
-                        development companies in the region. The <br />
-                        Boolean Tech has a zeal in this sector that.
+                        Ghana National Gas Company Partners <br /> with pcl. to Launch a Corporate Digital <br /> Learning Platform 
                     </SecondParagraph>
-                    <Link to="/insight/1">
+                    <a href="https://phillipsconsulting.net/articles_post/ghana-national-gas-company-partners-with-pcl-to-launch-a-corporate-digital-learning-platform/ ">
                         <Button>READ NOW <img style={{ marginLeft: "10px", height: "8px" }} src={arrow_gold} alt="" /></Button>
-                    </Link>
+                    </a>
                 </div>
                 <div>
-                    <ImgPlak src={plak_solaire} alt="" />
-                    <DateAndAuthor>
-                        <NameAuthor>30th October, 2022</NameAuthor>
-                        <NameAuthor>Daniels Williams</NameAuthor>
-                    </DateAndAuthor>
-                    <Paragraph>How to Add Battery Backup to an <br />Existing Grid Tied Solar System by <br />Yourself!</Paragraph>
+                    <a href="https://phillipsconsulting.net/articles_post/leveraging-capacity-building-to-boost-business-growth/">
+                        <ImgPlak src={plak_solaire} alt="" />
+                    </a>
                     <SecondParagraph>
-                        The Boolean Tech has a zeal in this sector <br />
-                        that makes us one of the most sought after <br />
-                        development companies in the region. The <br />
-                        Boolean Tech has a zeal in this sector that.
+                       Leveraging Capacity Building to Boost <br /> Business Growth 
                     </SecondParagraph>
-                    <Link to="/insight/2">
+                    <a href='https://phillipsconsulting.net/articles_post/leveraging-capacity-building-to-boost-business-growth/ '>
                         <Button>READ NOW <img style={{ marginLeft: "10px", height: "8px" }} src={arrow_gold} alt="" /></Button>
-                    </Link>
+                    </a>
                 </div>
                 <div>
-                    <ImgPlak src={plak_solaire} alt="" />
-                    <DateAndAuthor>
-                        <NameAuthor>30th October, 2022</NameAuthor>
-                        <NameAuthor>Daniels Williams</NameAuthor>
-                    </DateAndAuthor>
-                    <Paragraph>How to Add Battery Backup to an <br />Existing Grid Tied Solar System by <br />Yourself!</Paragraph>
+                    <a href="https://phillipsconsulting.net/articles_post/data-governance-a-precursor-for-digital-transformation/ ">
+                        <ImgPlak src={plak_solaire} alt="" />
+                    </a>
                     <SecondParagraph>
-                        The Boolean Tech has a zeal in this sector <br />
-                        that makes us one of the most sought after <br />
-                        development companies in the region. The <br />
-                        Boolean Tech has a zeal in this sector that.
+                        Data Governance: A Precursor for Digital <br /> Transformation 
                     </SecondParagraph>
-                    <Link to="/insight/3">
+                    <a href='https://phillipsconsulting.net/articles_post/data-governance-a-precursor-for-digital-transformation/ '>
                         <Button>READ NOW <img style={{ marginLeft: "10px", height: "8px" }} src={arrow_gold} alt="" /></Button>
-                    </Link>
+                    </a>
                 </div>
-            </div>
+            </UnderDiv>
             <div style={{ display: "flex", justifyContent: "center", marginTop: "70px" }}>
                 <Link to='/insight'>
                     <ButtonMoreArticle>more articles <img style={{ marginLeft: "5px", height: "12px" }} src={arrow_up} alt="" /></ButtonMoreArticle>
                 </Link>
             </div>
-        </div>
+        </DivPrincipal>
     );
 };
 

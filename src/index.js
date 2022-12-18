@@ -20,7 +20,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Service from './pages/Service';
 import Insight from './pages/Insight';
-import InsightDetail from './pages/InsightDetail'
+// import InsightDetail from './pages/InsightDetail'
 import Contact from './pages/Contact';
 import QualityAssurance from './pages/QualityAssurance';
 import OperationMaintenance from './pages/OperationMaintenance'
@@ -36,8 +36,8 @@ root.render(
                 <Route exact path='/' element={<Home />} />
                 <Route path='/about' element={<About />} />
                 <Route path='/service' element={<Service />} />    
-                <Route exact path='/insight' element={<Insight />} /> 
-                <Route path='/insight/:name' element={<InsightDetail />} />
+                <Route path='/insight' element={<Insight />} /> 
+                {/* <Route path='/insight/:name' element={<InsightDetail />} /> */}
                 <Route path='/contact' element={<Contact />} />
                 <Route path='/quality-assurance' element={<QualityAssurance />} />
                 <Route path='/training-service' element={<TrainingService />} />

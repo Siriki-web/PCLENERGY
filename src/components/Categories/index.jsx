@@ -8,16 +8,12 @@ const ContainerCategory = styled.div`
     @media only screen and (max-width: 500px){
         margin-left: 0;
     }
-
-    // @media only screen and (max-width: 820px){
-    //     margin-left: 135px;
-    // }
     `
 
 const ButtonAll = styled.button`
     border: 1px solid #B2B2B2;
     padding: 15px 25px;
-    margin-right: 40px;
+    margin-right: 25px;
     border-radius: 37px;
     background: #0D0D0D;
     color: white;
@@ -32,20 +28,19 @@ const ButtonAll = styled.button`
 const ButtonCategories = styled.button`
     border: 1px solid #B2B2B2;
     padding: 15px 25px;
-    margin-right: 40px;
+    margin-right: 30px;
     border-radius: 37px;
     background-color: #0D0D0D;
     color: white;
 
     @media all and (max-width: 1024px){
         padding: 10px 15px;
-        margin: 10px;
+        margin: 5px;
     }
 
 `
 
 const Categories = ({ setActiveCategory, categories, activeCategory }) => {
-
 
     const handleClick = (e) => {
         setActiveCategory(e.target.value)
@@ -54,7 +49,7 @@ const Categories = ({ setActiveCategory, categories, activeCategory }) => {
 
     return (
         <ContainerCategory>
-            <ButtonAll  onClick={() => setActiveCategory('')}>All</ButtonAll>
+            <ButtonAll onClick={() => setActiveCategory('')}>All</ButtonAll>
 
             {
                 categories.map((cat) =>
@@ -63,6 +58,7 @@ const Categories = ({ setActiveCategory, categories, activeCategory }) => {
                         // style={{backgroundColor: activeCategory ? "#EFA21F" : null}}
                         value={cat}
                         onClick={handleClick}>{cat}
+                       
                     </ButtonCategories>
                 )
             }

@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import Nav from '../../components/Nav';
 import OurIndustry from '../../components/OurIndustry';
 import Footer from '../../components/Footer';
-
 import quality_assurance from '../../assets/quality-assurance.png'
 import software_dev from '../../assets/software-development.png'
 import strategic_advisory from '../../assets/strategic-advisory.png'
@@ -384,7 +383,7 @@ const Service = () => {
                             <Link to="operation-maintenance">
                                 <CardImage style={{ backgroundImage: `url("${maintenance_consultancy}")` }}>
                                     <CardOverlay>
-                                        <NameService>OPERAION AND <br />MAINTENANCE <br />CONSULTANCY</NameService>
+                                        <NameService>OPERATION AND <br />MAINTENANCE <br />CONSULTANCY</NameService>
                                     </CardOverlay>
                                 </CardImage>
                             </Link>
@@ -392,7 +391,7 @@ const Service = () => {
                     </SusCtnService>
                     <Btn>
                         <Link to="/contact">
-                            <ButtonContact>contact us now <img style={{ height: "15px", marginLeft: "5px" }} src={arrow_up} alt="" /></ButtonContact>
+                            <ButtonContact className="wow animate__animated animate__rotateInDownLeft">contact us now <img style={{ height: "15px", marginLeft: "5px" }} src={arrow_up} alt="" /></ButtonContact>
                         </Link>
                     </Btn>
                     <CtnTestimonials>
@@ -402,7 +401,7 @@ const Service = () => {
                                 <Carre>
                                     <ImgVirgule src={virgule_debout} alt="" />
                                 </Carre>
-                                <CadreTestimonials>
+                                <CadreTestimonials className='wow animate__animated animate__fadeInLeft'>
                                     <Testi>TESTIMONIALS</Testi>
                                     <PeopleSay>people say about our services</PeopleSay>
                                     <Para>

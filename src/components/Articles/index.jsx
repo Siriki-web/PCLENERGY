@@ -291,7 +291,7 @@ const Articles = ({ categoryPost, picture, date, comment, titlePost, author, des
                 <TitlePage name="our insights" paragraph="Renewable Energy for a Sustainable World." />
             </Cover>
             <div style={{ paddingTop: "120px", marginBottom: "90px" }}>
-                <div style={{ display: "flex", justifyContent: "space-around", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", justifyContent: "space-around"}}>
                     <ContainerLeft>
                         <TitleH3>
                             <span style={{ color: "#EFA21F" }}>Home

@@ -21,7 +21,7 @@ const ImgPerson = styled.img`
 const MeetOurTeam = ({name, fonction, cp_twitter, cp_link, cover}) => {
     return (
         <div>
-            <li>
+            <li className="wow animate__animated animate__fadeInUp">
                 <ImgPerson src={cover} alt="" /><br />
                 <Name>{name}</Name>
                 <Fonction>{fonction}</Fonction>
