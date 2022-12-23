@@ -18,13 +18,15 @@ const ButtonAll = styled.button`
         border-radius: 37px;
         background: #0D0D0D;
         color: white;
-            &: focus{
+        transition: transform .3s ease-out ;
+            &:focus{
                 background-color: #F2A42A;
                 color: white;
                 }
             &:hover{
-                backgroundColor: "#EFA21F",
+                background-color: #EFA21F;
                 color: white;
+                transform: rotate(15deg) scale(1) translateX(10px);
             }
 
     @media all and (max-width: 1024px){
@@ -40,14 +42,15 @@ const ButtonCategories = styled.button`
     border-radius: 37px;
     background-color: #0D0D0D;
     color: white;
-
-    &: focus{
+    transition: transform .3s ease-out ;
+    &:focus{
         background-color: #F2A42A;
         color: white;
         }
-    &: hover{
-        backgroundColor: "#EFA21F",
+    &:hover{
+        background-color: #EFA21F;
         color: white;
+        transform: rotate(15deg) scale(1) translateX(10px);
         }
 
     @media all and (max-width: 1024px){
