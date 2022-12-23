@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+// import { Button } from "@mui/material";
 
 
 const ContainerCategory = styled.div`
@@ -11,16 +12,23 @@ const ContainerCategory = styled.div`
     `
 
 const ButtonAll = styled.button`
-    border: 1px solid #B2B2B2;
-    padding: 15px 25px;
-    margin-right: 25px;
-    border-radius: 37px;
-    background: #0D0D0D;
-    color: white;
+        border: 1px solid #B2B2B2;
+        padding: 15px 25px;
+        margin-right: 25px;
+        border-radius: 37px;
+        background: #0D0D0D;
+        color: white;
+            &: focus{
+                background-color: #F2A42A;
+                color: white;
+                }
+            &:hover{
+                backgroundColor: "#EFA21F",
+                color: white;
+            }
 
     @media all and (max-width: 1024px){
         padding: 10px 15px;
-        // margin-left: 25px;
         margin: 10px;
     }
     `
@@ -32,6 +40,15 @@ const ButtonCategories = styled.button`
     border-radius: 37px;
     background-color: #0D0D0D;
     color: white;
+
+    &: focus{
+        background-color: #F2A42A;
+        color: white;
+        }
+    &: hover{
+        backgroundColor: "#EFA21F",
+        color: white;
+        }
 
     @media all and (max-width: 1024px){
         padding: 10px 15px;
@@ -49,16 +66,19 @@ const Categories = ({ setActiveCategory, categories, activeCategory }) => {
 
     return (
         <ContainerCategory>
-            <ButtonAll onClick={() => setActiveCategory('')}>All</ButtonAll>
+            <ButtonAll onClick={() => setActiveCategory('')}
+
+
+            >All</ButtonAll>
 
             {
                 categories.map((cat) =>
                     <ButtonCategories
                         key={cat}
-                        // style={{backgroundColor: activeCategory ? "#EFA21F" : null}}
                         value={cat}
-                        onClick={handleClick}>{cat}
-                       
+                        onClick={handleClick}
+                        
+                        >{cat}
                     </ButtonCategories>
                 )
             }

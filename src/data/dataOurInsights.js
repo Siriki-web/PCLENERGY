@@ -76,7 +76,7 @@ export const dataOurInsights = [
         id: 'https://phillipsconsulting.net/articles_post/ikeja-electric-partners-with-phillips-consulting-to-take-leadership-in-digital-learning-in-the-electricity-distribution-sector/',
         name: 't11',
         picture: mariana_proenca,
-        titlePost: 'Ikeja Electric Partners with Phillips Consulting to Take Leadership In Digital Learning In the Electricity Distribution Sector ',
+        titlePost:  `Ikeja Electric Partners with Phillips Consulting to Take Leadership In Digital Learning In the Electricity \n Distribution Sector `,
         categoryPost: 'Articles',
     },
     {

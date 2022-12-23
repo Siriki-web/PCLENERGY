@@ -142,6 +142,8 @@ const DivRight = styled.div`
 
 const Insight = () => {
 
+    // const [query, setQuery] = useState("")
+
     useEffect(() => {
         window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
     }, [])
@@ -165,14 +167,13 @@ const Insight = () => {
                         activeCategory={activeCategory} />
 
                     {
-                        dataOurInsights.map(({ id, picture, author, titlePost, contentPost, comment, date, categoryPost }) =>
+                        dataOurInsights.map(({ id, picture, titlePost, categoryPost }) =>
                             !activeCategory || activeCategory === categoryPost ? (
                                 <div key={id}>
                                     <InsightItem
                                         id={id}
                                         picture={picture}
                                         titlePost={titlePost}
-                                        contentPost={contentPost}
                                     />
                                 </div>
                             ) : null
@@ -190,18 +191,22 @@ const Insight = () => {
                                     borderRadius: "5px",
                                     border: "none"
                                 }} type="search" placeholder='Search Here' />
+                                {/* {
+                                    dataOurInsights
+                                       
+                                        .map(({ id, categoryPost }) =>
+                                            <div key={id}>
+                                                <h1>categoryPost</h1>
+                                                <a href={`${id}`}>id</a>
+                                            </div>
+                                        )
+                                } */}
                             </div>
                         </LookingInsights>
                         <RecentPosts>
                             <div>
                                 <H3>Recent Posts</H3>
                                 <div>
-                                    {/* {dataOurInsights.map(({ id, picture, titlePost, date }) =>
-                                        <div key={id}>
-                                            <RecentPost picture={picture} date={date} titlePost={titlePost} />
-                                        </div>
-                                    )
-                                    } */}
                                     <div>
                                         <div style={{ display: "flex", alignItems: "center" }}>
                                             <a href="https://phillipsconsulting.net/articles_post/ghana-national-gas-company-partners-with-pcl-to-launch-a-corporate-digital-learning-platform/ ">
@@ -210,7 +215,6 @@ const Insight = () => {
                                             <a href="https://phillipsconsulting.net/articles_post/ghana-national-gas-company-partners-with-pcl-to-launch-a-corporate-digital-learning-platform/ ">
 
                                                 <div style={{ marginLeft: "20px" }}>
-                                                    {/* <p style={{ color: "#EFA21F", fontSize: "15px" }}>{date}</p> */}
                                                     <p style={{ color: "white", fontSize: "12px" }}>Ghana National Gas Company Partners with pcl. to Launch a Corporate Digital Learning Platform</p>
                                                 </div>
                                             </a>
@@ -223,7 +227,6 @@ const Insight = () => {
                                             </a>
                                             <a href="https://phillipsconsulting.net/articles_post/leveraging-capacity-building-to-boost-business-growth/ ">
                                                 <div style={{ marginLeft: "20px" }}>
-                                                    {/* <p style={{ color: "#EFA21F", fontSize: "15px" }}>{date}</p> */}
                                                     <p style={{ color: "white", fontSize: "12px" }}>Leveraging Capacity Building to Boost Business Growth </p>
                                                 </div>
                                             </a>
@@ -236,7 +239,6 @@ const Insight = () => {
                                             </a>
                                             <a href="https://phillipsconsulting.net/articles_post/data-governance-a-precursor-for-digital-transformation/ ">
                                                 <div style={{ marginLeft: "20px" }}>
-                                                    {/* <p style={{ color: "#EFA21F", fontSize: "15px" }}>{date}</p> */}
                                                     <p style={{ color: "white", fontSize: "12px" }}>Data Governance: A Precursor for Digital Transformation </p>
                                                 </div>
                                             </a>
@@ -249,7 +251,6 @@ const Insight = () => {
                                             </a>
                                             <a href="https://phillipsconsulting.net/articles_post/leveraging-big-data-analytics-to-improve-business-performance/ ">
                                                 <div style={{ marginLeft: "20px" }}>
-                                                    {/* <p style={{ color: "#EFA21F", fontSize: "15px" }}>{date}</p> */}
                                                     <p style={{ color: "white", fontSize: "12px" }}>Leveraging Big Data Analytics to Improve Business Performance </p>
                                                 </div>
                                             </a>
@@ -262,7 +263,6 @@ const Insight = () => {
                                             </a>
                                             <a href="https://phillipsconsulting.net/articles_post/embracing-the-culture-of-digital-revolution-in-everyday-work/ ">
                                                 <div style={{ marginLeft: "20px" }}>
-                                                    {/* <p style={{ color: "#EFA21F", fontSize: "15px" }}>{date}</p> */}
                                                     <p style={{ color: "white", fontSize: "12px" }}>Embracing the Culture of Digital Revolution in Everyday Work </p>
                                                 </div>
                                             </a>

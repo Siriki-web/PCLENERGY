@@ -5,7 +5,7 @@ import arrow_gold from '../../assets/arrow_orange.png'
 
 const Image = styled.img`
     height: 280px;
-    width: 500px;
+    width: 520px;
 
     @media all and (max-width: 1024px){
         width: 100%;
@@ -31,21 +31,28 @@ const Button = styled.button`
     }
     `
 
-const InsightItem = ({ id, picture, date, author, comment, titlePost, contentPost }) => {
+const PrincipalDiv = styled.div`
+    width: 75%;
+
+    @media only screen and (max-width: 500px){
+        width: 100%;
+    }
+`
+
+const InsightItem = ({ id, picture, titlePost }) => {
 
     return (
-        <div className="wow animate__animated animate__fadeInUp">
+        <PrincipalDiv className="wow animate__animated animate__fadeInUp">
             <a href={`${id}`}>
                 <Image src={picture} alt="" />
             </a>
             <TitlePost>{titlePost}</TitlePost>
-            <p>{contentPost}</p>
             <div key={id}>
                 <a href={`${id}`}>
                     <Button>READ NOW <img style={{ height: "8px", marginLeft: "5px" }} src={arrow_gold} alt="" /> </Button>
                 </a>
             </div>
-        </div>
+        </PrincipalDiv>
     );
 };
 
