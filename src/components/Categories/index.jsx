@@ -31,7 +31,7 @@ const ButtonAll = styled.button`
 
     @media all and (max-width: 1024px){
         padding: 10px 15px;
-        margin: 10px;
+        margin: 3px;
     }
     `
 
@@ -55,7 +55,7 @@ const ButtonCategories = styled.button`
 
     @media all and (max-width: 1024px){
         padding: 10px 15px;
-        margin: 5px;
+        margin: 3px;
     }
 
 `
@@ -69,10 +69,7 @@ const Categories = ({ setActiveCategory, categories, activeCategory }) => {
 
     return (
         <ContainerCategory>
-            <ButtonAll onClick={() => setActiveCategory('')}
-
-
-            >All</ButtonAll>
+            <ButtonAll onClick={() => setActiveCategory('')}>All</ButtonAll>
 
             {
                 categories.map((cat) =>
@@ -80,8 +77,8 @@ const Categories = ({ setActiveCategory, categories, activeCategory }) => {
                         key={cat}
                         value={cat}
                         onClick={handleClick}
-                        
-                        >{cat}
+
+                    >{cat}
                     </ButtonCategories>
                 )
             }

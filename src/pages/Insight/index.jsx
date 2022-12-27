@@ -108,7 +108,7 @@ const TheCategories = styled.div`
     width: 65%;
     margin-top: 35px;
 
-    @media all and (max-width: 1024px){
+    @media only screen and (max-width: 500px){
         width: auto;
     }
     `
@@ -138,6 +138,17 @@ const DivRight = styled.div`
     margin-top: 67px;
     `
 
+const PrincipalContainer = styled.div`
+    background-color: #0D0D0D;
+
+    @media only screen and (max-width: 500px){
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    `
 
 
 const Insight = () => {
@@ -152,7 +163,7 @@ const Insight = () => {
     const categories = dataOurInsights.reduce((acc, ins) => acc.includes(ins.categoryPost) ? acc : acc.concat(ins.categoryPost), [])
 
     return (
-        <div style={{ backgroundColor: "#0D0D0D" }}>
+        <PrincipalContainer>
             <Cover>
                 <CoverOverlay>
                     <Nav />
@@ -314,7 +325,7 @@ const Insight = () => {
             </TheInsights>
             <OurIndustry />
             <Footer />
-        </div>
+        </PrincipalContainer>
     );
 };
 

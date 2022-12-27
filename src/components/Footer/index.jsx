@@ -50,8 +50,12 @@ const UnderContainer = styled.div`
     `
 
 const ImgLogo = styled.img`
-    margin-left: 20px;
+    // margin-left: 10px;
     width: 90px;
+
+    @media only screen and (max-width: 500px){
+        margin-left: 20px;
+    }
     `
 
 const StyledLink = styled(Link)`
@@ -146,12 +150,19 @@ const LinkMob = styled.div`
 
 const Logo = styled.div`
     display: flex;
+    margin-right: 15px;
 
     @media only screen and (max-width: 500px){
         margin-left: -75px;
+        margin-right: 0;
     }
     `
 
+const ContainerLinkFooter = styled.div`
+
+    @media only screen and (max-width: 500px){
+        margin-left: 25px;
+    }`
 
 const Footer = () => {
     return (
@@ -164,7 +175,7 @@ const Footer = () => {
                         <InputText type="email" /><ButtonSubmitted className='wow animate__animated animate__rotateInDownLeft'>SUBMIT <img style={{ width: "15px", marginLeft: "4px" }} src={right_arrow} alt="" /></ButtonSubmitted>
                     </SubscribeNewsletter>
                 </div>
-                <div>
+                <ContainerLinkFooter>
                     <LinkMob>
                         <FirstRowLink>
                             <StyledLink to='/contact'>Contact Us</StyledLink>
@@ -184,7 +195,7 @@ const Footer = () => {
                             <IconSocialNetwork><GrFacebookOption style={{ padding: "11px", color: "white" }} /></IconSocialNetwork>
                         </Logo>
                     </DivIcon>
-                </div>
+                </ContainerLinkFooter>
             </UnderContainer>
             <Divizer />
             <Copyright>&copy; PCL Energy {new Date().getFullYear()}</Copyright>

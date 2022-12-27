@@ -27,10 +27,10 @@ const DivNav = styled.div`
 const Img = styled.img`
     width: 90px;
     // margin-right: 100px;
-    // margin-left: 15px;
+    margin-left: -45px;
 
     @media all and (max-width: 1024px) {
-        margin-left: -180px;
+        margin-left: -165px;
     }
     `
 
