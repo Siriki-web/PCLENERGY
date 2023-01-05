@@ -24,7 +24,7 @@ import Insight from './pages/Insight';
 import Contact from './pages/Contact';
 import QualityAssurance from './pages/QualityAssurance';
 import OperationMaintenance from './pages/OperationMaintenance'
-
+import Error from './pages/Error'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -53,6 +53,7 @@ root.render(
                 <Route path='/portfolio-advisory' element={<Portfolio />} />
                 <Route path='/program-project-management' element={<Program />} />
                 <Route path='/operation-maintenace' element={<OperationMaintenance />} />
+                <Route path='*' element={<Error />} />
             </Routes>
         </Router>
         <App />
