@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const UnderHeader = styled.div`
     position: absolute;
     background: rgba(0,0,0,0.8);
-    opacity: 0.6;
+    opacity: 0.8;
     height: 100%;
     width: 100%;
 `

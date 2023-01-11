@@ -91,17 +91,17 @@ const TheServices = styled.div`
     margin-right: 10px;
 `
 
-const Org = styled.p`
-    color: white;
+// const Org = styled.p`
+//     color: white;
 
-    @media only screen and (max-width: 500px){
-        font-size: 15px;
-        }
-    `
+//     @media only screen and (max-width: 500px){
+//         font-size: 15px;
+//         }
+//     `
 
 const PgH = styled.p`
     color: white;
-    line-height: 35px;
+    line-height: 5px;
 
     @media only screen and (max-width: 500px){
         font-size: 15px;
@@ -184,20 +184,19 @@ const Partnership = () => {
                     <TitreH2>Public-Private Partnership Advisory</TitreH2>
                     <Text>
                         PPP Advisory is a specialist finance consultancy that focuses on improving and smooth
-                        delivery of infrastructure projects and provides access to private capital by providing
-                        the strength and capacities of respective partners to be used optimally.<Br />.<Br />
+                        delivery of infrastructure projects and provides access to private capital by providing.<Br />
                         In view of helping industries (private and public) to achieve their objectives,
                         pcl. energy has the knowledge and skills of multidisciplinary experts who develop
                         and deliver technical, financial, commercial, legal, and practical solutions.
                         pcl. energy provides you with sustainable support in highlighting the organizational project.
 
 
-                        <br /><br />
+                        <br />
                         Key Areas:
                     </Text>
                     <DivQ>
                         <CircleButton></CircleButton>
-                        <Org>Policy and Research</Org>
+                        <PgH>Policy and Research</PgH>
                     </DivQ>
                     <DivStyle>
                         <CircleButton></CircleButton>

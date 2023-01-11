@@ -91,17 +91,18 @@ const TheServices = styled.div`
     margin-right: 10px;
 `
 
-const Org = styled.p`
-    color: white;
+// const Org = styled.p`
+//     color: white;
+//     line-height: 5px;
 
-    @media only screen and (max-width: 500px){
-        font-size: 15px;
-        }
-    `
+//     @media only screen and (max-width: 500px){
+//         font-size: 15px;
+//         }
+//     `
 
 const PgH = styled.p`
     color: white;
-    line-height: 35px;
+    line-height: 5px;
 
     @media only screen and (max-width: 500px){
         font-size: 15px;
@@ -193,19 +194,19 @@ const Bankable = () => {
                         for funding (investments or loans) from financial institutions. A prospective
                         financial investment is only bankable when proven to be economically viable,
                         and other factors that will provide answers to investors, saving the most
-                        fundamentals of any investment which are time and cost.<Br /><Br />
+                        fundamentals of any investment which are time and cost.<Br />
                         pcl. energy has expertise in the financial services sector including risk
                         management, financial analysis and evaluation, regulation and compliance, and
                         wealth management, which will be used to build a bankable feasibility study
                         that will meet any given requirements.
 
 
-                        <br /><br />
+                        <br />
                         Target Areas:
                     </Text>
                     <DivQ>
                         <CircleButton></CircleButton>
-                        <Org>Research</Org>
+                        <PgH>Research</PgH>
                     </DivQ>
                     <DivStyle>
                         <CircleButton></CircleButton>

@@ -92,17 +92,17 @@ const TheServices = styled.div`
     margin-right: 10px;
 `
 
-const Org = styled.p`
-    color: white;
+// const Org = styled.p`
+//     color: white;
 
-    @media only screen and (max-width: 500px){
-        font-size: 15px;
-        }
-    `
+//     @media only screen and (max-width: 500px){
+//         font-size: 15px;
+//         }
+//     `
 
 const PgH = styled.p`
     color: white;
-    line-height: 35px;
+    line-height: 5px;
 
     @media only screen and (max-width: 500px){
         font-size: 15px;
@@ -190,15 +190,15 @@ const Program = () => {
                         The success of your company is dependent on the effectiveness and efficiency  of your
                         project and <span style={{ color: "#EFA21F" }}>PROGRAM
                         MANAGEMENT</span>. Excellence and quality must be embedded from the project initiation
-                        stage up until the closing and monitoring stage.<Br /><Br />
+                        stage up until the closing and monitoring stage.<Br />
                         Pcl. Energy has executed multiple projects with her team of experts. Working relentlessly,
                         with our expertise we will help you make the right decisions for your company's growth.
-                        <br /><br />
+                        <br />
                         Focus Area:
                     </Text>
                     <DivQ>
                         <CircleButton></CircleButton>
-                        <Org>Project planning</Org>
+                        <PgH>Project planning</PgH>
                     </DivQ>
                     <DivStyle>
                         <CircleButton></CircleButton>

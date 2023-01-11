@@ -91,17 +91,17 @@ const TheServices = styled.div`
     margin-right: 10px;
 `
 
-const Org = styled.p`
-    color: white;
+// const Org = styled.p`
+//     color: white;
 
-    @media only screen and (max-width: 500px){
-        font-size: 15px;
-        }
-    `
+//     @media only screen and (max-width: 500px){
+//         font-size: 15px;
+//         }
+//     `
 
 const PgH = styled.p`
     color: white;
-    line-height: 35px;
+    line-height: 5px;
 
     @media only screen and (max-width: 500px){
         font-size: 15px;
@@ -187,18 +187,18 @@ const Portfolio = () => {
                     <Text>
                         Any investment and asset management decision rely completely on the expertise 
                         of your Portfolio advisory services. Your expertise and competence in this area will
-                        enable your organization to spot higher-yielding long-term investment opportunities with low risk.<Br /><Br />
+                        enable your organization to spot higher-yielding long-term investment opportunities with low risk.<Br />
                         pcl. energy represents a diverse professional discipline offering financial 
                         advisory services in areas of asset management in the Energy industry. 
                         Working closely to provide the necessary information for a better transition of 
                         organizational finances. Offering professional  strategies to potentially capture market returns with low risk.
 
-                        <br /><br />
+                        <br />
                         Focus Area:
                     </Text>
                     <DivQ>
                         <CircleButton></CircleButton>
-                        <Org>Risk management</Org>
+                        <PgH>Risk management</PgH>
                     </DivQ>
                     <DivStyle>
                         <CircleButton></CircleButton>

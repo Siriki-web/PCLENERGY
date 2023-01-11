@@ -35,7 +35,7 @@ const TheInsights = styled.div`
     margin-top: 190px;
     margin-left: 150px;
 
-    @media all and (max-width: 1024px){
+    @media only screen and (max-width: 500px){
         display: flex;
         flex-wrap: wrap;
         margin-left: 0;
@@ -220,10 +220,10 @@ const Insight = () => {
                                 <div>
                                     <div>
                                         <div style={{ display: "flex", alignItems: "center" }}>
-                                            <a href="https://phillipsconsulting.net/articles_post/ghana-national-gas-company-partners-with-pcl-to-launch-a-corporate-digital-learning-platform/ ">
+                                            <a href="https://phillipsconsulting.net/articles_post/ghana-national-gas-company-partners-with-pcl-to-launch-a-corporate-digital-learning-platform/" target="_blank" rel="noreferrer noopener">
                                                 <img style={{ width: "110px", height: "85px", borderRadius: "10px" }} src={marianna} alt="" />
                                             </a>
-                                            <a href="https://phillipsconsulting.net/articles_post/ghana-national-gas-company-partners-with-pcl-to-launch-a-corporate-digital-learning-platform/ ">
+                                            <a href="https://phillipsconsulting.net/articles_post/ghana-national-gas-company-partners-with-pcl-to-launch-a-corporate-digital-learning-platform/" target="_blank" rel="noreferrer noopener">
 
                                                 <div style={{ marginLeft: "20px" }}>
                                                     <p style={{ color: "white", fontSize: "12px" }}>Ghana National Gas Company Partners with pcl. to Launch a Corporate Digital Learning Platform</p>
@@ -233,10 +233,10 @@ const Insight = () => {
                                         <hr style={{ width: "300px" }} />
 
                                         <div style={{ display: "flex", alignItems: "center" }}>
-                                            <a href="https://phillipsconsulting.net/articles_post/leveraging-capacity-building-to-boost-business-growth/ ">
+                                            <a href="https://phillipsconsulting.net/articles_post/leveraging-capacity-building-to-boost-business-growth/" target="_blank" rel="noreferrer noopener">
                                                 <img style={{ width: "110px", height: "85px", borderRadius: "10px" }} src={marianna} alt="" />
                                             </a>
-                                            <a href="https://phillipsconsulting.net/articles_post/leveraging-capacity-building-to-boost-business-growth/ ">
+                                            <a href="https://phillipsconsulting.net/articles_post/leveraging-capacity-building-to-boost-business-growth/" target="_blank" rel="noreferrer noopener">
                                                 <div style={{ marginLeft: "20px" }}>
                                                     <p style={{ color: "white", fontSize: "12px" }}>Leveraging Capacity Building to Boost Business Growth </p>
                                                 </div>
@@ -245,10 +245,10 @@ const Insight = () => {
                                         <hr style={{ width: "300px" }} />
 
                                         <div style={{ display: "flex", alignItems: "center" }}>
-                                            <a href="https://phillipsconsulting.net/articles_post/data-governance-a-precursor-for-digital-transformation/ ">
+                                            <a href="https://phillipsconsulting.net/articles_post/data-governance-a-precursor-for-digital-transformation/" target="_blank" rel="noreferrer noopener">
                                                 <img style={{ width: "110px", height: "85px", borderRadius: "10px" }} src={marianna} alt="" />
                                             </a>
-                                            <a href="https://phillipsconsulting.net/articles_post/data-governance-a-precursor-for-digital-transformation/ ">
+                                            <a href="https://phillipsconsulting.net/articles_post/data-governance-a-precursor-for-digital-transformation/" target="_blank" rel="noreferrer noopener">
                                                 <div style={{ marginLeft: "20px" }}>
                                                     <p style={{ color: "white", fontSize: "12px" }}>Data Governance: A Precursor for Digital Transformation </p>
                                                 </div>
@@ -257,10 +257,10 @@ const Insight = () => {
                                         <hr style={{ width: "300px" }} />
 
                                         <div style={{ display: "flex", alignItems: "center" }}>
-                                            <a href="https://phillipsconsulting.net/articles_post/leveraging-big-data-analytics-to-improve-business-performance/ ">
+                                            <a href="https://phillipsconsulting.net/articles_post/leveraging-big-data-analytics-to-improve-business-performance/" target="_blank" rel="noreferrer noopener">
                                                 <img style={{ width: "110px", height: "85px", borderRadius: "10px" }} src={marianna} alt="" />
                                             </a>
-                                            <a href="https://phillipsconsulting.net/articles_post/leveraging-big-data-analytics-to-improve-business-performance/ ">
+                                            <a href="https://phillipsconsulting.net/articles_post/leveraging-big-data-analytics-to-improve-business-performance/" target="_blank" rel="noreferrer noopener">
                                                 <div style={{ marginLeft: "20px" }}>
                                                     <p style={{ color: "white", fontSize: "12px" }}>Leveraging Big Data Analytics to Improve Business Performance </p>
                                                 </div>
@@ -269,10 +269,10 @@ const Insight = () => {
                                         <hr style={{ width: "300px" }} />
 
                                         <div style={{ display: "flex", alignItems: "center" }}>
-                                            <a href="https://phillipsconsulting.net/articles_post/embracing-the-culture-of-digital-revolution-in-everyday-work/ ">
+                                            <a href="https://phillipsconsulting.net/articles_post/embracing-the-culture-of-digital-revolution-in-everyday-work/" target="_blank" rel="noreferrer noopener">
                                                 <img style={{ width: "110px", height: "85px", borderRadius: "10px" }} src={marianna} alt="" />
                                             </a>
-                                            <a href="https://phillipsconsulting.net/articles_post/embracing-the-culture-of-digital-revolution-in-everyday-work/ ">
+                                            <a href="https://phillipsconsulting.net/articles_post/embracing-the-culture-of-digital-revolution-in-everyday-work/" target="_blank" rel="noreferrer noopener">
                                                 <div style={{ marginLeft: "20px" }}>
                                                     <p style={{ color: "white", fontSize: "12px" }}>Embracing the Culture of Digital Revolution in Everyday Work </p>
                                                 </div>

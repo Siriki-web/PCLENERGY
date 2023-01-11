@@ -91,17 +91,17 @@ const TheServices = styled.div`
     margin-right: 10px;
 `
 
-const Org = styled.p`
-    color: white;
+// const Org = styled.p`
+//     color: white;
 
-    @media only screen and (max-width: 500px){
-        font-size: 15px;
-        }
-    `
+//     @media only screen and (max-width: 500px){
+//         font-size: 15px;
+//         }
+//     `
 
 const PgH = styled.p`
     color: white;
-    line-height: 35px;
+    line-height: 5px;
 
     @media only screen and (max-width: 500px){
         font-size: 15px;
@@ -186,17 +186,17 @@ const OperationMaintenance = () => {
                         Reaching a company's full potential is possible with a conducive operating environment
                         and prompt in maintenance. Many engineering companies have failed to deliver the required
                         results or targets due to a lack of expertise in operations. Proper consultation, cost, and
-                        time will be saved with an increase in productivity and efficiency.<Br /><Br />
+                        time will be saved with an increase in productivity and efficiency.<Br />
                         pcl. energy is focused on performance optimization and increasing the life cycle of any
                         operation to ascertain maximum or peak efficiency. Coupled with proper health safety and
                         environmental (HSE) practices, a key to achieving all objectives
 
-                        <br /><br />
+                        <br />
                         Key Areas:
                     </Text>
                     <DivQ>
                         <CircleButton></CircleButton>
-                        <Org>Energy System</Org>
+                        <PgH>Energy System</PgH>
                     </DivQ>
                     <DivStyle>
                         <CircleButton></CircleButton>

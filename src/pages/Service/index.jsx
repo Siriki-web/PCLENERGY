@@ -89,6 +89,7 @@ const ButtonContact = styled.button`
     background-image: linear-gradient(to right, #EE6B2A,#30B34A);
     border-radius: 2px;
     color: white;
+    cursor: pointer;
 `
 
 const CtnTestimonials = styled.div`
@@ -217,7 +218,7 @@ const CardImage = styled.div`
 const CardOverlay = styled.div`
     position: absolute;
     background: rgba(0,0,0,0.8);
-    opacity: 0.6;
+    opacity: 0.9;
     height: 100%;
     width: 100%;
     `

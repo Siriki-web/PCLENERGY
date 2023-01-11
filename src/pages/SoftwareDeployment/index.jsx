@@ -92,17 +92,17 @@ const TheServices = styled.div`
     margin-right: 10px;
 `
 
-const Org = styled.p`
-    color: white;
+// const Org = styled.p`
+//     color: white;
 
-    @media only screen and (max-width: 500px){
-        font-size: 15px;
-        }
-    `
+//     @media only screen and (max-width: 500px){
+//         font-size: 15px;
+//         }
+//     `
 
 const PgH = styled.p`
     color: white;
-    line-height: 35px;
+    line-height: 5px;
 
     @media only screen and (max-width: 500px){
         font-size: 15px;
@@ -114,7 +114,6 @@ const PgH = styled.p`
 const DivStyle = styled.div`
     display: flex;
     align-items: baseline;
-    // line-height: 10px;
 
     @media all and (max-width: 1024px){
         padding-left: 2rem;
@@ -187,15 +186,12 @@ const SoftwareDevelopment = () => {
                         pcl. energy is ready to develop and deploy both new and existing software that
                         will go in line with the requirements within the industry in a competitive environment,
                         digital transformation is essential. These services are designed to ensure that clients
-                        get the best out of their investments.
-
-
-                        <br /><br />
+                        get the best out of their investments. <br />
                         Key Areas:
                     </Text>
                     <DivQ>
                         <CircleButton></CircleButton>
-                        <Org>Skill development</Org>
+                        <PgH>Skill development</PgH>
                     </DivQ>
                     <DivStyle>
                         <CircleButton></CircleButton>

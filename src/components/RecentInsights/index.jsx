@@ -23,30 +23,11 @@ const ImgPlak = styled.img`
     height: 207px;
     `
 
-// const Paragraph = styled.p`
-//     color: #EFA21F;
-//     font-size: 22px;
-//     line-height: 28px;
-//     margin-top: 0px;
-//     margin-bottom: 0px;
-//     `
-
 const SecondParagraph = styled.p`
     color: white;
     font-size: 18px;
     line-height: 30px;
     `
-
-// const DateAndAuthor = styled.div`
-//     display: flex;
-//     justify-content: space-between;
-//     `
-
-// const NameAuthor = styled.p`
-//     font-size: 12px;
-//     line-height: 25px;
-//     color: white;
-// `
 
 const Button = styled.button`
     background: none;
@@ -70,6 +51,7 @@ const ButtonMoreArticle = styled.button`
     background-image: linear-gradient(to right, #EE6B2A, #30B24A);
     border-radius: 5px;
     color: white;
+    cursor: pointer;
     `
 
 const DivPrincipal = styled.div`

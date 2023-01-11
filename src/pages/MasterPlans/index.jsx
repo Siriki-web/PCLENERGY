@@ -92,17 +92,17 @@ const TheServices = styled.div`
     margin-right: 10px;
 `
 
-const Org = styled.p`
-    color: white;
+// const Org = styled.p`
+//     color: white;
 
-    @media only screen and (max-width: 500px){
-        font-size: 15px;
-        }
-    `
+//     @media only screen and (max-width: 500px){
+//         font-size: 15px;
+//         }
+//     `
 
 const PgH = styled.p`
     color: white;
-    line-height: 35px;
+    line-height: 5px;
 
     @media only screen and (max-width: 500px){
         font-size: 15px;
@@ -189,18 +189,18 @@ const MasterPlans = () => {
                         document that provides a conceptual layout. A comprehensive conceptual layout that will
                         determine the long-term goals of a company is needed. With a detailed and all-encompassing
                         master plan, a company will be better at consistent decision-making, the best use of resources,
-                        and positive development.<Br /><Br />
+                        and positive development.<Br />
                         pcl. energy provides you with services of documents and policy guides designed to help industries
                         and/or communities create a vision of their short-term and long-term goals. We aim to give Energy
                         industries a steady point of refresh for taking action, producing positive economic development, and
                         the ability to make an informed decision, thereby achieving predictability in the industry.
 
-                        <br /><br />
+                        <br />
                         Key Areas:
                     </Text>
                     <DivQ>
                         <CircleButton></CircleButton>
-                        <Org>Data gathering and Analysis</Org>
+                        <PgH>Data gathering and Analysis</PgH>
                     </DivQ>
                     <DivStyle>
                         <CircleButton></CircleButton>

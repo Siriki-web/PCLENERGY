@@ -7,7 +7,7 @@ const Image = styled.img`
     height: 280px;
     width: 520px;
 
-    @media all and (max-width: 1024px){
+    @media only screen and (max-width: 500px){
         width: 100%;
     }
     `
@@ -17,14 +17,14 @@ const TitlePost = styled.h1`
     color: #EFA21F;
     `
 
-const Button = styled.button`
+const ButtonA = styled.a`
     display: flex;
     align-items: center;
     color: #EFA21F;
     background: none;
     border: none;
     margin-bottom: 35px;
-    margin-left: -5px;
+    margin-left: 0;
 
      @media all and (max-width: 1024px){
         margin-bottom: 20px;
@@ -43,14 +43,14 @@ const InsightItem = ({ id, picture, titlePost }) => {
 
     return (
         <PrincipalDiv className="wow animate__animated animate__fadeInUp">
-            <a href={`${id}`}>
+            <a href={`${id}`} target="_blank" rel="noreferrer noopener">
                 <Image src={picture} alt="" />
             </a>
             <TitlePost>{titlePost}</TitlePost>
             <div key={id}>
-                <a href={`${id}`}>
-                    <Button>READ NOW <img style={{ height: "8px", marginLeft: "5px" }} src={arrow_gold} alt="" /> </Button>
-                </a>
+                <ButtonA href={`${id}`} target="_blank" rel="noreferrer noopener">READ NOW
+                     <img style={{ height: "8px", marginLeft: "5px" }} src={arrow_gold} alt="" />
+                </ButtonA>
             </div>
         </PrincipalDiv>
     );

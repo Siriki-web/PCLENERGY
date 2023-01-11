@@ -91,17 +91,17 @@ const TheServices = styled.div`
     margin-right: 10px;
 `
 
-const Org = styled.p`
-    color: white;
+// const Org = styled.p`
+//     color: white;
 
-    @media only screen and (max-width: 500px){
-        font-size: 15px;
-        }
-    `
+//     @media only screen and (max-width: 500px){
+//         font-size: 15px;
+//         }
+//     `
 
 const PgH = styled.p`
     color: white;
-    line-height: 35px;
+    line-height: 5px;
 
     @media only screen and (max-width: 500px){
         font-size: 15px;
@@ -183,15 +183,15 @@ const SupportFunction = () => {
                         Creating value and making profits are the main target of every organization.
                         Improving the focus on your core business activities and building an ecosystem
                         of professionals and specialists will increase efficiency and control cost in
-                        your company.<Br /><Br /> Pcl. Energy can support you with our vast experience in outsourcing,
+                        your company.<Br /> Pcl. Energy can support you with our vast experience in outsourcing,
                         having built a network of reliable independent professionals with specialties in all areas of services.
 
-                        <br /><br />
+                        <br />
                         Focus Area:
                     </Text>
                     <DivQ>
                         <CircleButton></CircleButton>
-                        <Org>Quality Assurance</Org>
+                        <PgH>Quality Assurance</PgH>
                     </DivQ>
                     <DivStyle>
                         <CircleButton></CircleButton>

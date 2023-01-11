@@ -10,6 +10,7 @@ const BtnLearnMore = styled.button`
     padding: 12px 25px;
     background-image: linear-gradient(to right, #EE6B2A, #2BAF49);
     color: white;
+    cursor: pointer;
 
     @media only screen and (max-width: 500px) {
         font-weight: bold;

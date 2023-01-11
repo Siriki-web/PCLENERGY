@@ -47,6 +47,7 @@ const Button = styled.button`
     border-radius: 5px; 
     margin-left: 80px; 
     margin-top: 5px;
+    cursor: pointer;
     `
 
 const DivButton = styled.div`

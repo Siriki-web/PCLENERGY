@@ -96,17 +96,17 @@ const TheServices = styled.div`
     margin-right: 10px;
 `
 
-const Org = styled.p`
-    color: white;
+// const Org = styled.p`
+//     color: white;
 
-    @media only screen and (max-width: 500px){
-        font-size: 15px;
-        }
-    `
+//     @media only screen and (max-width: 500px){
+//         font-size: 15px;
+//         }
+//     `
 
 const PgH = styled.p`
     color: white;
-    line-height: 35px;
+    line-height: 5px;
 
     @media only screen and (max-width: 500px){
         font-size: 15px;
@@ -191,12 +191,12 @@ const TrainingService = () => {
                         training thousands of individuals from across companies and organizations. Services
                         like training require huge expertise to deliver.
 
-                        <br /><br />
+                        <br />
                         Key Areas:
                     </Text>
                     <DivQ>
                         <CircleButton></CircleButton>
-                        <Org>Workshop</Org>
+                        <PgH>Workshop</PgH>
                     </DivQ>
                     <DivStyle>
                         <CircleButton></CircleButton>

@@ -92,17 +92,17 @@ const TheServices = styled.div`
     margin-right: 10px;
 `
 
-const Org = styled.p`
-    color: white;
+// const Org = styled.p`
+//     color: white;
 
-    @media only screen and (max-width: 500px){
-        font-size: 15px;
-        }
-    `
+//     @media only screen and (max-width: 500px){
+//         font-size: 15px;
+//         }
+//     `
 
 const PgH = styled.p`
     color: white;
-    line-height: 35px;
+    line-height: 5px;
 
     @media only screen and (max-width: 500px){
         font-size: 15px;
@@ -195,17 +195,17 @@ const EnergyConcept = () => {
                         fewer greenhouse emissions. This is only effectively possible with experienced personnel
                         to help you understand the industry. With our content experience to provide a general
                         overview of the industry models and analysis that will build a system to analyze the design,
-                        cost, and project implementation. <Br /><Br />
+                        cost, and project implementation. <Br />
                         pcl. energy is an energy-based company that has experienced personnel with over 30 years of
                         experience in the energy industry, at pcl we have enough experience to give out the necessary
                         services within the industry.
 
-                        <br /><br />
+                        <br />
                         Focus areas:
                     </Text>
                     <DivQ>
                         <CircleButton></CircleButton>
-                        <Org>Energy Transition</Org>
+                        <PgH>Energy Transition</PgH>
                     </DivQ>
                     <DivStyle>
                         <CircleButton></CircleButton>

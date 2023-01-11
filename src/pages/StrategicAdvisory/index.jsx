@@ -91,17 +91,17 @@ const TheServices = styled.div`
     margin-right: 10px;
 `
 
-const Org = styled.p`
-    color: white;
+// const Org = styled.p`
+//     color: white;
 
-    @media only screen and (max-width: 500px){
-        font-size: 15px;
-        }
-    `
+//     @media only screen and (max-width: 500px){
+//         font-size: 15px;
+//         }
+//     `
 
 const PgH = styled.p`
     color: white;
-    line-height: 35px;
+    line-height: 5px;
 
     @media only screen and (max-width: 500px){
         font-size: 15px;
@@ -185,17 +185,17 @@ const StrategicAdvisory = () => {
                     <Text>
                         Being able to quickly react and respond to the demands
                         of the ever­ changing business environment is one of the
-                        greatest challenges faced by every organization. <Br /><Br />
+                        greatest challenges faced by every organization. <Br />
                         At pcl. energy, we provide clients with the insights they
                         need to better understand their competitive landscape and
                         we then support them in the journey of implementing with
                         agility, their revenue generation, and cost management strategic priorities.
-                        <br /><br />
+                        <br />
                         Services provided include:
                     </Text>
                     <DivQ>
                         <CircleButton></CircleButton>
-                        <Org>Strategic Research and Market Intelligence</Org>
+                        <PgH>Strategic Research and Market Intelligence</PgH>
                     </DivQ>
                     <DivStyle>
                         <CircleButton></CircleButton>

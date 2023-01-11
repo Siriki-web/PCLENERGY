@@ -93,17 +93,17 @@ const TheServices = styled.div`
     margin-right: 10px;
 `
 
-const Org = styled.p`
-    color: white;
+// const Org = styled.p`
+//     color: white;
 
-    @media only screen and (max-width: 500px){
-        font-size: 15px;
-        }
-    `
+//     @media only screen and (max-width: 500px){
+//         font-size: 15px;
+//         }
+//     `
 
 const PgH = styled.p`
     color: white;
-    line-height: 35px;
+    line-height: 5px;
 
     @media only screen and (max-width: 500px){
         font-size: 15px;
@@ -194,18 +194,18 @@ const Lobbying = () => {
                     <Text>
                         The management and maintenance of a business are channeled on the relationship 
                         with core stakeholders in the government, as such the growth of the brand is 
-                        promoted when industries align with the government and its regulations.<Br /><Br />
+                        promoted when industries align with the government and its regulations.<Br />
                         pcl. energy serves as a middleman between you and the regulatory bodies, 
                         helping industries (oil and gas) communicate with governments to educate 
                         lawmakers on how proposed legislation or regulations could affect the 
                         organization's business or lawmakers.
 
-                        <br /><br />
+                        <br />
                         Key Areas:
                     </Text>
                     <DivQ>
                         <CircleButton></CircleButton>
-                        <Org>Legal aspect projects ans businesses</Org>
+                        <PgH>Legal aspect projects ans businesses</PgH>
                     </DivQ>
                     <DivStyle>
                         <CircleButton></CircleButton>

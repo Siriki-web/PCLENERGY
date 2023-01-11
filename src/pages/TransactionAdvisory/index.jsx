@@ -93,17 +93,17 @@ const TheServices = styled.div`
     margin-right: 10px;
 `
 
-const Org = styled.p`
-    color: white;
+// const Org = styled.p`
+//     color: white;
 
-    @media only screen and (max-width: 500px){
-        font-size: 15px;
-        }
-    `
+//     @media only screen and (max-width: 500px){
+//         font-size: 15px;
+//         }
+//     `
 
 const PgH = styled.p`
     color: white;
-    line-height: 35px;
+    line-height: 5px;
 
     @media only screen and (max-width: 500px){
         font-size: 15px;
@@ -190,18 +190,18 @@ const TransactionAdvisory = () => {
                         issues are very complex and require diligent analysis.
                         The bedrock of a successful business is hard work, and challenges are prone to bring
                         a business down, in a bid to curb these uncertainties advisable to avail of
-                        professional transaction advisory services.<Br /><Br />
+                        professional transaction advisory services.<Br />
                         pcl. energy with the help of their financial due diligence team provides you with
                         outstanding analysis projected to earn networking capital and operational performance.
                         At pcl. energy, we help you with all the tasks attached to your transaction from the
                         start to finish, we are here as your backbone.
 
-                        <br /><br />
+                        <br />
                         Focus Areas:
                     </Text>
                     <DivQ>
                         <CircleButton></CircleButton>
-                        <Org>Transaction preparation and planning</Org>
+                        <PgH>Transaction preparation and planning</PgH>
                     </DivQ>
                     <DivStyle>
                         <CircleButton></CircleButton>

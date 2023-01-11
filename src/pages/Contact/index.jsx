@@ -57,6 +57,7 @@ const ButtonSend = styled.button`
     padding: 15px 25px;
     text-transform: uppercase;
     width: 215px;
+    cursor: pointer;
 
     @media only screen and (max-width: 500px){
         width: auto;
@@ -154,9 +155,6 @@ const Br = styled.br`
     }`
 
 
-
-
-
 const Contact = () => {
 
     useEffect(() => {
@@ -241,7 +239,7 @@ const Contact = () => {
                     <DivForm>
                         <form ref={form} onSubmit={sendEmail} style={{ display: "flex", flexDirection: "column", padding: "40px" }} >
                             <label style={{ color: "#D8921C", marginBottom: "10px" }}>Full Name</label>
-                            <input type="text" name="name" id="name" style={{
+                            <input type="text" name="name" id="name" autofocus required style={{
                                 backgroundColor: "#0D0D0D",
                                 border: "1px solid #D8921C4D",
                                 height: "30px",
@@ -251,7 +249,7 @@ const Contact = () => {
                             }} />
 
                             <label style={{ color: "#D8921C", marginBottom: "10px" }}>E-Mail Address</label>
-                            <input type="email" name="email" id="email" style={{
+                            <input type="email" name="email" id="email" required style={{
                                 backgroundColor: "#0D0D0D",
                                 border: "1px solid #D8921C4D",
                                 height: "30px",
@@ -261,7 +259,7 @@ const Contact = () => {
                             }} />
 
                             <label style={{ color: "#D8921C", marginBottom: "10px" }}>Phone Number</label>
-                            <input type="tel" name="phone" id="phone" style={{
+                            <input type="tel" name="phone" id="phone" required style={{
                                 backgroundColor: "#0D0D0D",
                                 border: "1px solid #D8921C4D",
                                 height: "30px",

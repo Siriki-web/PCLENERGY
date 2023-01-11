@@ -115,7 +115,7 @@ const Container = styled.div`
 
 const PgH = styled.p`
     color: white;
-    line-height: 35px;
+    line-height: 5px;
 
     @media only screen and (max-width: 500px){
         font-size: 15px;
@@ -182,13 +182,13 @@ const TitreH2 = styled.h2`
         }
     `
 
-const Org = styled.p`
-    color: white;
+// const Org = styled.p`
+//     color: white;
 
-    @media only screen and (max-width: 500px){
-        font-size: 1rem;
-        }
-    `
+//     @media only screen and (max-width: 500px){
+//         font-size: 1rem;
+//         }
+//     `
 
 const DivQu = styled.div`
     display: flex;
@@ -243,12 +243,12 @@ const QualityAssurance = () => {
                         ASSURANCE</span> Services. We offer you an unexampled Experience cutting 
                         across the Energy Sector. We provide this service across Nigeria and 
                         beyond. As a result, we can help you to assure quality across all your 
-                        business processes and runnings.<br /><br />
+                        business processes and runnings.<br />
                         Our out- point Quality Assurance Services include:
                     </Text>
                     <DivQ>
                         <CircleButton></CircleButton>
-                        <Org>Organisation Of Quality Assurance Training Courses</Org>
+                        <PgH>Organisation Of Quality Assurance Training Courses</PgH>
                     </DivQ>
                     <DivStyle>
                         <CircleButton></CircleButton>
