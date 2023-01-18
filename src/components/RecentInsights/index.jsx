@@ -35,6 +35,7 @@ const Button = styled.button`
     display: flex;
     align-items: center;
     border: none;
+    cursor: pointer;
 
     @media all and (max-width: 1024px){
         margin-bottom: 20px;
@@ -65,6 +66,7 @@ const UnderDiv = styled.div`
     justify-content: space-around;
     flex-wrap: wrap;
     `
+
 
 const RecentInsights = ({id}) => {
     return (

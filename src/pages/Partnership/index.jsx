@@ -260,10 +260,10 @@ const Partnership = () => {
                         <TheServices></TheServices>
                         <Pg><Link to="/master-plans" style={{ color: 'white' }}>Master Plans</Link></Pg>
                     </DivServices>
-                    <DivServices>
+                    {/* <DivServices>
                         <TheServices></TheServices>
                         <Pg><Link to="" style={{ color: 'white' }}>Pre-Feasibility Studies</Link></Pg>
-                    </DivServices>
+                    </DivServices> */}
                     <DivServices>
                         <TheServices></TheServices>
                         <Pg><Link to="/transaction-advisory" style={{ color: 'white' }}>Transaction Advisory & Due Diligence</Link></Pg>

@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const UnderHeader = styled.div`
     position: absolute;
     background: rgba(0,0,0,0.8);
-    opacity: 0.8;
+    opacity: 0.9;
     height: 100%;
     width: 100%;
 `
@@ -18,10 +18,12 @@ const Div = styled.div`
 
 const H1 = styled.h1`
     color: #EFA21F;
+    font-size: 70px;
     z-index: 1;
     text-transform: uppercase;
 
     @media only screen and (max-width: 500px){
+        font-size: 2rem;
         text-align: center
     }
 `

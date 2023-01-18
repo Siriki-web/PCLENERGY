@@ -56,22 +56,22 @@ const CategoriesInsights = styled.span`
     color: white;
     `
 
-const DivTags = styled.div`
-    background-color: #707070;
-    padding: 20px;
-    border-radius: 5px;
-    width: 65%;
-    margin-top: 35px;
+// const DivTags = styled.div`
+//     background-color: #707070;
+//     padding: 20px;
+//     border-radius: 5px;
+//     width: 65%;
+//     margin-top: 35px;
 
-    @media all and (max-width: 1024px){
-        width: auto;
-    }
-    `
+//     @media all and (max-width: 1024px){
+//         width: auto;
+//     }
+//     `
 
-const Tags = styled.div`
-    display: flex;
-    justify-content: space-between;
-    `
+// const Tags = styled.div`
+//     display: flex;
+//     justify-content: space-between;
+//     `
 
 
 const RecentPosts = styled.div`
@@ -123,13 +123,14 @@ const Div = styled.div`
 const TitleP = styled.p`
     color: white;
     `
-const Pg = styled.p`
-    font-size: 15px;
-    `
+// const Pg = styled.p`
+//     font-size: 15px;
+//     `
 
-const ColorTextTags = styled.div`
-    color: white;
-    `
+// const ColorTextTags = styled.div`
+//     color: white;
+//     `
+
 const H3 = styled.h3`
     color: white;
     `
@@ -301,7 +302,7 @@ const Insight = () => {
                             </div>
                         </div>
                     </TheCategories>
-                    <DivTags>
+                    {/* <DivTags>
                         <H3>Tags</H3>
                         <Tags>
                             <ColorTextTags>
@@ -320,7 +321,7 @@ const Insight = () => {
                                 <Pg>Fossil Ressources</Pg>
                             </ColorTextTags>
                         </Tags>
-                    </DivTags>
+                    </DivTags> */}
                 </DivRight>
             </TheInsights>
             <OurIndustry />

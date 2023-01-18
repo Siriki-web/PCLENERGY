@@ -15,7 +15,7 @@ import master_plans from '../../assets/master-plans.png'
 import maintenance_consultancy from '../../assets/maintenance-consultancy.png'
 import lobbying from '../../assets/lobbying.png'
 import energy_concept from '../../assets/energy-concept.png'
-import feasibility from '../../assets/feasibility-studies.png'
+// import feasibility from '../../assets/feasibility-studies.png'
 import bankable from '../../assets/bankable.png'
 import pp from '../../assets/public-private.png'
 import arrow_up from '../../assets/arrow-up.png'
@@ -300,11 +300,18 @@ const Service = () => {
                                     </CardOverlay>
                                 </CardImage>
                             </Link>
-                            <CardImage style={{ backgroundImage: `url("${feasibility}")` }}>
+                            <Link to="/lobbying">
+                                <CardImage style={{ backgroundImage: `url("${lobbying}")` }}>
+                                    <CardOverlay>
+                                        <NameService>LOBBYING & <br />GOVERNEMENT <br />RELATIONS</NameService>
+                                    </CardOverlay>
+                                </CardImage>
+                            </Link>
+                            {/* <CardImage style={{ backgroundImage: `url("${feasibility}")` }}>
                                 <CardOverlay>
                                     <NameService>PRE-FEASIBILITY<br />STUDIES</NameService>
                                 </CardOverlay>
-                            </CardImage>
+                            </CardImage> */}
                         </div>
                         <div>
                             <Link to="/training-service">
@@ -358,13 +365,7 @@ const Service = () => {
                                     </CardOverlay>
                                 </CardImage>
                             </Link>
-                            <Link to="/lobbying">
-                                <CardImage style={{ backgroundImage: `url("${lobbying}")` }}>
-                                    <CardOverlay>
-                                        <NameService>LOBBYING & <br />GOVERNEMENT <br />RELATIONS</NameService>
-                                    </CardOverlay>
-                                </CardImage>
-                            </Link>
+                            
                         </div>
                         <div>
                             <Link to="/bankable">

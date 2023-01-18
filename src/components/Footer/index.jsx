@@ -4,7 +4,7 @@ import right_arrow from '../../assets/right-arrow.png'
 import { Link } from 'react-router-dom'
 import { GrLinkedinOption } from 'react-icons/gr'
 import { GrTwitter } from 'react-icons/gr'
-import { MdEmail } from 'react-icons/md'
+// import { MdEmail } from 'react-icons/md'
 import { GrFacebookOption } from 'react-icons/gr'
 import { BiArrowToTop } from 'react-icons/bi'
 import styled from 'styled-components';
@@ -203,10 +203,17 @@ const Footer = () => {
 
                     <DivIcon>
                         <Logo>
-                            <IconSocialNetwork><GrLinkedinOption style={{ padding: "11px", color: "white" }} /></IconSocialNetwork>
-                            <IconSocialNetwork><GrTwitter style={{ padding: "11px", color: "white" }} /></IconSocialNetwork>
-                            <IconSocialNetwork><MdEmail style={{ padding: "11px", color: "white" }} /></IconSocialNetwork>
-                            <IconSocialNetwork><GrFacebookOption style={{ padding: "11px", color: "white" }} /></IconSocialNetwork>
+                            <a href="https://www.linkedin.com/company/phillips-consulting-limited/" target="_blank" rel="noreferrer noopener">
+                                <IconSocialNetwork><GrLinkedinOption style={{ padding: "11px", color: "white" }} /></IconSocialNetwork>
+                            </a>
+                            <a href="https://twitter.com/PCLAfrica" target="_blank" rel="noreferrer noopener">
+                                <IconSocialNetwork><GrTwitter style={{ padding: "11px", color: "white" }} /></IconSocialNetwork>
+                            </a>
+                            {/* <IconSocialNetwork><MdEmail style={{ padding: "11px", color: "white" }} /></IconSocialNetwork> */}
+                            <a href="https://www.facebook.com/pages/Phillips-Consulting-Limited/248117741930873?fref=ts" target="_blank" rel="noreferrer noopener">
+                                <IconSocialNetwork><GrFacebookOption style={{ padding: "11px", color: "white" }} /></IconSocialNetwork>
+                            </a>
+
                         </Logo>
                     </DivIcon>
                 </ContainerLinkFooter>

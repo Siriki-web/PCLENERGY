@@ -92,14 +92,6 @@ const TheServices = styled.div`
     margin-right: 10px;
 `
 
-// const Org = styled.p`
-//     color: white;
-
-//     @media only screen and (max-width: 500px){
-//         font-size: 15px;
-//         }
-//     `
-
 const PgH = styled.p`
     color: white;
     line-height: 5px;
@@ -272,10 +264,10 @@ const MasterPlans = () => {
                         <TheServices></TheServices>
                         <Pg><Link to="/operation-maintenace" style={{ color: 'white' }}>Operation And maintenance Consultancy</Link></Pg>
                     </DivServices>
-                    <DivServices>
+                    {/* <DivServices>
                         <TheServices></TheServices>
                         <Pg><Link to="" style={{ color: 'white' }}>Pre-Feasibility Studies</Link></Pg>
-                    </DivServices>
+                    </DivServices> */}
                     <DivServices>
                         <TheServices></TheServices>
                         <Pg><Link to="/transaction-advisory" style={{ color: 'white' }}>Transaction Advisory & Due Diligence</Link></Pg>

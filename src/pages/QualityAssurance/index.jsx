@@ -162,15 +162,6 @@ const Br = styled.br`
     }
     `
 
-const DivQ = styled.div`
-    display: flex;
-    align-items: center; 
-
-    @media all and (max-width: 1024px){
-        padding-left: 2rem;
-        padding-right: 2rem;
-        }
-`
 
 const TitreH2 = styled.h2`
     text-align: left;
@@ -182,13 +173,6 @@ const TitreH2 = styled.h2`
         }
     `
 
-// const Org = styled.p`
-//     color: white;
-
-//     @media only screen and (max-width: 500px){
-//         font-size: 1rem;
-//         }
-//     `
 
 const DivQu = styled.div`
     display: flex;
@@ -307,10 +291,10 @@ const QualityAssurance = () => {
                         <TheServices></TheServices>
                         <Pg><Link to="/operation-maintenace" style={{color: 'white'}}>Operation And maintenance Consultancy</Link></Pg>
                     </DivServices>
-                    <DivServices>
+                    {/* <DivServices>
                         <TheServices></TheServices>
                         <Pg><Link to="" style={{color: 'white'}}>Pre-Feasibility Studies</Link></Pg>
-                    </DivServices>
+                    </DivServices> */}
                     <DivServices>
                         <TheServices></TheServices>
                         <Pg><Link to="/transaction-advisory" style={{color: 'white'}}>Transaction Advisory & Due Diligence</Link></Pg>

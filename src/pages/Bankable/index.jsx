@@ -91,14 +91,6 @@ const TheServices = styled.div`
     margin-right: 10px;
 `
 
-// const Org = styled.p`
-//     color: white;
-//     line-height: 5px;
-
-//     @media only screen and (max-width: 500px){
-//         font-size: 15px;
-//         }
-//     `
 
 const PgH = styled.p`
     color: white;
@@ -114,7 +106,6 @@ const PgH = styled.p`
 const DivStyle = styled.div`
     display: flex;
     align-items: baseline;
-    // line-height: 10px;
 
     @media all and (max-width: 1024px){
         padding-left: 2rem;
@@ -137,16 +128,12 @@ const Img = styled.img`
         margin-left: 30px;
     }
     `
+
 const Container2 = styled.div`
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     margin-bottom: 40px;
-
-    // @media only screen and (max-width: 500px){
-    //     padding-left: 1rem;
-    //     padding-right: 1rem;
-    // }
     `
 
 const Br = styled.br`

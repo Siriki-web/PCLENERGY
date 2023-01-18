@@ -91,13 +91,6 @@ const TheServices = styled.div`
     margin-right: 10px;
 `
 
-// const Org = styled.p`
-//     color: white;
-
-//     @media only screen and (max-width: 500px){
-//         font-size: 15px;
-//         }
-//     `
 
 const PgH = styled.p`
     color: white;

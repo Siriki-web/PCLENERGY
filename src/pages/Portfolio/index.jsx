@@ -259,10 +259,10 @@ const Portfolio = () => {
                         <TheServices></TheServices>
                         <Pg><Link to="/operation-maintenace" style={{ color: 'white' }}>Operation And maintenance Consultancy</Link></Pg>
                     </DivServices>
-                    <DivServices>
+                    {/* <DivServices>
                         <TheServices></TheServices>
                         <Pg><Link to="" style={{ color: 'white' }}>Pre-Feasibility Studies</Link></Pg>
-                    </DivServices>
+                    </DivServices> */}
                     <DivServices>
                         <TheServices></TheServices>
                         <Pg><Link to="/transaction-advisory" style={{ color: 'white' }}>Transaction Advisory & Due Diligence</Link></Pg>

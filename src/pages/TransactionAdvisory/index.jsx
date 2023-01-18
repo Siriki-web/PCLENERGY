@@ -261,10 +261,10 @@ const TransactionAdvisory = () => {
                         <TheServices></TheServices>
                         <Pg><Link to="/master-plans" style={{ color: 'white' }}>Master Plans</Link></Pg>
                     </DivServices>
-                    <DivServices>
+                    {/* <DivServices>
                         <TheServices></TheServices>
                         <Pg><Link to="" style={{ color: 'white' }}>Pre-Feasibility Studies</Link></Pg>
-                    </DivServices>
+                    </DivServices> */}
                     <DivServices>
                         <TheServices></TheServices>
                         <Pg><Link to="/partnership" style={{ color: 'white' }}>Public Private Partnership (PPP)</Link></Pg>
