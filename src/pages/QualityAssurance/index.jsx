@@ -115,7 +115,7 @@ const Container = styled.div`
 
 const PgH = styled.p`
     color: white;
-    line-height: 5px;
+    line-height: 25px;
 
     @media only screen and (max-width: 500px){
         font-size: 15px;
@@ -246,10 +246,10 @@ const QualityAssurance = () => {
                         business processes and runnings.<br />
                         Our out- point Quality Assurance Services include:
                     </Text>
-                    <DivQ>
+                    <DivStyle>
                         <CircleButton></CircleButton>
                         <PgH>Organisation Of Quality Assurance Training Courses</PgH>
-                    </DivQ>
+                    </DivStyle>
                     <DivStyle>
                         <CircleButton></CircleButton>
                         <PgH>Backing In Defining A Quality Assurance Program That Meets The Full <Br />

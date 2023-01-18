@@ -16,6 +16,8 @@ const Fonction = styled.p`
 const ImgPerson = styled.img`
     height: 250px;
     width: 250px;
+    border-radius: 20px;
+    border: 1px solid white;
     `        
 
 const MeetOurTeam = ({name, fonction, cp_twitter, cp_link, cover}) => {

@@ -106,6 +106,7 @@ const PgH = styled.p`
     @media only screen and (max-width: 500px){
         font-size: 15px;
         text-align: justify;
+        line-height: 20px;
        
     }
     `
@@ -113,7 +114,6 @@ const PgH = styled.p`
 const DivStyle = styled.div`
     display: flex;
     align-items: baseline;
-    // line-height: 10px;
 
     @media all and (max-width: 1024px){
         padding-left: 2rem;
@@ -193,10 +193,10 @@ const StrategicAdvisory = () => {
                         <br />
                         Services provided include:
                     </Text>
-                    <DivQ>
+                    <DivStyle>
                         <CircleButton></CircleButton>
                         <PgH>Strategic Research and Market Intelligence</PgH>
-                    </DivQ>
+                    </DivStyle>
                     <DivStyle>
                         <CircleButton></CircleButton>
                         <PgH>Strategy Development</PgH>

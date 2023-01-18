@@ -6,6 +6,7 @@ import { GrLinkedinOption } from 'react-icons/gr'
 import { GrTwitter } from 'react-icons/gr'
 import { MdEmail } from 'react-icons/md'
 import { GrFacebookOption } from 'react-icons/gr'
+import { BiArrowToTop } from 'react-icons/bi'
 import styled from 'styled-components';
 
 
@@ -164,6 +165,19 @@ const ContainerLinkFooter = styled.div`
         margin-left: 25px;
     }`
 
+
+const ScrollPage = styled.div`
+    position: fixed;
+    width: 25px;
+    height: 25px;
+    bottom: 50px;
+    right: 30px;
+    border: 1px solid #EFA21F;
+`
+
+
+
+
 const Footer = () => {
     return (
         <Container>
@@ -199,6 +213,10 @@ const Footer = () => {
             </UnderContainer>
             <Divizer />
             <Copyright>&copy; PCL Energy {new Date().getFullYear()}</Copyright>
+            <ScrollPage>
+                <a href="#top"><BiArrowToTop style={{color: "#EFA21F", padding: "5px 5px"}}/></a>
+            </ScrollPage>
+
         </Container>
 
     );

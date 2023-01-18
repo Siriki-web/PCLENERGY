@@ -1,9 +1,11 @@
-import phillips from '../assets/phillips.png'
-import victor from '../assets/victor.png'
-import tony from '../assets/tony.png'
-import yusuf from '../assets/yusuf.png'
+// import phillips from '../assets/phillips.png'
 import twitter from '../assets/twitter.png'
 import linkedin from '../assets/linkedin.png'
+import inco from '../assets/name1.jpeg'
+import foluso from '../assets/name3.jpg'
+import baba from '../assets/name2.jpg'
+
+
 
 
 export const dataPerson = [
@@ -13,7 +15,7 @@ export const dataPerson = [
         fonction: 'Co-Founder',
         cp_twitter: twitter,
         cp_link: linkedin,
-        cover: yusuf
+        cover: inco
     },
     {
         id: 2,
@@ -21,22 +23,14 @@ export const dataPerson = [
         fonction: 'Co-Founder',
         cp_twitter: twitter,
         cp_link: linkedin,
-        cover: phillips
+        cover: foluso
     },
     {
         id: 3,
-        name: 'Engr. Tony Attah',
+        name: 'Engr. Usman Baba',
         fonction: 'CEO',
         cp_twitter: twitter,
         cp_link: linkedin,
-        cover: tony
-    },
-    {
-        id: 4,
-        name: 'Mr. Victor Mba',
-        fonction: 'CFO',
-        cp_twitter: twitter,
-        cp_link: linkedin,
-        cover: victor
+        cover: baba
     }
 ]

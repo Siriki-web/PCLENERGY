@@ -107,6 +107,7 @@ const PgH = styled.p`
     @media only screen and (max-width: 500px){
         font-size: 15px;
         text-align: justify;
+        line-height: 15px;
        
     }
     `
@@ -189,10 +190,10 @@ const SoftwareDevelopment = () => {
                         get the best out of their investments. <br />
                         Key Areas:
                     </Text>
-                    <DivQ>
+                    <DivStyle>
                         <CircleButton></CircleButton>
                         <PgH>Skill development</PgH>
-                    </DivQ>
+                    </DivStyle>
                     <DivStyle>
                         <CircleButton></CircleButton>
                         <PgH>Management Planning</PgH>
